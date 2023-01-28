@@ -1,84 +1,128 @@
-# EasyPulse
-A collection of HQ presets for EasyEffects and PulseEffects.
+A complete set of `High Quality` presets for [EasyEffects](https://github.com/wwmm/easyeffects) and [PulseEffects](https://github.com/wwmm/pulseeffects).
 
-![easyeffects_presets](https://user-images.githubusercontent.com/123143444/213625722-3d25507e-05d7-4dad-ad9a-72bcd157d6db.gif)
-![pulseeffects_presets](https://user-images.githubusercontent.com/123143444/213635531-5b1e66a0-faff-4b1f-8f7d-ffd51c1832b0.gif)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/123143444/215234342-4a49f39b-9092-4916-94c1-3d8e0c6a9b06.gif" height="185"> <img src="https://user-images.githubusercontent.com/123143444/215234349-585700f8-f45e-4162-8de5-3141da05573f.gif" height="185">
+</p>
 
-## Features
+## WHAT'S INSIDE? 🎁
 
-- Ready to use. No need to set anything else only load.
-- Constant updates. This includes quality improvements and bug fixes.
-- 12 presets
-  - air (Acoustic / Ballad / Vocal)
-  - bass (Beat / Deep)
-  - blues (Jazz / R&B)
-  - club (Dance / Electronic)
-  - custom (Template)
-  - hifi (Surround / Theater)
-  - laptop (Speakers)
-  - lofi (Chill / Dream)
-  - podcast (Speech)
-  - radio
-  - rock (Alternative / Indie / Metal)
-  - ziyad
-- 10 band equalizer (25Hz – 12800kHz / x4 / Q 5.00)
-- Bedroom reverb (200Hz – 12800kHz)
-- Limiter with automatic leveling (distortion free)
-- 25 ms delay on the right channel (stereo effect in headphones)
+<details>
+<summary>15 presets with bedroom and stereo effects included.</summary>
+<p>
+  
+- acoustic 🥁
+- bass 🔉
+- blues 🎷️
+- classical 🎻️
+- club 🎛️
+- custom 🎨
+- hifi 💥️
+- laptop 💻️
+- latin 👠️
+- lofi 🍃️
+- podcast 🎙
+- pop 🎤️
+- radio 📻️
+- rock 🎸️
+- vocal 👄️
+  
+</p>
+</details>
+  
+- Support for newer versions of [EasyEffects](https://github.com/wwmm/easyeffects) and [PulseEffects](https://github.com/wwmm/pulseeffects) (included in the [Ubuntu repositories](https://packages.ubuntu.com/)).
+- A simple guide on how to build them (under development 🚧).
 
-## Installation
+**Sounds amazing!?** 🥳 Then support me with a ⭐️ and a follow! 😎️
 
-1. [Clone this repository](https://github.com/p-chan5/EasyPulse/archive/refs/heads/main.zip) or go to the [releases tab](https://github.com/p-chan5/EasyPulse/releases) and download the last version.
-2. Unzip it.
-3. Locate the `.js` files and paste them into one of the following paths:
+## INSTALLATION 🚀️
 
-***PulseEffects:***
+[![Source Tarball](https://img.shields.io/badge/-Source_zip-green.svg?style=for-the-badge)](https://github.com/p-chan5/EasyPulse/archive/refs/heads/main.zip)
+[![All versions](https://img.shields.io/badge/-All_Versions-lightgrey.svg?style=for-the-badge)](https://github.com/p-chan5/EasyPulse/releases)
 
-`~/.config/PulseEffects/output` *(Repositories)*
+1. Unzip and move the `.js` files to one of the following paths or use the `Import a preset` button:
 
-`~/.var/app/com.github.wwmm.pulseeffects/.config/output` *(Flatpak)*
+<details>
+<summary>EasyEffects</summary>
+<p>
+  
+* Flatpak: `~/.var/app/com.github.wwmm.easyeffects/config/output`
+* Repositories: `~/.config/easyeffects/output`
+  
+</p>
+</details>
 
-***EasyEffects:***
+<details> 
+<summary>PulseEffects</summary>
+<p>
 
-`~/.config/easyeffects/output` *(Repositories)*
+* Flatpak: `~/.var/app/com.github.wwmm.pulseeffects/.config/output`
+* Repositories: `~/.config/PulseEffects/output`
 
-`~/.var/app/com.github.wwmm.easyeffects/config/output` *(Flatpak)*
+</p>
+</details>
 
-...or use the `Import a preset` button.
+2. Finally load your favorite from `Presets`
 
-![easyeffects_import_a_preset_button](https://user-images.githubusercontent.com/123143444/213627977-1a4009de-9122-415b-b644-a3a41c2a7429.png)
+![presets_output](https://user-images.githubusercontent.com/123143444/215234552-4046d7d2-0270-4364-9a69-ed5b59c6f563.png)
 
-![pulseeffects_import_a_preset_button](https://user-images.githubusercontent.com/123143444/213635562-7567877d-feea-4a42-969e-3abe522d7045.png)
+## A BIT OF HISTORY 📖️
+The other day I was looking for some presets on the web. The first result I came across was [JackHack96's repository](https://github.com/JackHack96/EasyEffects-Presets) I tried them but **they were not capable enough for what they promised (Bass Enhancement and Perfect EQ)** so I decided to create my own and share them with the community!
 
-4. It's done!
+## INSPIRATION 💡
+Much of it comes from the presets offered by the `macOS` equalizer (note that **the settings are not exactly the same**).
 
-## FAQ
+<img src="https://user-images.githubusercontent.com/123143444/215025761-689f1011-f8bb-4bb0-aebe-6c206148c670.jpg" height="250"> <img src="https://user-images.githubusercontent.com/123143444/215027219-54166db1-a36d-4f0b-bcd8-b717db550f6a.jpg" height="250">
 
-**What equipment did you try it with?**
+## PHILOSOPHY 🧠
+All ideas and comments are welcome as long as you are respectful of others. Feel free to suggest changes or make them in a [fork](https://github.com/p-chan5/EasyPulse/fork) after all we do this for fun!
 
-I used the following headphones:
+## UNLOCK THE POTENTIAL OF YOUR SPEAKERS AND HEADPHONES 🔓
+**You don't need overpriced equipment to get good results!** For example I use `sony-mdr-zx110` headphones and a `low-end laptop` running `PulseAudio` (factory sound card). What is the potential of yor equipment? Please be realistic. Maybe you just need to reduce an annoying frequency (use `custom` for it) or increase the lows.
 
-- sony-mdr-zx110
-- sony-mdr-zx310
+## THE EQUALIZER IS EVERYTHING 🤯️
 
-**Are they compatible with older versions of Easy Effects or Pulse Effects?**
+<img src=https://user-images.githubusercontent.com/123143444/215235039-93d2e6a0-2aaf-488f-b8a7-6a02f0b7c749.png height="250" align="right">
 
-Most likely not. You can try but this could lead to problems. If you can't upgrade or downgrade to any of these versions I suggest you try recreating them from scratch (soon a tutorial on how to do it)
+You may be wondering what is special about your presets? 🤨️ The answer is: The `Equalizer` or as I usually call it: **"The Soul"**. Just remember that **a clean sound will be the result of a correct EQ**
 
-<img align="right" src=https://user-images.githubusercontent.com/123143444/213626078-ab51df40-8acf-481a-af5f-e8c7e5e4a7ca.png> <img align="right" src=https://user-images.githubusercontent.com/123143444/213626063-9c5a9b1e-560e-48de-a99a-e65a2b2338b2.png>
+[EasyEffects](https://github.com/wwmm/easyeffects) and [PulseEffects](https://github.com/wwmm/pulseeffects) includes the [LSP equalizer](https://lsp-plug.in/?page=manuals&section=para_equalizer_x32_stereo) (the best option so far) so you just need to find the correct frequency: `(25Hz - 12.8kHz)` + the appropriate parameters: `(Slope x4 / Q 5.00)` and you're ready to go! I wish I could explain this in more detail but that's pretty much all I did. 🙂️ Lie! I tried with the following frequency ranges: `(20Hz - 10.2kHz)` / `(30Hz - 15.4kHz)` / `(35Hz - 17.9kHz)` but none sound better than `(25Hz - 12.8kHz)`
 
-**Please add more bass!**
+So I migrated this settings to `lsp-plugins-para-equalizer-x32-stereo` and I did toggling between `5 dB` to `-5 dB` Here are the 👽️ results:
 
-I didn't add it because I prefer to get rid of annoying frequencies rather than boost them. In technical terms I believe more in subtractive EQ than additive EQ. But if you want more bass and a crisp sound then boost the frequencies `50Hz` and `12.8kHz`
+<p align="center">
+<img src=https://user-images.githubusercontent.com/123143444/215234666-ac75f0bf-35ed-45a7-8e30-1905b49ccb58.gif height="200"> <img src=https://user-images.githubusercontent.com/123143444/215234752-f4d334ba-a793-4cde-a0b8-57a7a6989236.gif height="200">
+</p>
 
-**I notice volume reduction on the equalizer. Why?**
+## TIPS ✨️
 
-This is normal (believe it or not) it's impossible to edit the source without getting a different volume level. Unless you want to kill the dynamics with a compressor (although I don't recommend it).
+<img src=https://user-images.githubusercontent.com/123143444/215235885-465b77b5-8c2a-44c2-8a68-5d986d1701eb.png align="right"> <img src=https://user-images.githubusercontent.com/123143444/215235895-87678de3-354c-4ba2-809f-b31e7ac3806f.png align="right">
 
-![level](https://user-images.githubusercontent.com/123143444/213627926-8f0ddf20-3e24-48d9-878d-fb035b787ef6.png)
+### BASS AND HIGHS 💯️
+I applied `subtractive EQ` to each preset (the cleanest option) this means that **you will not see any EQ bands with gain above** `0 dB` but if you want to give them more presence increase `50Hz` and `12.8kHz`
 
-**False Volume**
+### ON OR OFF 🤔️
+Some effects like `Reverberation` or `Delay` are disabled for obvious reasons (you might like it or not). **Be sure to activate them and test them!** Finally save your settings by rewriting the preset.
 
-In fact the limiter must act only in dangerous situations (when the input signal exceeds `0 dB` and becomes distorted) Although this can also affect your source and cause `Automatic Leveling`. One solution for this is to reduce the Output Level of the equalizer so the limiter will act less frequently.
+![on_or_off](https://user-images.githubusercontent.com/123143444/215234907-d390dbc2-db7e-4a4a-a706-f00c236a6060.png)
 
-![output](https://user-images.githubusercontent.com/123143444/213627944-600d2e52-a126-4bea-8be7-71696a5eebf7.png)
+### LIMITER ON STAGE 🎭
+The limiter has a good and a bad side (this will depend on how much you force him to act) on the one hand it will prevent the modified signal from exceeding `0 dB` and being distorted on the other hand it could kill the dynamics of the source and push it below the threshold.
+
+[EasyEffects](https://github.com/wwmm/easyeffects) includes the [LSP limiter](https://lsp-plug.in/?page=manuals&section=limiter_stereo) (more advanced in theory) which **can achieve transparent results with the right settings!** But even with this **the signal is still hanging by a thread and... You move that thread!** The simplest solution is to lower the `Output Volume` of the `Equalizer` or the `Input Level` of the `Limiter` (at least for [PulseEffects](https://github.com/wwmm/pulseeffects))
+
+<img src=https://user-images.githubusercontent.com/123143444/215234944-83711bc0-f037-4a1d-badd-42e0eeeb2e8b.png height="100">
+
+But... **for nothing in the world do you think of turning it off!** ⚠️ or any incoming signal greater than `0 dB` could be harmful to your hearing 👂️☠️ or your equipment 💻️🎧️☠️
+
+## UPDATE CYCLE ⚡️
+I can only offer support for new versions included in the [Ubuntu releases](https://ubuntu.com/about/release-cycle). This is the case of [EasyEffects](https://github.com/wwmm/easyeffects) that was included since `22.10` but **maintainers are always welcome!** Contact me by opening a [New Issue](https://github.com/p-chan5/EasyPulse/issues/new/choose).
+
+## COMPATIBILITY ISSUES ⚠️
+I recommend `upgrading` or `downgrading` your version to avoid having to deal with this. [EasyEffects](https://github.com/wwmm/easyeffects) regularly changes the structure of its `.js` files (which is why they need to be rebuilt) but for [PulseEffects](https://github.com/wwmm/pulseeffects) this is different since their files have no further changes! It's up to you...
+
+## HOW TO BUILD THEM 🏗️
+(under development 🚧)
+
+## FAQ ❓
+**What does EasyPulse mean?**
+Just a weird mix of the words [EasyEffects](https://github.com/wwmm/easyeffects) and [PulseEffects](https://github.com/wwmm/pulseeffects) 😜️ or if you want: "Made to be `Easy` 🙌️ Made with the `Pulse` of the soul ❤️"
