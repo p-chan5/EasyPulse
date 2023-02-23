@@ -158,9 +158,9 @@ lofi 🍃️|0.00|0.00|0.00|-6.00|-12.00|-12.00|-6.00|0.00|0.00|0.00
 podcast 🎙|0.00|0.00|-3.00|-6.00|-9.00|-9.00|-6.00|-3.00|0.00|0.00
 rock 🎸️|0.00|0.00|-3.00|-6.00|-9.00|-12.00|-9.00|-6.00|-3.00|0.00
 
-## FIND IT ON THE WIKI 📖
+## LOOK IT UP ON THE WIKI 📖
 
-We have some tutorials and settings [here](https://github.com/p-chan5/EasyPulse/wiki). Check it out!
+Tutorials / FAQs / settings and more can be found [here](https://github.com/p-chan5/EasyPulse/wiki).
 
 ## HELP LINKS 🔗
 
