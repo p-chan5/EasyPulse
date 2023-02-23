@@ -1,0 +1,41 @@
+0.5.0
+
+- Maintained support for EasyEffects `7.0.0` and PulseEffects `4.8.7`
+  - Equalizer Filter Mode changed to `RLC (MT)`
+  - Limiter replaced by Maximizer.
+  - Several settings were reviewed and corrected.
+- The philosophy of the project changed. We now focus more on quality than quantity.
+- The [Wiki](https://github.com/p-chan5/EasyPulse/wiki) has been inaugurated.
+- Added HELP LINKS 🔗 to `README.md`
+
+0.4.0
+
+- Maintained support for EasyEffects `7.0.0` and PulseEffects `4.8.7`
+- `blues` renamed to jazz 🎷️
+- Added HOW TO BUILD THEM 🏗️ to `README.md`
+
+0.3.0
+
+- Added support for EasyEffects `7.0.0` dropped for `6.3.0`
+- Maintained support for PulseEffects `4.8.7`
+
+0.2.0
+
+- Maintained support for EasyEffects `6.3.0` and PulseEffects `4.8.7`
+- New presets:
+  - acoustic 🥁
+  - classical 🎻️
+  - latin 👠️
+- The following presets were renamed:
+  - `air` = vocal 👄️
+  - `ziyad` = pop 🎤️
+- Improved Limiter settings:
+  - Attack response reduced to `10 ms` (ALR)
+  - Loss of volume compensated by `Knee` (ALR)
+  - Peak cutting algorithm is now used.
+  - `Automatic Leveling` is now enabled (PE)
+- Delay is now before the Limiter (due to the `Dry` and `Wet` fields)
+
+0.1.0
+
+- Added support for EasyEffects `6.3.0` and PulseEffects `4.8.7`
