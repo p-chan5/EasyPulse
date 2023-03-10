@@ -1,7 +1,7 @@
 A set of `High Quality` presets for [EasyEffects](https://github.com/wwmm/easyeffects) and [PulseEffects](https://github.com/wwmm/pulseeffects).
 
 <p align=center>
-<img src=https://user-images.githubusercontent.com/123143444/220776157-734288e4-5244-4211-a872-91c5b0bb9a11.gif height=185> <img src=https://user-images.githubusercontent.com/123143444/220776177-bafa90b6-c2c0-4dd8-a45c-915cad8243c0.gif height=185>
+<img src=https://user-images.githubusercontent.com/123143444/224163501-4ec7f1a0-340f-4c8b-829d-e28e1a23954f.gif height=185> <img src=https://user-images.githubusercontent.com/123143444/224163527-0cad887d-2f04-4c77-a77a-c1030e905ac3.gif height=185>
 </p>
 
 <p align=center>
@@ -11,23 +11,23 @@ Made to be Easy. Made with the Pulse of the Soul. ❤️
 ## WHAT'S INSIDE? 🎁
 
 <details>
-<summary>8 presets with bedroom and stereo effects included.</summary>
+<summary>8 configuration profiles.</summary>
 <p>
 
 - classical 🎻️
-- club 🍸
 - custom 🎨
 - hifi 💥️
 - kpop 🎤️
 - lofi 🍃️
 - podcast 🎙
 - rock 🎸️
+- surround 🧬
   
 </p>
 </details>
   
 - Support for new versions included in the [Ubuntu repositories](https://packages.ubuntu.com/).
-- A simple guide on how to build them.
+- A guide on how to build them.
 
 Do they sound amazing? Then support me with a ⭐️ and a follow!
 
@@ -46,7 +46,7 @@ PulseEffects:
 * Flatpak: `~/.var/app/com.github.wwmm.pulseeffects/.config/output`
 * Repositories: `~/.config/PulseEffects/output`
 
-3. It's done! `Load` them from `Presets` > `Output`
+3. It's done! Load them from `Presets` > `Output`
 
 <img src=https://user-images.githubusercontent.com/123143444/216798224-68a8b6b7-dee3-4a8b-b7d4-ee1396b30a3d.png>
 <img src=https://user-images.githubusercontent.com/123143444/215234552-4046d7d2-0270-4364-9a69-ed5b59c6f563.png>
@@ -58,7 +58,7 @@ All ideas and comments are welcome as long as you are respectful of others. Feel
 
 ## UNLOCK THE POTENTIAL OF YOUR EQUIPMENT 🔓
 
-You don't need expensive headphones or speakers to achieve good results. They were created with the aim of cleaning up the signal. So if they sound amazing with my `sony-mdr-zx110` maybe yours is no exception!
+You don't need expensive headphones or speakers to achieve good results. At first they were created to clean the signal from my `sony-mdr-zx110` but then I realized that they work on any other architecture!
 
 ## THE EQUALIZER IS EVERYTHING 🤯️
 
@@ -71,18 +71,35 @@ Both versions include LSP equalizer (the best FOSS option so far) so you just ne
 For testing purposes I migrated this setting to `para-equalizer-x32-stereo` and toggled between `5 dB` and `-5 dB`
 
 <p align=center>
-<img src=https://user-images.githubusercontent.com/123143444/220776374-7f857e4d-5e8b-4c3e-b99f-9abf3000e8b8.gif height=200> <img src=https://user-images.githubusercontent.com/123143444/219545396-a5cf41b2-fb82-4174-9883-c1461b473764.gif height=200>
+<img src=https://user-images.githubusercontent.com/123143444/224163786-8fd6f226-bc37-457e-bf1b-182a70777f47.gif height=200> <img src=https://user-images.githubusercontent.com/123143444/223950404-f540e6dc-cf83-4eee-92b8-d064bdc75b63.gif height=200>
 </p>
+
+## SOPHISTICATED SURROUND 🪡
+
+We have put all our effort into this advanced preset. We hope this is the definitive answer to the demand imposed by Linux users for years: ***"Quality sound, without much chatter..."*** Inspired by the video [Are You Using This EQ Trick? Left and Right Channel EQ](https://www.youtube.com/watch?v=RzRmw4rNY90) by user Michael Wynne aka [In The Mix](https://www.youtube.com/@inthemix).
+
+> hifi 💥️ + `Split Channels` = surround 🧬
+
+<img src=https://user-images.githubusercontent.com/123143444/223876846-7a4a3463-3ff2-48f3-a8d8-bd61a5c245f0.gif>
+<img src=https://user-images.githubusercontent.com/123143444/223869569-7d9ac67f-9263-4116-a0d6-9c1f618997eb.png height=200>
 
 ## EFFECTS 🎛️
 
+### CROSSFEED 🎧
+
+Center the signal via `Feed` / `Cutoff` sets the limit of frequencies it affects (these values are maxed out so you can hear them).
+
 ### REVERBERATION ⛰️
 
-Increase the `Amount` to make it more noticeable. Try going beyond these values, you can achieve creative results with some practice.
+Increase `Wet Level / Amount` to make it more noticeable. Try going beyond these values, you can achieve creative results with some practice.
 
 ### DELAY 👥️
 
-Sets a delay in `ms` on the right channel (the most common) achieving a stereo effect. Try ranges from `20.00 ms` to `35.00 ms`
+Switch to full stereo mode. The most common range for the right channel is `20.00 ms` to `35.00 ms`
+
+### AUTO GAIN 🛠
+
+Corrects the signal volume based on a `Target` We use `-10.0 dB` but it can also be a value equal to or greater than `-6.0 dB` / `Reset History` reevaluates this operation (refresh).
 
 ### MAXIMIZER 👂
 
@@ -96,7 +113,11 @@ Prevents the signal from exceeding `0 dB` and becoming distorted.
 
 If you want to give them more presence increase the gain of the `50.0 Hz` and `12.8 kHz` frequencies (see graph).
 
-<img src=https://user-images.githubusercontent.com/123143444/219545652-2a875057-5fe0-4ce4-8e3e-f12173c23893.gif height=200>
+<img src=https://user-images.githubusercontent.com/123143444/222322134-13715ad6-ad24-4918-ba9f-3ee8e9a92ef3.png height=200>
+
+Also lower the output volume of the Equalizer (a little is enough). This will prevent the dynamics from being ruined as it goes through the Maximizer.
+
+<img src=https://user-images.githubusercontent.com/123143444/222323070-6157e24a-524b-4140-8961-6745b86a1732.png>
 
 ### ON OR OFF? 🤔️
 
@@ -107,17 +128,23 @@ Some effects are disabled by default, be sure to turn them on and try them out. 
 
 ## COMPATIBILITY ISSUES ⚠️
 
-I recommend upgrading or downgrading your version to avoid having to deal with this. EasyEffects regularly changes the structure of its `.js` files (which is why they need to be rebuilt) but for PulseEffects this is different, since their files have no further changes!
+I recommend upgrading or downgrading your version to avoid having to deal with this. EasyEffects changes the structure of its `.js` files from time to time (so they need to be rebuilt) but for PulseEffects this is different, since their files have no further changes!
 
 ## HOW TO BUILD THEM 🏗️
 
-This is a manual process summarized in a few steps:
+This is a manual process summarized in 11 steps:
 
-1. Add them in the following order: Equalizer > Reverberation > Delay > Maximizer (reset each to its default values).
+1. Add them in the following order: Crossfeed > Equalizer > Reverberation > Delay > Auto Gain > Maximizer (reset each to its default values).
 
 <img src=https://user-images.githubusercontent.com/123143444/216802921-bbd53003-2f54-477f-8a96-534f4ea7b6fa.png>
 
-2. Select Equalizer. Set the following values:
+2. Select Crossfeed. Set the following values:
+
+Cutoff|Feed
+:---:|:---:
+2000 Hz|1.0 dB
+
+3. Select Equalizer. Set the following values:
 
 Bands
 :---:
@@ -131,26 +158,39 @@ Band|Mode|Slope|Quality
 :---:|:---:|:---:|:---:
 All|RLC (MT)|x4|5.00
 
-3. Select Reverberation. Set the following values:
+4. Select Reverberation. Set the following values:
 
 High Frequency Damping|Room Size|Diffusion|Pre Delay|Decay Time|Wet Level / Amount|Bass Cut|Treble Cut
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
 12800 Hz|Large/smooth|0.00|25.00 ms|0.40 s|-6.0 dB|200 Hz|12800 Hz
 
-4. Select Delay. Set the following values:
+5. Select Delay. Set the following values:
 
 Right
 :---:
 25.00 ms
 
-5. Turn off Reverberation and Delay
-6. Save this setting as `custom`
-7. Select Equalizer. Reduce band gain and save each setting according to its name. Load `custom` to start over.
+6. Select Auto Gain. Set the following values:
+
+EasyEffects:
+
+Target|Reference
+:---:|:---:
+-10.0 dB|Integrated
+
+PulseEffects:
+
+Use Geometric Mean|Target|Integrated
+:---:|:---:|:---:
+Disable|-10.0 dB|100
+
+7. Turn off Crossfeed > Reverberation > Delay > Auto Gain
+8. Save as `custom`
+9. Select Equalizer. Reduce band gain and save each setting according to its name. Load `custom` to start over.
 
 Name|25 Hz|50 Hz|100 Hz|200 Hz|400 Hz|800 Hz|1600 Hz|3200 Hz|6400 Hz|12800 Hz
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
 classical 🎻️|0.00|-3.00|-6.00|-9.00|-12.00|-9.00|-6.00|-3.00|0.00|0.00
-club 🍸|0.00|0.00|0.00|-10.00|-10.00|-10.00|-10.00|-10.00|0.00|0.00
 custom 🎨|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00
 hifi 💥️|0.00|0.00|0.00|-15.00|-12.00|-12.00|-12.00|-15.00|0.00|0.00
 kpop 🎤️|0.00|0.00|0.00|-4.00|-8.00|-12.00|-8.00|-4.00|0.00|0.00
@@ -158,17 +198,49 @@ lofi 🍃️|0.00|0.00|0.00|-6.00|-12.00|-12.00|-6.00|0.00|0.00|0.00
 podcast 🎙|0.00|0.00|-3.00|-6.00|-9.00|-9.00|-6.00|-3.00|0.00|0.00
 rock 🎸️|0.00|0.00|-3.00|-6.00|-9.00|-12.00|-9.00|-6.00|-3.00|0.00
 
+10. Load `hifi` > Select Equalizer. Set the following values:
+
+Split Channels
+:---:
+Enable
+
+Channel|25 Hz|50 Hz|100 Hz|200 Hz|400 Hz|800 Hz|1600 Hz|3200 Hz|6400 Hz|12800 Hz
+:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
+Left|0.00|0.00|0.00|-15.00|-9.00|-12.00|-12.00|-12.00|0.00|0.00
+Right|0.00|0.00|0.00|-12.00|-12.00|-12.00|-9.00|-15.00|0.00|0.00
+
+11. Save as `surround`
+
 ## LOOK IT UP ON THE WIKI 📖
 
-Tutorials / FAQs / settings and more can be found [here](https://github.com/p-chan5/EasyPulse/wiki).
+FAQ and more can be found [here](https://github.com/p-chan5/EasyPulse/wiki).
+
+## SCHEDULE 📅
+
+0.7.0 - 6 April 2023
+
+- Add Loudness 📢️
+- Enhance Surround 🧬
+- Improve Reverberation ⛰️
+
+0.8.0 - ???
+
+- Add Bass Enhancer 💪
+- Add Multiband Compressor 🔥
 
 ## HELP LINKS 🔗
+
+### Crossfeed
+
+- [Bauer stereophonic-to-binaural DSP](https://bs2b.sourceforge.net/)
+- [bs2b: GStreamer Bad Plugins 1.0 Plugins](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-bad/html/gst-plugins-bad-plugins-bs2b.html)
 
 ### Equalizer
 
 - [LSP | Parametric Equalizer x32 LeftRight](https://lsp-plug.in/?page=manuals&section=para_equalizer_x32_lr)
 - [FL Studio | Fruity Parametric EQ 2](https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Parametric%20EQ%202.htm)
 - [Equalizers tutorial | MeldaProduction](https://www.meldaproduction.com/tutorials/text/equalizers)
+- [IRR vs FIR: Understanding their differences](https://www.juansaudio.com/post/iir-vs-fir-understanding-their-differences)
 
 ### Reverberation
 
