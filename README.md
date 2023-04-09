@@ -1,7 +1,7 @@
 A set of `High Quality` presets for [EasyEffects](https://github.com/wwmm/easyeffects) and [PulseEffects](https://github.com/wwmm/pulseeffects).
 
 <p align=center>
-<img src=https://user-images.githubusercontent.com/123143444/229336611-5696d3ff-0eea-406f-b443-29f69072dac4.gif height=185> <img src=https://user-images.githubusercontent.com/123143444/229336618-77c24ad1-d454-4053-a1d7-da1334b24000.gif height=185>
+<img src=https://user-images.githubusercontent.com/123143444/230702814-1daf5bfa-836b-4eb3-9ce6-b403979827b7.gif height=185> <img src=https://user-images.githubusercontent.com/123143444/230702819-1c902967-d224-43e4-899c-f5c9fc60a9e6.gif height=185>
 </p>
 
 <p align=center>
@@ -70,15 +70,17 @@ Both versions include LSP equalizer (the best FOSS option so far) So we need to 
 For testing purposes I migrated this setting to `para-equalizer-x32-stereo` and toggled between `5 dB` and `-5 dB`
 
 <p align=center>
-<img src=https://user-images.githubusercontent.com/123143444/229336718-a29eac21-2fdd-4b9f-8440-178a7b186590.gif height=200> <img src=https://user-images.githubusercontent.com/123143444/223950404-f540e6dc-cf83-4eee-92b8-d064bdc75b63.gif height=200>
+<img src=https://user-images.githubusercontent.com/123143444/230702849-20a4a13d-6515-43a0-8d79-456387e11a03.gif height=200> <img src=https://user-images.githubusercontent.com/123143444/223950404-f540e6dc-cf83-4eee-92b8-d064bdc75b63.gif height=200>
 </p>
 
 ## SOPHISTICATED SURROUND 🪡
 
-This feature exclusive for EE `=>7.0.0` (equal to or greater than). Inspired by the video: [Are You Using This EQ Trick? Left and Right Channel EQ](https://www.youtube.com/watch?v=RzRmw4rNY90) by Michael Wynne aka [In The Mix](https://www.youtube.com/@inthemix).
+This feature is exclusive for users of EasyEffects `7.0.0` or higher. For it to work you must turn on one of the other two Equalizers (without forgetting the first one) and that's it :) **Please don't do more than that!** Editing them is our job (means they can be easily broken by the end user).
+
+Inspired by the video: [Are You Using This EQ Trick? Left and Right Channel EQ](https://www.youtube.com/watch?v=RzRmw4rNY90) by Michael Wynne aka [In The Mix](https://www.youtube.com/@inthemix).
 
 <img src=https://user-images.githubusercontent.com/123143444/223876846-7a4a3463-3ff2-48f3-a8d8-bd61a5c245f0.gif>
-<img src=https://user-images.githubusercontent.com/123143444/229336921-4a7655ba-08b0-4863-9e91-70bd4e52a777.png height=225>
+<img src=https://user-images.githubusercontent.com/123143444/230560382-809e22ec-a12c-4167-a59f-988d62fe9d2f.gif height=230>
 
 ## EFFECTS 🎛️
 
@@ -86,9 +88,17 @@ This feature exclusive for EE `=>7.0.0` (equal to or greater than). Inspired by 
 
 Reduces the stereo signal via `Feed` / `Cutoff` sets the limit of frequencies it affects.
 
-### EQUALIZER 2 🧬
+### BASS ENHANCER 💪
 
-Expands the signal recreating a Dolby Atmosphere.
+It will make it sound crunchier.
+
+### 2ND EQUALIZER 🧬
+
+Expands the signal recreating a **smooth** `Dolby Atmos` (for modern music).
+
+### 3RD EQUALIZER 🧬
+
+Expands the signal recreating a **harsh** `Dolby Atmos` (for heavy music).
 
 ### LOUDNESS 📢️
 
@@ -106,7 +116,7 @@ Switch to full stereo mode. The most common range for the right channel is `20.0
 
 ### AUTO GAIN 🛠
 
-Corrects the volume based on a `Target` = `-10.0 dB` / `Reset History` reevaluates this operation (refresh).
+Corrects the volume based on a `Target` = `-10.0 dB` / `Reset History` reevaluates this operation (refresh) / `Maximum History` is arbitrary.
 
 ### MAXIMIZER 👂
 
@@ -118,13 +128,7 @@ Prevents the signal from exceeding `0 dB` and becoming distorted.
 
 <img src=https://user-images.githubusercontent.com/123143444/215235895-87678de3-354c-4ba2-809f-b31e7ac3806f.png align=right> <img src=https://user-images.githubusercontent.com/123143444/215235885-465b77b5-8c2a-44c2-8a68-5d986d1701eb.png align=right>
 
-To give them more presence increase the gain of the `50.0 Hz` and `12.8 kHz` frequencies (see graph).
-
-<img src=https://user-images.githubusercontent.com/123143444/222322134-13715ad6-ad24-4918-ba9f-3ee8e9a92ef3.png height=200>
-
-Also turn down the Equalizer Output (a little is enough). This will prevent the dynamics from being messed up as it goes through the Maximizer.
-
-<img src=https://user-images.githubusercontent.com/123143444/222323070-6157e24a-524b-4140-8961-6745b86a1732.png>
+To give them more presence increase the gain of the `50.0 Hz` and `12.8 kHz` frequencies of the 1st Equalizer.
 
 ### ON OR OFF? 🤔️
 
@@ -135,7 +139,7 @@ Some effects are disabled by default, be sure to turn them on and try them out. 
 
 ## COMPATIBILITY ISSUES ⚠️
 
-I recommend upgrading / downgrading your version to avoid having to deal with this. EasyEffects changes the structure of its `.js` files from time to time, but for PulseEffects this is different, since their files have no further changes!
+Since we **DO NOT** support old versions, it is vital that you have the current stable branch (either EE or PE) for them to work.
 
 ## LOOK IT UP ON THE WIKI 📖
 
@@ -143,10 +147,9 @@ FAQ and more can be found [here](https://github.com/p-chan5/EasyPulse/wiki).
 
 ## SCHEDULE 📅
 
-0.8.0 - July 8 2023
+0.9.0 - ???
 
-- Add 3rd Equalizer 🧬
-- Add Bass Enhancer 💪
+We'll put something here when we feel more creative...
 
 ## HELP LINKS 🔗
 
@@ -160,6 +163,10 @@ FAQ and more can be found [here](https://github.com/p-chan5/EasyPulse/wiki).
 - [FL Studio | Fruity Parametric EQ 2](https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Parametric%20EQ%202.htm)
 - [Equalizers tutorial | MeldaProduction](https://www.meldaproduction.com/tutorials/text/equalizers)
 - [IRR vs FIR: Understanding their differences](https://www.juansaudio.com/post/iir-vs-fir-understanding-their-differences)
+
+### Bass Enhancer
+
+- [Calf Studio Gear | Bass Enhancer](https://calf-studio-gear.org/doc/Bass%20Enhancer.html)
 
 ### Loudness
 
