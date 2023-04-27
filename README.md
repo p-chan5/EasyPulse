@@ -33,7 +33,7 @@ Do they sound amazing? Then support me with a ⭐️ and a follow!
 ## INSTALLATION 🚀️
 
 1. Go to [Releases](https://github.com/p-chan5/EasyPulse/releases) and download the latest version as `Source code` (zip) or (tar.gz)
-2. Unzip and move the `.js` files to one of the following paths:
+2. Unzip and move the `.json` files to one of the following paths:
 
 EasyEffects:
   
