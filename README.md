@@ -8,10 +8,10 @@ A set of `High Quality` presets for [EasyEffects](https://github.com/wwmm/easyef
 Made to be Easy. Made with the Pulse of the Soul. ❤️
 </p>
 
-## WHAT'S INSIDE? 🎁
+## WHAT'S INSIDE 🎁
 
 <details>
-<summary>8 configuration profiles.</summary>
+<summary>7 configuration profiles.</summary>
 <p>
 
 - classical 🎻️
@@ -20,13 +20,12 @@ Made to be Easy. Made with the Pulse of the Soul. ❤️
 - hifi 💥️
 - kpop 🎤️
 - lofi 🍃️
-- podcast 🎙
 - rock 🎸️
-  
+
 </p>
 </details>
-  
-- Support for new versions included in the [Ubuntu repositories](https://packages.ubuntu.com/). For old see: [HOW TO BUILD THEM](https://github.com/p-chan5/EasyPulse/wiki/HOW-TO-BUILD-THEM).
+
+- Support for new versions included in the [Ubuntu repositories](https://packages.ubuntu.com/). For old read [HOW TO BUILD THEM](https://github.com/p-chan5/EasyPulse/wiki/HOW-TO-BUILD-THEM).
 
 Do they sound amazing? Then support me with a ⭐️ and a follow!
 
@@ -63,74 +62,78 @@ You don't need expensive headphones or speakers to get good results, because the
 
 <img src=https://user-images.githubusercontent.com/123143444/219545184-953ee563-9730-4f98-b28a-d4eb71031288.png height=250 align=right>
 
-Achieving professional results is difficult even with the right tools. You might think that something is much more complicated than it seems, but you just need to look back. In this case, a clean sound will be the result of a correct EQ or also known as: [Subtractive EQ](https://producerhive.com/music-production-recording-tips/subtractive-vs-additive-eq/).
+Achieving professional results is difficult even with the right tools. You might think that something is much more complicated than it seems, but you just need to look back. In this case, a clean sound will be the result of correct EQ or also known as [subtractive EQ](https://producerhive.com/music-production-recording-tips/subtractive-vs-additive-eq/).
 
-Both versions include LSP equalizer (the best FOSS option so far) So we need to set the range and filter characteristics: `(25Hz - 12.8kHz)` `(RLC (MT) / Slope x4 / Q 5.00)`
+Both versions implement LSP Parametric Equalizer (the best FOSS option so far) So we just need to set the range plus filter characteristics `(Bell / RLC (MT) / x4 / 25Hz - 12.8kHz / 5.00)` and voila!
 
-For testing purposes I migrated this setting to `para-equalizer-x32-stereo` and toggled between `5 dB` and `-5 dB`
+For testing purposes, we migrated this setting to `para-equalizer-x32-stereo` and toggled between `24 dB` and `-24 dB`
 
 <p align=center>
-<img src=https://user-images.githubusercontent.com/123143444/230702849-20a4a13d-6515-43a0-8d79-456387e11a03.gif height=200> <img src=https://user-images.githubusercontent.com/123143444/223950404-f540e6dc-cf83-4eee-92b8-d064bdc75b63.gif height=200>
+<img src=https://github.com/p-chan5/EasyPulse/assets/123143444/67f3aa38-2d8b-4648-85d9-5f561bd47e5e height=200> <img src=https://github.com/p-chan5/EasyPulse/assets/123143444/bc349889-d154-4762-a487-717198ea4a19 height=200>
 </p>
 
 ## SOPHISTICATED SURROUND 🪡
 
-This feature is exclusive for users of EasyEffects `7.0.0` or higher. For it to work you must turn on one of the other two Equalizers (without forgetting the first one) and that's it :) **Please don't do more than that!** Editing them is our job (means they can be easily broken by the end user).
+This feature is exclusive for EasyEffects users. For it to work, you need to turn on one of the other two equalizers. **PLEASE DON'T DO MORE THAN THAT!** Editing them is our job (means they can be easily broken by the end user).
 
-Inspired by the video: [Are You Using This EQ Trick? Left and Right Channel EQ](https://www.youtube.com/watch?v=RzRmw4rNY90) by Michael Wynne aka [In The Mix](https://www.youtube.com/@inthemix).
+Inspired by the video [Are You Using This EQ Trick? Left and Right Channel EQ](https://www.youtube.com/watch?v=RzRmw4rNY90) by Michael Wynne aka [In The Mix](https://www.youtube.com/@inthemix).
 
 <img src=https://user-images.githubusercontent.com/123143444/223876846-7a4a3463-3ff2-48f3-a8d8-bd61a5c245f0.gif>
-<img src=https://user-images.githubusercontent.com/123143444/230560382-809e22ec-a12c-4167-a59f-988d62fe9d2f.gif height=230>
+<img src=https://github.com/p-chan5/EasyPulse/assets/123143444/d89fabe0-9093-4d0d-a915-fbb3cfc7f03e height=230>
 
 ## EFFECTS 🎛️
 
 ### CROSSFEED 🎧
 
-Reduces the stereo signal via `Feed` / `Cutoff` sets the limit of frequencies it affects.
-
-### BASS ENHANCER 💪
-
-It will make it sound crunchier.
-
-### 2ND EQUALIZER 🧬
-
-Expands the signal recreating a **smooth** `Dolby Atmos` (for modern music).
-
-### 3RD EQUALIZER 🧬
-
-Expands the signal recreating a **harsh** `Dolby Atmos` (for heavy music).
+Reduces the stereo signal via `Feed` / `Cutoff` sets the limit of frequencies that it affects.
 
 ### LOUDNESS 📢️
 
-It gives more prominence to the bass in exchange for reducing other frequencies (see graph). Use it with `Auto Gain`
+Applies volume corrections that equalize the input signal (see graph). Use it with `Auto Gain`
 
 <img src=https://user-images.githubusercontent.com/123143444/229337025-00e7ccc2-6a85-4a43-96a5-8f4c694c7c1c.png height=200>
 
+### 1ST EQUALIZER 🎲
+
+The heart of this project.
+
+### BASS ENHANCER 💪
+
+It makes it sound crunchier. Increase `Amount` to make it more noticeable.
+
+### 2ND EQUALIZER 🧬
+
+Expands the signal recreating a smooth `Dolby Atmos` (for modern music).
+
+### 3RD EQUALIZER 🧬
+
+Expands the signal recreating a harsh `Dolby Atmos` (for heavy music).
+
 ### REVERBERATION ⛰️
 
-Increase `Wet Level / Amount` to make it more noticeable.
+Creates a bedroom. Increase `Wet Level / Amount` to make it more noticeable.
 
 ### DELAY 👥️
 
-Switch to full stereo mode. The most common range for the right channel is `20.00 ms` to `35.00 ms`
+Creates a stereo separation effect. The most common range for the right channel is `20.00 ms` to `35.00 ms`
 
 ### AUTO GAIN 🛠
 
-Corrects the volume based on a `Target` = `-10.0 dB` / `Reset History` reevaluates this operation (refresh) / `Maximum History` is arbitrary.
+Normalizes the volume based on a `Target` / `Reset History` re-evaluates this operation (refresh) / `Maximum History` is arbitrary.
 
 ### MAXIMIZER 👂
 
-Prevents the signal from exceeding `0 dB` and becoming distorted.
+Prevents the signal from exceeding `0 dB` and becoming distorted / `Threshold` can replace `Auto Gain` in exchange for messing up dynamics.
 
 ## TIPS ✨️
 
-### BASS AND HIGHS 💯️
-
 <img src=https://user-images.githubusercontent.com/123143444/215235895-87678de3-354c-4ba2-809f-b31e7ac3806f.png align=right> <img src=https://user-images.githubusercontent.com/123143444/215235885-465b77b5-8c2a-44c2-8a68-5d986d1701eb.png align=right>
 
-To give them more presence increase the gain of the `50.0 Hz` and `12.8 kHz` frequencies of the 1st Equalizer.
+### BASS AND HIGHS 💯️
 
-### ON OR OFF? 🤔️
+To give them more prominence load `custom` and boost the `50.0 Hz / 12.8 kHz` gain of the 1st Equalizer.
+
+### ON OR OFF 🤔️
 
 Some effects are disabled by default, be sure to turn them on and try them out. If you liked it, save it by rewriting the original file.
 
@@ -147,7 +150,7 @@ FAQ and more can be found [here](https://github.com/p-chan5/EasyPulse/wiki).
 
 ## SCHEDULE 📅
 
-0.9.0 - ???
+1.0.0 - ???
 
 We'll put something here when we feel more creative...
 
@@ -156,6 +159,10 @@ We'll put something here when we feel more creative...
 ### Crossfeed
 
 - [Bauer stereophonic-to-binaural DSP](https://bs2b.sourceforge.net/)
+
+### Loudness
+
+- [LSP Loudness Compensator Stereo](https://lsp-plug.in/?page=manuals&section=loud_comp_stereo)
 
 ### Equalizer
 
@@ -167,10 +174,6 @@ We'll put something here when we feel more creative...
 ### Bass Enhancer
 
 - [Calf Studio Gear | Bass Enhancer](https://calf-studio-gear.org/doc/Bass%20Enhancer.html)
-
-### Loudness
-
-- [LSP Loudness Compensator Stereo](https://lsp-plug.in/?page=manuals&section=loud_comp_stereo)
 
 ### Reverberation
 
