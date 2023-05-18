@@ -152,7 +152,7 @@ FAQ and more can be found [here](https://github.com/p-chan5/EasyPulse/wiki).
 
 1.0.0 - ???
 
-We'll put something here when we feel more creative...
+- Improve surround mode. Similar to [360 Reality Audio](https://www.techhive.com/article/578318/sony-360-reality-audio-review.html).
 
 ## HELP LINKS 🔗
 
