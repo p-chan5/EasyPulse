@@ -153,6 +153,7 @@ FAQ and more can be found [here](https://github.com/p-chan5/EasyPulse/wiki).
 1.0.0 - ???
 
 - Improve surround mode. Similar to [360 Reality Audio](https://www.techhive.com/article/578318/sony-360-reality-audio-review.html).
+- Optimize L/R EQs (Split Channels) for [HRTF](https://www.sciencedirect.com/topics/engineering/head-related-transfer-function). Use [SPARTA](https://leomccormack.github.io/sparta-site/) and then migrate config.
 
 ## HELP LINKS 🔗
 
