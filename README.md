@@ -25,13 +25,13 @@ Made to be Easy. Made with the Pulse of the Soul. ❤️
 </p>
 </details>
 
-- Support for new versions included in the [Ubuntu repositories](https://packages.ubuntu.com/). For old read [HOW TO BUILD THEM](https://github.com/p-chan5/EasyPulse/wiki/HOW-TO-BUILD-THEM).
+- Support for new versions included in the [Ubuntu repositories](https://packages.ubuntu.com/).
 
-Do they sound amazing? Then support me with a ⭐️ and a follow!
+Do they sound amazing? Then support us with a ⭐️ and a follow!
 
 ## INSTALLATION 🚀️
 
-1. Go to [Releases](https://github.com/p-chan5/EasyPulse/releases) and download the latest version as `Source code` (zip) or (tar.gz)
+1. Download the [latest release](https://github.com/p-chan5/EasyPulse/releases/latest) as `zip / tar.gz` or read [HOW TO BUILD THEM](https://github.com/p-chan5/EasyPulse/wiki/HOW-TO-BUILD-THEM).
 2. Unzip and move the `.json` files to one of the following paths:
 
 EasyEffects:
@@ -44,7 +44,7 @@ PulseEffects:
 * Flatpak: `~/.var/app/com.github.wwmm.pulseeffects/.config/output`
 * Repositories: `~/.config/PulseEffects/output`
 
-3. It's done! Load them from `Presets` > `Output`
+3. Ready! Load them from `Presets` > `Output`
 
 <img src=https://user-images.githubusercontent.com/123143444/216798224-68a8b6b7-dee3-4a8b-b7d4-ee1396b30a3d.png>
 <img src=https://user-images.githubusercontent.com/123143444/215234552-4046d7d2-0270-4364-9a69-ed5b59c6f563.png>
@@ -64,7 +64,7 @@ You don't need expensive headphones or speakers to get good results, because the
 
 Achieving professional results is difficult even with the right tools. You might think that something is much more complicated than it seems, but you just need to look back. In this case, a clean sound will be the result of correct EQ or also known as [subtractive EQ](https://producerhive.com/music-production-recording-tips/subtractive-vs-additive-eq/).
 
-Both versions implement LSP Parametric Equalizer (the best FOSS option so far) So we just need to set the range plus filter characteristics `(Bell / RLC (MT) / x4 / 25Hz - 12.8kHz / 5.00)` and voila!
+Both versions implement LSP Parametric Equalizer (the best FOSS option so far) So we just need to set the range plus filter characteristics `(Bell / RLC (MT) / x4 / 25 Hz - 12.8 kHz / 5.00)` and voila!
 
 For testing purposes, we migrated this setting to `para-equalizer-x32-stereo` and toggled between `24 dB` and `-24 dB`
 
@@ -72,30 +72,30 @@ For testing purposes, we migrated this setting to `para-equalizer-x32-stereo` an
 <img src=https://github.com/p-chan5/EasyPulse/assets/123143444/67f3aa38-2d8b-4648-85d9-5f561bd47e5e height=200> <img src=https://github.com/p-chan5/EasyPulse/assets/123143444/bc349889-d154-4762-a487-717198ea4a19 height=200>
 </p>
 
-## SOPHISTICATED SURROUND 🪡
+## SOPHISTICATED SURROUND 🦇
 
 This feature is exclusive for EasyEffects users. For it to work, you need to turn on one of the other two equalizers. **PLEASE DON'T DO MORE THAN THAT!** Editing them is our job (means they can be easily broken by the end user).
 
 Inspired by the video [Are You Using This EQ Trick? Left and Right Channel EQ](https://www.youtube.com/watch?v=RzRmw4rNY90) by Michael Wynne aka [In The Mix](https://www.youtube.com/@inthemix).
 
 <img src=https://user-images.githubusercontent.com/123143444/223876846-7a4a3463-3ff2-48f3-a8d8-bd61a5c245f0.gif>
-<img src=https://github.com/p-chan5/EasyPulse/assets/123143444/d89fabe0-9093-4d0d-a915-fbb3cfc7f03e height=230>
+<img src=https://github.com/p-chan5/EasyPulse/assets/123143444/b598a44f-5f5f-4c34-95be-90510a28e4b8 height=230>
 
 ## EFFECTS 🎛️
 
 ### CROSSFEED 🎧
 
-Reduces the stereo signal via `Feed` / `Cutoff` sets the limit of frequencies that it affects.
+Center the signal via `Feed` / `Cutoff` sets the limit of frequencies it affects.
 
 ### LOUDNESS 📢️
 
-Applies volume corrections that equalize the input signal (see graph). Use it with `Auto Gain`
+Applies volume corrections giving more prominence to the bass (see graph). Use it with `Auto Gain`
 
 <img src=https://user-images.githubusercontent.com/123143444/229337025-00e7ccc2-6a85-4a43-96a5-8f4c694c7c1c.png height=200>
 
 ### 1ST EQUALIZER 🎲
 
-The heart of this project.
+The heart of the project.
 
 ### BASS ENHANCER 💪
 
@@ -103,19 +103,19 @@ It makes it sound crunchier. Increase `Amount` to make it more noticeable.
 
 ### 2ND EQUALIZER 🧬
 
-Expands the signal recreating a smooth `Dolby Atmos` (for modern music).
+Expands the signal recreating a smooth `Dolby Atmos`
 
 ### 3RD EQUALIZER 🧬
 
-Expands the signal recreating a harsh `Dolby Atmos` (for heavy music).
+Expands the signal recreating a harsh `Dolby Atmos`
 
 ### REVERBERATION ⛰️
 
 Creates a bedroom. Increase `Wet Level / Amount` to make it more noticeable.
 
-### DELAY 👥️
+### STEREO TOOLS 👥️
 
-Creates a stereo separation effect. The most common range for the right channel is `20.00 ms` to `35.00 ms`
+They create a stereo separation effect.
 
 ### AUTO GAIN 🛠
 
@@ -131,7 +131,7 @@ Prevents the signal from exceeding `0 dB` and becoming distorted / `Threshold` c
 
 ### BASS AND HIGHS 💯️
 
-To give them more prominence load `custom` and boost the `50.0 Hz / 12.8 kHz` gain of the 1st Equalizer.
+To give them more prominence load `custom` and boost the `50.0 Hz` and `12.8 kHz` gain of the 1st EQ.
 
 ### ON OR OFF 🤔️
 
@@ -153,7 +153,6 @@ FAQ and more can be found [here](https://github.com/p-chan5/EasyPulse/wiki).
 1.0.0 - ???
 
 - Improve surround mode. Similar to [360 Reality Audio](https://www.techhive.com/article/578318/sony-360-reality-audio-review.html).
-- Optimize L/R EQs (Split Channels) for [HRTF](https://www.sciencedirect.com/topics/engineering/head-related-transfer-function). Use [SPARTA](https://leomccormack.github.io/sparta-site/) and then migrate config.
 
 ## HELP LINKS 🔗
 
@@ -181,10 +180,9 @@ FAQ and more can be found [here](https://github.com/p-chan5/EasyPulse/wiki).
 - [Calf Studio Gear | Reverb](https://calf-studio-gear.org/doc/Reverb.html)
 - [FL Studio | Fruity Reeverb 2](https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Reeverb%202.htm)
 
-### Delay
+### Stereo Tools
 
-- [LSP Delay Compensator x2 Stereo](https://lsp-plug.in/?page=manuals&section=comp_delay_x2_stereo)
-- [FL Studio | Fruity Stereo Enhancer](https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Stereo%20Enhancer.htm)
+- [Calf Studio Gear | Stereo Tools](https://calf-studio-gear.org/doc/Stereo%20Tools.html)
 
 ### Maximizer
 
