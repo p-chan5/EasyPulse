@@ -1,4 +1,4 @@
-A set of `High Quality` presets for [EasyEffects](https://github.com/wwmm/easyeffects) and [PulseEffects](https://github.com/wwmm/pulseeffects).
+A set of `High Quality` presets for [Easy Effects](https://github.com/wwmm/easyeffects).
 
 ## WHAT'S INSIDE 🎁
 
@@ -22,16 +22,9 @@ Do they sound amazing? Then support us with a ⭐️ and a follow!
 
 1. Download the [latest release](https://github.com/p-chan5/EasyPulse/releases/latest) as `zip / tar.gz` or read [HOW TO BUILD THEM](https://github.com/p-chan5/EasyPulse/wiki/HOW-TO-BUILD-THEM).
 2. Unzip and move the `.json` files to one of the following paths:
-
-EasyEffects:
   
 * Flatpak: `~/.var/app/com.github.wwmm.easyeffects/config/output`
 * Repositories: `~/.config/easyeffects/output`
-
-PulseEffects:
-
-* Flatpak: `~/.var/app/com.github.wwmm.pulseeffects/.config/output`
-* Repositories: `~/.config/PulseEffects/output`
 
 3. Ready! Load them from `Presets` > `Output`
 
@@ -43,7 +36,7 @@ Centers the signal via `Feed` | `Cutoff` sets the limit of frequencies it affect
 
 ### LOUDNESS 📢️
 
-Applies volume corrections giving more prominence to the bass. Use it with `Auto Gain`
+Applies volume corrections giving more prominence to the bass. Use it with `Autogain`
 
 ### 1ST EQUALIZER 🎲
 
@@ -61,7 +54,7 @@ Expands the signal recreating a smooth `Dolby Atmos`
 
 Expands the signal recreating a harsh `Dolby Atmos`
 
-### COMPRESSOR 🔥
+### COMPRESSOR 🔥️
 
 Increases the dynamic range of the signal making it sound fuller.
 
@@ -73,11 +66,11 @@ Creates a bedroom. Try going beyond these values, you can achieve creative resul
 
 They create a stereo separation effect.
 
-### AUTO GAIN 🛠
+### AUTOGAIN 🛠
 
 Normalizes the volume based on a `Target` | `Reset History` re-evaluates this operation (refresh) | `Maximum History` is arbitrary.
 
-### LIMITER 🎭
+### LIMITER 👂️
 
 Prevents the signal from exceeding 0 dB and becoming distorted | `Threshold` can replace `Auto Gain` in exchange for messing up dynamics.
 
@@ -112,8 +105,6 @@ Since we **DO NOT** support old versions, it is vital that you have the current 
 ### Equalizer
 
 - [LSP Parametric Equalizer x32 LeftRight](https://lsp-plug.in/?page=manuals&section=para_equalizer_x32_lr)
-- [FL Studio | Fruity Parametric EQ 2](https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Parametric%20EQ%202.htm)
-- [Equalizers Tutorial | MeldaProduction](https://www.meldaproduction.com/tutorials/text/equalizers)
 
 ### Bass Enhancer
 
@@ -126,7 +117,6 @@ Since we **DO NOT** support old versions, it is vital that you have the current 
 ### Reverberation
 
 - [Calf Studio Gear | Reverb](https://calf-studio-gear.org/doc/Reverb.html)
-- [FL Studio | Fruity Reeverb 2](https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Reeverb%202.htm)
 
 ### Stereo Tools
 
@@ -135,5 +125,3 @@ Since we **DO NOT** support old versions, it is vital that you have the current 
 ### Limiter
 
 - [LSP Sidechain Limiter Stereo](https://lsp-plug.in/?page=manuals&section=sc_limiter_stereo)
-- [Calf Studio Gear | Limiter](https://calf-studio-gear.org/doc/Limiter.html)
-- [FL Studio | Fruity Limiter](https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Limiter.htm)
