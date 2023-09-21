@@ -3,7 +3,7 @@ A set of `High Quality` presets for [Easy Effects](https://github.com/wwmm/easye
 ## WHAT'S INSIDE 🎁
 
 <details>
-<summary>6 configuration profiles.</summary>
+<summary>7 configuration profiles.</summary>
 <p>
 
 - classical 🎻️
@@ -21,7 +21,7 @@ Do they sound amazing? Then support us with a ⭐️ and a follow!
 
 ## INSTALLATION 🚀️
 
-1. Clone the Source Code as [.zip](https://github.com/p-chan5/EasyPulse/archive/refs/heads/main.zip)
+1. [Clone the Source Code](https://github.com/p-chan5/EasyPulse/archive/refs/heads/main.zip).
 2. Unzip and move the `.json` files to one of the following paths:
   
 * Flatpak: `~/.var/app/com.github.wwmm.easyeffects/config/output`
