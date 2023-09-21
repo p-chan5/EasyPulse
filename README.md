@@ -9,6 +9,7 @@ A set of `High Quality` presets for [Easy Effects](https://github.com/wwmm/easye
 - classical 🎻️
 - edm 🎹
 - hifi 💥️
+- indie 🍄
 - kpop 🎤️
 - lofi 🍃️
 - rock 🎸️
@@ -20,7 +21,7 @@ Do they sound amazing? Then support us with a ⭐️ and a follow!
 
 ## INSTALLATION 🚀️
 
-1. Download the [latest release](https://github.com/p-chan5/EasyPulse/releases/latest) as `zip / tar.gz` or read [HOW TO BUILD THEM](https://github.com/p-chan5/EasyPulse/wiki/HOW-TO-BUILD-THEM).
+1. Clone the Source Code as [.zip](https://github.com/p-chan5/EasyPulse/archive/refs/heads/main.zip)
 2. Unzip and move the `.json` files to one of the following paths:
   
 * Flatpak: `~/.var/app/com.github.wwmm.easyeffects/config/output`
@@ -54,6 +55,10 @@ Expands the signal recreating a smooth `Dolby Atmos`
 
 Expands the signal recreating a harsh `Dolby Atmos`
 
+### MULTIBAND COMPRESSOR 🌶️
+
+Increases the dynamic range of bass, midrange and treble.
+
 ### COMPRESSOR 🔥️
 
 Increases the dynamic range of the signal making it sound fuller.
@@ -72,7 +77,7 @@ Normalizes the volume based on a `Target` | `Reset History` re-evaluates this op
 
 ### LIMITER 👂️
 
-Prevents the signal from exceeding 0 dB and becoming distorted | `Threshold` can replace `Auto Gain` in exchange for messing up dynamics.
+Prevents the signal from exceeding 0 dB and becoming distorted | `Threshold` can replace `Autogain` in exchange for messing up dynamics.
 
 ### LEVEL METER 🔊️
 
@@ -109,6 +114,10 @@ Since we **DO NOT** support old versions, it is vital that you have the current 
 ### Bass Enhancer
 
 - [Calf Studio Gear | Bass Enhancer](https://calf-studio-gear.org/doc/Bass%20Enhancer.html)
+
+### Multiband Compressor
+
+- [LSP Sidechain Multiband Compressor Stereo](https://lsp-plug.in/?page=manuals&section=sc_mb_compressor_stereo)
 
 ### Compressor
 
