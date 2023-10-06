@@ -2,9 +2,7 @@ A set of `High Quality` presets for [Easy Effects](https://github.com/wwmm/easye
 
 ## WHAT'S INSIDE 🎁
 
-<details>
-<summary>7 configuration profiles.</summary>
-<p>
+7 configuration profiles.
 
 - classical 🎻️
 - edm 🎹
@@ -14,14 +12,11 @@ A set of `High Quality` presets for [Easy Effects](https://github.com/wwmm/easye
 - lofi 🍃️
 - rock 🎸️
 
-</p>
-</details>
-
 Do they sound amazing? Then support us with a ⭐️ and a follow!
 
 ## INSTALLATION 🚀️
 
-1. [Clone the Source Code](https://github.com/p-chan5/EasyPulse/archive/refs/heads/main.zip).
+1. [Clone](https://github.com/p-chan5/EasyPulse/archive/refs/heads/main.zip) the Source Code or download the [latest release](https://github.com/p-chan5/EasyPulse/releases/latest).
 2. Unzip and move the `.json` files to one of the following paths:
   
 * Flatpak: `~/.var/app/com.github.wwmm.easyeffects/config/output`
