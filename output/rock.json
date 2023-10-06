@@ -37,13 +37,13 @@
             "mode": "Upward",
             "output-gain": 0.0,
             "ratio": 1.5,
-            "release": 200.0,
+            "release": 0.0,
             "release-threshold": -100.0,
             "sidechain": {
                 "lookahead": 0.0,
                 "mode": "RMS",
                 "preamp": 0.0,
-                "reactivity": 10.0,
+                "reactivity": 250.0,
                 "source": "Middle",
                 "type": "Feed-forward"
             },
@@ -53,7 +53,7 @@
         "crossfeed#0": {
             "bypass": true,
             "fcut": 1864,
-            "feed": 1.0,
+            "feed": 6.0,
             "input-gain": 0.0,
             "output-gain": 0.0
         },
@@ -98,64 +98,64 @@
             "input-gain": 0.0,
             "left": {
                 "band0": {
-                    "frequency": 277.0,
-                    "gain": -3.0,
+                    "frequency": 329.0,
+                    "gain": 3.0,
                     "mode": "LRX (BT)",
                     "mute": false,
                     "q": 0.0,
                     "slope": "x4",
                     "solo": false,
-                    "type": "Lo-shelf"
+                    "type": "Hi-shelf"
                 },
                 "band1": {
-                    "frequency": 554.0,
-                    "gain": 3.0,
+                    "frequency": 659.0,
+                    "gain": -3.0,
                     "mode": "LRX (BT)",
                     "mute": false,
                     "q": 0.0,
                     "slope": "x4",
                     "solo": false,
-                    "type": "Lo-shelf"
+                    "type": "Hi-shelf"
                 },
                 "band2": {
-                    "frequency": 1108.0,
-                    "gain": -3.0,
+                    "frequency": 1318.0,
+                    "gain": 3.0,
                     "mode": "LRX (BT)",
                     "mute": false,
                     "q": 0.0,
                     "slope": "x4",
                     "solo": false,
-                    "type": "Lo-shelf"
+                    "type": "Hi-shelf"
                 },
                 "band3": {
-                    "frequency": 2217.0,
-                    "gain": 3.0,
-                    "mode": "LRX (BT)",
-                    "mute": false,
-                    "q": 0.0,
-                    "slope": "x4",
-                    "solo": false,
-                    "type": "Lo-shelf"
-                },
-                "band4": {
-                    "frequency": 4434.0,
+                    "frequency": 2637.0,
                     "gain": -3.0,
                     "mode": "LRX (BT)",
                     "mute": false,
                     "q": 0.0,
                     "slope": "x4",
                     "solo": false,
-                    "type": "Lo-shelf"
+                    "type": "Hi-shelf"
                 },
-                "band5": {
-                    "frequency": 8869.0,
+                "band4": {
+                    "frequency": 5274.0,
                     "gain": 3.0,
                     "mode": "LRX (BT)",
                     "mute": false,
                     "q": 0.0,
                     "slope": "x4",
                     "solo": false,
-                    "type": "Lo-shelf"
+                    "type": "Hi-shelf"
+                },
+                "band5": {
+                    "frequency": 10548.0,
+                    "gain": -3.0,
+                    "mode": "LRX (BT)",
+                    "mute": false,
+                    "q": 0.0,
+                    "slope": "x4",
+                    "solo": false,
+                    "type": "Hi-shelf"
                 }
             },
             "mode": "IIR",
@@ -165,64 +165,64 @@
             "pitch-right": 0.0,
             "right": {
                 "band0": {
-                    "frequency": 554.0,
-                    "gain": -3.0,
+                    "frequency": 659.0,
+                    "gain": 3.0,
                     "mode": "LRX (BT)",
                     "mute": false,
                     "q": 0.0,
                     "slope": "x4",
                     "solo": false,
-                    "type": "Lo-shelf"
+                    "type": "Hi-shelf"
                 },
                 "band1": {
-                    "frequency": 1108.0,
-                    "gain": 3.0,
+                    "frequency": 1318.0,
+                    "gain": -3.0,
                     "mode": "LRX (BT)",
                     "mute": false,
                     "q": 0.0,
                     "slope": "x4",
                     "solo": false,
-                    "type": "Lo-shelf"
+                    "type": "Hi-shelf"
                 },
                 "band2": {
-                    "frequency": 2217.0,
-                    "gain": -3.0,
+                    "frequency": 2637.0,
+                    "gain": 3.0,
                     "mode": "LRX (BT)",
                     "mute": false,
                     "q": 0.0,
                     "slope": "x4",
                     "solo": false,
-                    "type": "Lo-shelf"
+                    "type": "Hi-shelf"
                 },
                 "band3": {
-                    "frequency": 4434.0,
-                    "gain": 3.0,
-                    "mode": "LRX (BT)",
-                    "mute": false,
-                    "q": 0.0,
-                    "slope": "x4",
-                    "solo": false,
-                    "type": "Lo-shelf"
-                },
-                "band4": {
-                    "frequency": 8869.0,
+                    "frequency": 5274.0,
                     "gain": -3.0,
                     "mode": "LRX (BT)",
                     "mute": false,
                     "q": 0.0,
                     "slope": "x4",
                     "solo": false,
-                    "type": "Lo-shelf"
+                    "type": "Hi-shelf"
                 },
-                "band5": {
-                    "frequency": 17739.0,
+                "band4": {
+                    "frequency": 10548.0,
                     "gain": 3.0,
                     "mode": "LRX (BT)",
                     "mute": false,
                     "q": 0.0,
                     "slope": "x4",
                     "solo": false,
-                    "type": "Lo-shelf"
+                    "type": "Hi-shelf"
+                },
+                "band5": {
+                    "frequency": 21096.0,
+                    "gain": -3.0,
+                    "mode": "LRX (BT)",
+                    "mute": false,
+                    "q": 0.0,
+                    "slope": "x4",
+                    "solo": false,
+                    "type": "Hi-shelf"
                 }
             },
             "split-channels": true
@@ -233,64 +233,64 @@
             "input-gain": 0.0,
             "left": {
                 "band0": {
-                    "frequency": 277.0,
-                    "gain": -6.0,
+                    "frequency": 329.0,
+                    "gain": 6.0,
                     "mode": "LRX (BT)",
                     "mute": false,
                     "q": 0.0,
                     "slope": "x4",
                     "solo": false,
-                    "type": "Lo-shelf"
+                    "type": "Hi-shelf"
                 },
                 "band1": {
-                    "frequency": 554.0,
-                    "gain": 6.0,
+                    "frequency": 659.0,
+                    "gain": -6.0,
                     "mode": "LRX (BT)",
                     "mute": false,
                     "q": 0.0,
                     "slope": "x4",
                     "solo": false,
-                    "type": "Lo-shelf"
+                    "type": "Hi-shelf"
                 },
                 "band2": {
-                    "frequency": 1108.0,
-                    "gain": -6.0,
+                    "frequency": 1318.0,
+                    "gain": 6.0,
                     "mode": "LRX (BT)",
                     "mute": false,
                     "q": 0.0,
                     "slope": "x4",
                     "solo": false,
-                    "type": "Lo-shelf"
+                    "type": "Hi-shelf"
                 },
                 "band3": {
-                    "frequency": 2217.0,
-                    "gain": 6.0,
-                    "mode": "LRX (BT)",
-                    "mute": false,
-                    "q": 0.0,
-                    "slope": "x4",
-                    "solo": false,
-                    "type": "Lo-shelf"
-                },
-                "band4": {
-                    "frequency": 4434.0,
+                    "frequency": 2637.0,
                     "gain": -6.0,
                     "mode": "LRX (BT)",
                     "mute": false,
                     "q": 0.0,
                     "slope": "x4",
                     "solo": false,
-                    "type": "Lo-shelf"
+                    "type": "Hi-shelf"
                 },
-                "band5": {
-                    "frequency": 8869.0,
+                "band4": {
+                    "frequency": 5274.0,
                     "gain": 6.0,
                     "mode": "LRX (BT)",
                     "mute": false,
                     "q": 0.0,
                     "slope": "x4",
                     "solo": false,
-                    "type": "Lo-shelf"
+                    "type": "Hi-shelf"
+                },
+                "band5": {
+                    "frequency": 10548.0,
+                    "gain": -6.0,
+                    "mode": "LRX (BT)",
+                    "mute": false,
+                    "q": 0.0,
+                    "slope": "x4",
+                    "solo": false,
+                    "type": "Hi-shelf"
                 }
             },
             "mode": "IIR",
@@ -300,64 +300,64 @@
             "pitch-right": 0.0,
             "right": {
                 "band0": {
-                    "frequency": 554.0,
-                    "gain": -6.0,
+                    "frequency": 659.0,
+                    "gain": 6.0,
                     "mode": "LRX (BT)",
                     "mute": false,
                     "q": 0.0,
                     "slope": "x4",
                     "solo": false,
-                    "type": "Lo-shelf"
+                    "type": "Hi-shelf"
                 },
                 "band1": {
-                    "frequency": 1108.0,
-                    "gain": 6.0,
+                    "frequency": 1318.0,
+                    "gain": -6.0,
                     "mode": "LRX (BT)",
                     "mute": false,
                     "q": 0.0,
                     "slope": "x4",
                     "solo": false,
-                    "type": "Lo-shelf"
+                    "type": "Hi-shelf"
                 },
                 "band2": {
-                    "frequency": 2217.0,
-                    "gain": -6.0,
+                    "frequency": 2637.0,
+                    "gain": 6.0,
                     "mode": "LRX (BT)",
                     "mute": false,
                     "q": 0.0,
                     "slope": "x4",
                     "solo": false,
-                    "type": "Lo-shelf"
+                    "type": "Hi-shelf"
                 },
                 "band3": {
-                    "frequency": 4434.0,
-                    "gain": 6.0,
-                    "mode": "LRX (BT)",
-                    "mute": false,
-                    "q": 0.0,
-                    "slope": "x4",
-                    "solo": false,
-                    "type": "Lo-shelf"
-                },
-                "band4": {
-                    "frequency": 8869.0,
+                    "frequency": 5274.0,
                     "gain": -6.0,
                     "mode": "LRX (BT)",
                     "mute": false,
                     "q": 0.0,
                     "slope": "x4",
                     "solo": false,
-                    "type": "Lo-shelf"
+                    "type": "Hi-shelf"
                 },
-                "band5": {
-                    "frequency": 17739.0,
+                "band4": {
+                    "frequency": 10548.0,
                     "gain": 6.0,
                     "mode": "LRX (BT)",
                     "mute": false,
                     "q": 0.0,
                     "slope": "x4",
                     "solo": false,
-                    "type": "Lo-shelf"
+                    "type": "Hi-shelf"
+                },
+                "band5": {
+                    "frequency": 21096.0,
+                    "gain": -6.0,
+                    "mode": "LRX (BT)",
+                    "mute": false,
+                    "q": 0.0,
+                    "slope": "x4",
+                    "solo": false,
+                    "type": "Hi-shelf"
                 }
             },
             "split-channels": true
@@ -368,7 +368,7 @@
         "limiter#0": {
             "alr": true,
             "alr-attack": 0.1,
-            "alr-knee": 10.0,
+            "alr-knee": 9.0,
             "alr-release": 1000.0,
             "attack": 5.0,
             "bypass": false,
@@ -409,7 +409,7 @@
                 "mute": false,
                 "ratio": 1.2,
                 "release-threshold": -100.0,
-                "release-time": 100.0,
+                "release-time": 0.0,
                 "sidechain-custom-highcut-filter": false,
                 "sidechain-custom-lowcut-filter": false,
                 "sidechain-highcut-frequency": 500.0,
@@ -417,7 +417,7 @@
                 "sidechain-lowcut-frequency": 10.0,
                 "sidechain-mode": "RMS",
                 "sidechain-preamp": 0.0,
-                "sidechain-reactivity": 10.0,
+                "sidechain-reactivity": 250.0,
                 "sidechain-source": "Middle",
                 "solo": false
             },
@@ -435,7 +435,7 @@
                 "mute": false,
                 "ratio": 1.2,
                 "release-threshold": -100.0,
-                "release-time": 100.0,
+                "release-time": 0.0,
                 "sidechain-custom-highcut-filter": false,
                 "sidechain-custom-lowcut-filter": false,
                 "sidechain-highcut-frequency": 1000.0,
@@ -443,7 +443,7 @@
                 "sidechain-lowcut-frequency": 500.0,
                 "sidechain-mode": "RMS",
                 "sidechain-preamp": 0.0,
-                "sidechain-reactivity": 10.0,
+                "sidechain-reactivity": 250.0,
                 "sidechain-source": "Middle",
                 "solo": false,
                 "split-frequency": 138.0
@@ -462,7 +462,7 @@
                 "mute": false,
                 "ratio": 1.2,
                 "release-threshold": -100.0,
-                "release-time": 100.0,
+                "release-time": 0.0,
                 "sidechain-custom-highcut-filter": false,
                 "sidechain-custom-lowcut-filter": false,
                 "sidechain-highcut-frequency": 2000.0,
@@ -470,7 +470,7 @@
                 "sidechain-lowcut-frequency": 1000.0,
                 "sidechain-mode": "RMS",
                 "sidechain-preamp": 0.0,
-                "sidechain-reactivity": 10.0,
+                "sidechain-reactivity": 250.0,
                 "sidechain-source": "Middle",
                 "solo": false,
                 "split-frequency": 4434.0
