@@ -2,7 +2,7 @@ A set of `High Quality` presets for [Easy Effects](https://github.com/wwmm/easye
 
 ## WHAT'S INSIDE 🎁
 
-7 configuration profiles.
+7 configuration profiles:
 
 - classical 🎻️
 - edm 🎹
@@ -16,7 +16,7 @@ Do they sound amazing? Then support us with a ⭐️ and a follow!
 
 ## INSTALLATION 🚀️
 
-1. [Clone](https://github.com/p-chan5/EasyPulse/archive/refs/heads/main.zip) the Source Code or download the [latest release](https://github.com/p-chan5/EasyPulse/releases/latest).
+1. Download the [latest release](https://github.com/p-chan5/EasyPulse/releases/latest) as `zip / tar.gz` or read [HOW TO BUILD THEM](https://github.com/p-chan5/EasyPulse/wiki/HOW-TO-BUILD-THEM).
 2. Unzip and move the `.json` files to one of the following paths:
   
 * Flatpak: `~/.var/app/com.github.wwmm.easyeffects/config/output`
@@ -50,9 +50,13 @@ Expands the signal recreating a smooth `Dolby Atmos`
 
 Expands the signal recreating a harsh `Dolby Atmos`
 
-### MULTIBAND COMPRESSOR 🌶️
+### 1ST MULTIBAND COMPRESSOR ❤️‍🔥
 
 Increases the dynamic range of bass, midrange and treble.
+
+### 2ND MULTIBAND COMPRESSOR 🧬
+
+Expands the signal recreating a `Sony 360 Reality Audio`
 
 ### COMPRESSOR 🔥️
 
@@ -62,7 +66,7 @@ Increases the dynamic range of the signal making it sound fuller.
 
 Creates a bedroom. Try going beyond these values, you can achieve creative results with some practice.
 
-### STEREO TOOLS 👥️
+### DELAY / STEREO TOOLS 👥️
 
 They create a stereo separation effect.
 
@@ -70,7 +74,7 @@ They create a stereo separation effect.
 
 Normalizes the volume based on a `Target` | `Reset History` re-evaluates this operation (refresh) | `Maximum History` is arbitrary.
 
-### LIMITER 👂️
+### LIMITER / MAXIMIZER 👂️
 
 Prevents the signal from exceeding 0 dB and becoming distorted | `Threshold` can replace `Autogain` in exchange for messing up dynamics.
 
@@ -80,13 +84,54 @@ Helps to find the true perceived loudness of the signal.
 
 ## TIPS ✨
 
+### HIGHER QUALITY, HIGHER LATENCY 💎️
+
+You can get more quality in exchange for notable latency. Just follow the steps below:
+
+1. Select Loudness. Set the following values:
+
+FFT Size
+:---:
+16384
+
+2. Select 1st / 2nd / 3rd Equalizer. Set the following values:
+
+X|Mode
+:---:|:---:
+Equalizer|SPM
+Filter|(MT)
+
+3. Select 1st / 2nd Multiband Compressor. Set the following values:
+
+Mode
+:---:
+Linear Phase
+
+#|Lookahead
+:---:|:---:
+X|20.00 ms
+
+4. Select Compressor. Set the following values:
+
+> Sidechain
+
+Lookahead
+:---:
+20.00 ms
+
+5. Select Limiter. Set the following values:
+
+Lookahead|Attack|Release
+:---:|:---:|:---:
+20.00 ms|20.00 ms|20.00 ms
+
 ### ON OR OFF 🤔
 
 Some effects are disabled by default, be sure to turn them on and try them out. If you liked it, save it by rewriting the original file.
 
-### UPWARD COMPRESSION 📈
+### DOWNWARD / UPWARD COMPRESSION 📈
 
-To achieve different styles, you can set the `Release Time` to 100.00, 200.00, 300.00, 400.00 or 500.00 ms and the `Ratio` to 1.20:1, 1.50:1, 2.00:1, 3.00:1 or 6.00:1
+To achieve different styles, you can set the `Release Time` to 0.00, 100.00, 200.00, 300.00, 400.00 or 500.00 ms and the `Ratio` to 1.20:1, 1.50:1, 2.00:1, 3.00:1 or 6.00:1
 
 ## COMPATIBILITY ISSUES ⚠️
 
@@ -112,7 +157,7 @@ Since we **DO NOT** support old versions, it is vital that you have the current 
 
 ### Multiband Compressor
 
-- [LSP Sidechain Multiband Compressor Stereo](https://lsp-plug.in/?page=manuals&section=sc_mb_compressor_stereo)
+- [LSP Sidechain Multiband Compressor Stereo x8](https://lsp-plug.in/?page=manuals&section=sc_mb_compressor_stereo)
 
 ### Compressor
 
@@ -122,6 +167,10 @@ Since we **DO NOT** support old versions, it is vital that you have the current 
 
 - [Calf Studio Gear | Reverb](https://calf-studio-gear.org/doc/Reverb.html)
 
+### Delay
+
+- [LSP Delay Compensator x2 Stereo](https://lsp-plug.in/?page=manuals&section=comp_delay_x2_stereo)
+
 ### Stereo Tools
 
 - [Calf Studio Gear | Stereo Tools](https://calf-studio-gear.org/doc/Stereo%20Tools.html)
@@ -129,3 +178,7 @@ Since we **DO NOT** support old versions, it is vital that you have the current 
 ### Limiter
 
 - [LSP Sidechain Limiter Stereo](https://lsp-plug.in/?page=manuals&section=sc_limiter_stereo)
+
+### Maximizer
+
+- [zam-plugins](https://www.zamaudio.com/?p=976)
