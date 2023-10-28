@@ -37,7 +37,7 @@
             "mode": "Upward",
             "output-gain": 0.0,
             "ratio": 1.5,
-            "release": 0.0,
+            "release": 200.0,
             "release-threshold": -100.0,
             "sidechain": {
                 "lookahead": 0.0,
@@ -45,8 +45,10 @@
                 "preamp": 0.0,
                 "reactivity": 250.0,
                 "source": "Middle",
+                "stereo-split-source": "Left/Right",
                 "type": "Feed-forward"
             },
+            "stereo-split": true,
             "threshold": 0.0,
             "wet": 0.0
         },
@@ -57,137 +59,96 @@
             "input-gain": 0.0,
             "output-gain": 0.0
         },
+        "delay#0": {
+            "bypass": true,
+            "dry-l": -100.0,
+            "dry-r": -100.0,
+            "input-gain": 0.0,
+            "invert-phase-l": false,
+            "invert-phase-r": false,
+            "output-gain": 0.0,
+            "time-l": 0.0,
+            "time-r": 20.0,
+            "wet-l": 0.0,
+            "wet-r": 0.0
+        },
         "equalizer#1": {
             "balance": 0.0,
             "bypass": true,
             "input-gain": 0.0,
             "left": {
                 "band0": {
-                    "frequency": 329.0,
+                    "frequency": 466.0,
                     "gain": 3.0,
                     "mode": "LRX (BT)",
                     "mute": false,
                     "q": 0.0,
                     "slope": "x4",
                     "solo": false,
-                    "type": "Hi-shelf"
+                    "type": "Ladder-pass",
+                    "width": 1.0
                 },
                 "band1": {
-                    "frequency": 659.0,
-                    "gain": -3.0,
+                    "frequency": 1864.0,
+                    "gain": 3.0,
                     "mode": "LRX (BT)",
                     "mute": false,
                     "q": 0.0,
                     "slope": "x4",
                     "solo": false,
-                    "type": "Hi-shelf"
+                    "type": "Ladder-pass",
+                    "width": 1.0
                 },
                 "band2": {
-                    "frequency": 1318.0,
+                    "frequency": 7458.0,
                     "gain": 3.0,
                     "mode": "LRX (BT)",
                     "mute": false,
                     "q": 0.0,
                     "slope": "x4",
                     "solo": false,
-                    "type": "Hi-shelf"
-                },
-                "band3": {
-                    "frequency": 2637.0,
-                    "gain": -3.0,
-                    "mode": "LRX (BT)",
-                    "mute": false,
-                    "q": 0.0,
-                    "slope": "x4",
-                    "solo": false,
-                    "type": "Hi-shelf"
-                },
-                "band4": {
-                    "frequency": 5274.0,
-                    "gain": 3.0,
-                    "mode": "LRX (BT)",
-                    "mute": false,
-                    "q": 0.0,
-                    "slope": "x4",
-                    "solo": false,
-                    "type": "Hi-shelf"
-                },
-                "band5": {
-                    "frequency": 10548.0,
-                    "gain": -3.0,
-                    "mode": "LRX (BT)",
-                    "mute": false,
-                    "q": 0.0,
-                    "slope": "x4",
-                    "solo": false,
-                    "type": "Hi-shelf"
+                    "type": "Ladder-pass",
+                    "width": 1.0
                 }
             },
             "mode": "IIR",
-            "num-bands": 6,
+            "num-bands": 3,
             "output-gain": 0.0,
             "pitch-left": 0.0,
             "pitch-right": 0.0,
             "right": {
                 "band0": {
-                    "frequency": 659.0,
+                    "frequency": 932.0,
                     "gain": 3.0,
                     "mode": "LRX (BT)",
                     "mute": false,
                     "q": 0.0,
                     "slope": "x4",
                     "solo": false,
-                    "type": "Hi-shelf"
+                    "type": "Ladder-pass",
+                    "width": 1.0
                 },
                 "band1": {
-                    "frequency": 1318.0,
-                    "gain": -3.0,
+                    "frequency": 3729.0,
+                    "gain": 3.0,
                     "mode": "LRX (BT)",
                     "mute": false,
                     "q": 0.0,
                     "slope": "x4",
                     "solo": false,
-                    "type": "Hi-shelf"
+                    "type": "Ladder-pass",
+                    "width": 1.0
                 },
                 "band2": {
-                    "frequency": 2637.0,
+                    "frequency": 14917.0,
                     "gain": 3.0,
                     "mode": "LRX (BT)",
                     "mute": false,
                     "q": 0.0,
                     "slope": "x4",
                     "solo": false,
-                    "type": "Hi-shelf"
-                },
-                "band3": {
-                    "frequency": 5274.0,
-                    "gain": -3.0,
-                    "mode": "LRX (BT)",
-                    "mute": false,
-                    "q": 0.0,
-                    "slope": "x4",
-                    "solo": false,
-                    "type": "Hi-shelf"
-                },
-                "band4": {
-                    "frequency": 10548.0,
-                    "gain": 3.0,
-                    "mode": "LRX (BT)",
-                    "mute": false,
-                    "q": 0.0,
-                    "slope": "x4",
-                    "solo": false,
-                    "type": "Hi-shelf"
-                },
-                "band5": {
-                    "frequency": 21096.0,
-                    "gain": -3.0,
-                    "mode": "LRX (BT)",
-                    "mute": false,
-                    "q": 0.0,
-                    "slope": "x4",
-                    "solo": false,
-                    "type": "Hi-shelf"
+                    "type": "Ladder-pass",
+                    "width": 1.0
                 }
             },
             "split-channels": true
@@ -198,157 +159,83 @@
             "input-gain": 0.0,
             "left": {
                 "band0": {
-                    "frequency": 329.0,
+                    "frequency": 466.0,
                     "gain": 6.0,
                     "mode": "LRX (BT)",
                     "mute": false,
                     "q": 0.0,
                     "slope": "x4",
                     "solo": false,
-                    "type": "Hi-shelf"
+                    "type": "Ladder-pass",
+                    "width": 1.0
                 },
                 "band1": {
-                    "frequency": 659.0,
-                    "gain": -6.0,
+                    "frequency": 1864.0,
+                    "gain": 6.0,
                     "mode": "LRX (BT)",
                     "mute": false,
                     "q": 0.0,
                     "slope": "x4",
                     "solo": false,
-                    "type": "Hi-shelf"
+                    "type": "Ladder-pass",
+                    "width": 1.0
                 },
                 "band2": {
-                    "frequency": 1318.0,
+                    "frequency": 7458.0,
                     "gain": 6.0,
                     "mode": "LRX (BT)",
                     "mute": false,
                     "q": 0.0,
                     "slope": "x4",
                     "solo": false,
-                    "type": "Hi-shelf"
-                },
-                "band3": {
-                    "frequency": 2637.0,
-                    "gain": -6.0,
-                    "mode": "LRX (BT)",
-                    "mute": false,
-                    "q": 0.0,
-                    "slope": "x4",
-                    "solo": false,
-                    "type": "Hi-shelf"
-                },
-                "band4": {
-                    "frequency": 5274.0,
-                    "gain": 6.0,
-                    "mode": "LRX (BT)",
-                    "mute": false,
-                    "q": 0.0,
-                    "slope": "x4",
-                    "solo": false,
-                    "type": "Hi-shelf"
-                },
-                "band5": {
-                    "frequency": 10548.0,
-                    "gain": -6.0,
-                    "mode": "LRX (BT)",
-                    "mute": false,
-                    "q": 0.0,
-                    "slope": "x4",
-                    "solo": false,
-                    "type": "Hi-shelf"
+                    "type": "Ladder-pass",
+                    "width": 1.0
                 }
             },
             "mode": "IIR",
-            "num-bands": 6,
+            "num-bands": 3,
             "output-gain": 0.0,
             "pitch-left": 0.0,
             "pitch-right": 0.0,
             "right": {
                 "band0": {
-                    "frequency": 659.0,
+                    "frequency": 932.0,
                     "gain": 6.0,
                     "mode": "LRX (BT)",
                     "mute": false,
                     "q": 0.0,
                     "slope": "x4",
                     "solo": false,
-                    "type": "Hi-shelf"
+                    "type": "Ladder-pass",
+                    "width": 1.0
                 },
                 "band1": {
-                    "frequency": 1318.0,
-                    "gain": -6.0,
+                    "frequency": 3729.0,
+                    "gain": 6.0,
                     "mode": "LRX (BT)",
                     "mute": false,
                     "q": 0.0,
                     "slope": "x4",
                     "solo": false,
-                    "type": "Hi-shelf"
+                    "type": "Ladder-pass",
+                    "width": 1.0
                 },
                 "band2": {
-                    "frequency": 2637.0,
+                    "frequency": 14917.0,
                     "gain": 6.0,
                     "mode": "LRX (BT)",
                     "mute": false,
                     "q": 0.0,
                     "slope": "x4",
                     "solo": false,
-                    "type": "Hi-shelf"
-                },
-                "band3": {
-                    "frequency": 5274.0,
-                    "gain": -6.0,
-                    "mode": "LRX (BT)",
-                    "mute": false,
-                    "q": 0.0,
-                    "slope": "x4",
-                    "solo": false,
-                    "type": "Hi-shelf"
-                },
-                "band4": {
-                    "frequency": 10548.0,
-                    "gain": 6.0,
-                    "mode": "LRX (BT)",
-                    "mute": false,
-                    "q": 0.0,
-                    "slope": "x4",
-                    "solo": false,
-                    "type": "Hi-shelf"
-                },
-                "band5": {
-                    "frequency": 21096.0,
-                    "gain": -6.0,
-                    "mode": "LRX (BT)",
-                    "mute": false,
-                    "q": 0.0,
-                    "slope": "x4",
-                    "solo": false,
-                    "type": "Hi-shelf"
+                    "type": "Ladder-pass",
+                    "width": 1.0
                 }
             },
             "split-channels": true
         },
         "level_meter#0": {
             "bypass": true
-        },
-        "limiter#0": {
-            "alr": true,
-            "alr-attack": 0.1,
-            "alr-knee": 9.0,
-            "alr-release": 1000.0,
-            "attack": 5.0,
-            "bypass": false,
-            "dithering": "None",
-            "external-sidechain": false,
-            "gain-boost": true,
-            "input-gain": 0.0,
-            "lookahead": 5.0,
-            "mode": "Herm Thin",
-            "output-gain": 0.0,
-            "oversampling": "None",
-            "release": 5.0,
-            "sidechain-preamp": 0.0,
-            "stereo-link": 0.0,
-            "threshold": 0.0
         },
         "loudness#0": {
             "bypass": true,
@@ -359,6 +246,14 @@
             "output-gain": 0.0,
             "std": "ISO226-2003",
             "volume": -24.0
+        },
+        "maximizer#0": {
+            "bypass": false,
+            "ceiling": 0.0,
+            "input-gain": 0.0,
+            "output-gain": 0.0,
+            "release": 25.0,
+            "threshold": 0.0
         },
         "multiband_compressor#0": {
             "band0": {
@@ -374,7 +269,7 @@
                 "mute": false,
                 "ratio": 1.2,
                 "release-threshold": -100.0,
-                "release-time": 0.0,
+                "release-time": 100.0,
                 "sidechain-custom-highcut-filter": false,
                 "sidechain-custom-lowcut-filter": false,
                 "sidechain-highcut-frequency": 500.0,
@@ -384,7 +279,8 @@
                 "sidechain-preamp": 0.0,
                 "sidechain-reactivity": 250.0,
                 "sidechain-source": "Middle",
-                "solo": false
+                "solo": false,
+                "stereo-split-source": "Left/Right"
             },
             "band1": {
                 "attack-threshold": 0.0,
@@ -400,7 +296,7 @@
                 "mute": false,
                 "ratio": 1.2,
                 "release-threshold": -100.0,
-                "release-time": 0.0,
+                "release-time": 100.0,
                 "sidechain-custom-highcut-filter": false,
                 "sidechain-custom-lowcut-filter": false,
                 "sidechain-highcut-frequency": 1000.0,
@@ -411,7 +307,8 @@
                 "sidechain-reactivity": 250.0,
                 "sidechain-source": "Middle",
                 "solo": false,
-                "split-frequency": 138.0
+                "split-frequency": 138.0,
+                "stereo-split-source": "Left/Right"
             },
             "band2": {
                 "attack-threshold": 0.0,
@@ -427,7 +324,7 @@
                 "mute": false,
                 "ratio": 1.2,
                 "release-threshold": -100.0,
-                "release-time": 0.0,
+                "release-time": 100.0,
                 "sidechain-custom-highcut-filter": false,
                 "sidechain-custom-lowcut-filter": false,
                 "sidechain-highcut-frequency": 2000.0,
@@ -438,7 +335,8 @@
                 "sidechain-reactivity": 250.0,
                 "sidechain-source": "Middle",
                 "solo": false,
-                "split-frequency": 4434.0
+                "split-frequency": 4434.0,
+                "stereo-split-source": "Left/Right"
             },
             "band3": {
                 "attack-threshold": -12.0,
@@ -465,7 +363,8 @@
                 "sidechain-reactivity": 10.0,
                 "sidechain-source": "Middle",
                 "solo": false,
-                "split-frequency": 2000.0
+                "split-frequency": 2000.0,
+                "stereo-split-source": "Left/Right"
             },
             "band4": {
                 "attack-threshold": -12.0,
@@ -492,7 +391,8 @@
                 "sidechain-reactivity": 10.0,
                 "sidechain-source": "Middle",
                 "solo": false,
-                "split-frequency": 4000.0
+                "split-frequency": 4000.0,
+                "stereo-split-source": "Left/Right"
             },
             "band5": {
                 "attack-threshold": -12.0,
@@ -519,7 +419,8 @@
                 "sidechain-reactivity": 10.0,
                 "sidechain-source": "Middle",
                 "solo": false,
-                "split-frequency": 8000.0
+                "split-frequency": 8000.0,
+                "stereo-split-source": "Left/Right"
             },
             "band6": {
                 "attack-threshold": -12.0,
@@ -546,7 +447,8 @@
                 "sidechain-reactivity": 10.0,
                 "sidechain-source": "Middle",
                 "solo": false,
-                "split-frequency": 12000.0
+                "split-frequency": 12000.0,
+                "stereo-split-source": "Left/Right"
             },
             "band7": {
                 "attack-threshold": -12.0,
@@ -573,7 +475,8 @@
                 "sidechain-reactivity": 10.0,
                 "sidechain-source": "Middle",
                 "solo": false,
-                "split-frequency": 16000.0
+                "split-frequency": 16000.0,
+                "stereo-split-source": "Left/Right"
             },
             "bypass": true,
             "compressor-mode": "Modern",
@@ -581,6 +484,7 @@
             "envelope-boost": "None",
             "input-gain": 0.0,
             "output-gain": 0.0,
+            "stereo-split": true,
             "wet": 0.0
         },
         "multiband_compressor#1": {
@@ -607,61 +511,64 @@
                 "sidechain-preamp": 0.0,
                 "sidechain-reactivity": 10.0,
                 "sidechain-source": "Middle",
-                "solo": false
+                "solo": false,
+                "stereo-split-source": "Left/Right"
             },
             "band1": {
-                "attack-threshold": -48.0,
+                "attack-threshold": 0.0,
                 "attack-time": 0.0,
                 "boost-amount": 6.0,
                 "boost-threshold": -72.0,
-                "compression-mode": "Downward",
+                "compression-mode": "Upward",
                 "compressor-enable": true,
                 "enable-band": true,
                 "external-sidechain": false,
-                "knee": -24.0,
+                "knee": 0.0,
                 "makeup": 0.0,
                 "mute": false,
-                "ratio": 2.0,
+                "ratio": 1.2,
                 "release-threshold": -100.0,
-                "release-time": 0.0,
-                "sidechain-custom-highcut-filter": false,
-                "sidechain-custom-lowcut-filter": false,
-                "sidechain-highcut-frequency": 1000.0,
+                "release-time": 100.0,
+                "sidechain-custom-highcut-filter": true,
+                "sidechain-custom-lowcut-filter": true,
+                "sidechain-highcut-frequency": 329.0,
                 "sidechain-lookahead": 0.0,
-                "sidechain-lowcut-frequency": 500.0,
+                "sidechain-lowcut-frequency": 20.0,
                 "sidechain-mode": "RMS",
                 "sidechain-preamp": 0.0,
                 "sidechain-reactivity": 250.0,
                 "sidechain-source": "Middle",
                 "solo": false,
-                "split-frequency": 138.0
+                "split-frequency": 329.0,
+                "stereo-split-source": "Side/Mid"
             },
             "band2": {
-                "attack-threshold": -12.0,
-                "attack-time": 20.0,
+                "attack-threshold": 0.0,
+                "attack-time": 0.0,
                 "boost-amount": 6.0,
                 "boost-threshold": -72.0,
-                "compression-mode": "Downward",
-                "compressor-enable": false,
+                "compression-mode": "Upward",
+                "compressor-enable": true,
                 "enable-band": true,
                 "external-sidechain": false,
-                "knee": -6.0,
+                "knee": 0.0,
                 "makeup": 0.0,
                 "mute": false,
-                "ratio": 1.0,
+                "ratio": 1.2,
                 "release-threshold": -100.0,
                 "release-time": 100.0,
-                "sidechain-custom-highcut-filter": false,
-                "sidechain-custom-lowcut-filter": false,
-                "sidechain-highcut-frequency": 2000.0,
+                "sidechain-custom-highcut-filter": true,
+                "sidechain-custom-lowcut-filter": true,
+                "sidechain-highcut-frequency": 329.0,
                 "sidechain-lookahead": 0.0,
-                "sidechain-lowcut-frequency": 1000.0,
+                "sidechain-lowcut-frequency": 20.0,
                 "sidechain-mode": "RMS",
                 "sidechain-preamp": 0.0,
-                "sidechain-reactivity": 10.0,
+                "sidechain-reactivity": 250.0,
                 "sidechain-source": "Middle",
                 "solo": false,
-                "split-frequency": 4434.0
+                "split-frequency": 2637.0,
+                "stereo-split-source": "Mid/Side"
             },
             "band3": {
                 "attack-threshold": -12.0,
@@ -688,7 +595,8 @@
                 "sidechain-reactivity": 10.0,
                 "sidechain-source": "Middle",
                 "solo": false,
-                "split-frequency": 2000.0
+                "split-frequency": 2000.0,
+                "stereo-split-source": "Left/Right"
             },
             "band4": {
                 "attack-threshold": -12.0,
@@ -715,7 +623,8 @@
                 "sidechain-reactivity": 10.0,
                 "sidechain-source": "Middle",
                 "solo": false,
-                "split-frequency": 4000.0
+                "split-frequency": 4000.0,
+                "stereo-split-source": "Left/Right"
             },
             "band5": {
                 "attack-threshold": -12.0,
@@ -742,7 +651,8 @@
                 "sidechain-reactivity": 10.0,
                 "sidechain-source": "Middle",
                 "solo": false,
-                "split-frequency": 8000.0
+                "split-frequency": 8000.0,
+                "stereo-split-source": "Left/Right"
             },
             "band6": {
                 "attack-threshold": -12.0,
@@ -769,7 +679,8 @@
                 "sidechain-reactivity": 10.0,
                 "sidechain-source": "Middle",
                 "solo": false,
-                "split-frequency": 12000.0
+                "split-frequency": 12000.0,
+                "stereo-split-source": "Left/Right"
             },
             "band7": {
                 "attack-threshold": -12.0,
@@ -796,7 +707,240 @@
                 "sidechain-reactivity": 10.0,
                 "sidechain-source": "Middle",
                 "solo": false,
-                "split-frequency": 16000.0
+                "split-frequency": 16000.0,
+                "stereo-split-source": "Left/Right"
+            },
+            "bypass": true,
+            "compressor-mode": "Modern",
+            "dry": -100.0,
+            "envelope-boost": "None",
+            "input-gain": 0.0,
+            "output-gain": 0.0,
+            "stereo-split": true,
+            "wet": 0.0
+        },
+        "multiband_compressor#2": {
+            "band0": {
+                "attack-threshold": -12.0,
+                "attack-time": 20.0,
+                "boost-amount": 6.0,
+                "boost-threshold": -72.0,
+                "compression-mode": "Downward",
+                "compressor-enable": false,
+                "external-sidechain": false,
+                "knee": -6.0,
+                "makeup": 0.0,
+                "mute": false,
+                "ratio": 1.0,
+                "release-threshold": -100.0,
+                "release-time": 100.0,
+                "sidechain-custom-highcut-filter": false,
+                "sidechain-custom-lowcut-filter": false,
+                "sidechain-highcut-frequency": 500.0,
+                "sidechain-lookahead": 0.0,
+                "sidechain-lowcut-frequency": 10.0,
+                "sidechain-mode": "RMS",
+                "sidechain-preamp": 0.0,
+                "sidechain-reactivity": 10.0,
+                "sidechain-source": "Middle",
+                "solo": false,
+                "stereo-split-source": "Left/Right"
+            },
+            "band1": {
+                "attack-threshold": -60.0,
+                "attack-time": 0.0,
+                "boost-amount": 6.0,
+                "boost-threshold": -72.0,
+                "compression-mode": "Downward",
+                "compressor-enable": true,
+                "enable-band": true,
+                "external-sidechain": false,
+                "knee": 0.0,
+                "makeup": 0.0,
+                "mute": false,
+                "ratio": 1.5,
+                "release-threshold": -100.0,
+                "release-time": 200.0,
+                "sidechain-custom-highcut-filter": false,
+                "sidechain-custom-lowcut-filter": false,
+                "sidechain-highcut-frequency": 1000.0,
+                "sidechain-lookahead": 0.0,
+                "sidechain-lowcut-frequency": 500.0,
+                "sidechain-mode": "RMS",
+                "sidechain-preamp": 0.0,
+                "sidechain-reactivity": 250.0,
+                "sidechain-source": "Middle",
+                "solo": false,
+                "split-frequency": 138.0,
+                "stereo-split-source": "Left/Right"
+            },
+            "band2": {
+                "attack-threshold": -12.0,
+                "attack-time": 20.0,
+                "boost-amount": 6.0,
+                "boost-threshold": -72.0,
+                "compression-mode": "Downward",
+                "compressor-enable": false,
+                "enable-band": true,
+                "external-sidechain": false,
+                "knee": -6.0,
+                "makeup": 0.0,
+                "mute": false,
+                "ratio": 1.0,
+                "release-threshold": -100.0,
+                "release-time": 100.0,
+                "sidechain-custom-highcut-filter": false,
+                "sidechain-custom-lowcut-filter": false,
+                "sidechain-highcut-frequency": 2000.0,
+                "sidechain-lookahead": 0.0,
+                "sidechain-lowcut-frequency": 1000.0,
+                "sidechain-mode": "RMS",
+                "sidechain-preamp": 0.0,
+                "sidechain-reactivity": 10.0,
+                "sidechain-source": "Middle",
+                "solo": false,
+                "split-frequency": 4434.0,
+                "stereo-split-source": "Left/Right"
+            },
+            "band3": {
+                "attack-threshold": -12.0,
+                "attack-time": 20.0,
+                "boost-amount": 6.0,
+                "boost-threshold": -72.0,
+                "compression-mode": "Downward",
+                "compressor-enable": false,
+                "enable-band": false,
+                "external-sidechain": false,
+                "knee": -6.0,
+                "makeup": 0.0,
+                "mute": false,
+                "ratio": 1.0,
+                "release-threshold": -100.0,
+                "release-time": 100.0,
+                "sidechain-custom-highcut-filter": false,
+                "sidechain-custom-lowcut-filter": false,
+                "sidechain-highcut-frequency": 4000.0,
+                "sidechain-lookahead": 0.0,
+                "sidechain-lowcut-frequency": 2000.0,
+                "sidechain-mode": "RMS",
+                "sidechain-preamp": 0.0,
+                "sidechain-reactivity": 10.0,
+                "sidechain-source": "Middle",
+                "solo": false,
+                "split-frequency": 2000.0,
+                "stereo-split-source": "Left/Right"
+            },
+            "band4": {
+                "attack-threshold": -12.0,
+                "attack-time": 20.0,
+                "boost-amount": 6.0,
+                "boost-threshold": -72.0,
+                "compression-mode": "Downward",
+                "compressor-enable": false,
+                "enable-band": false,
+                "external-sidechain": false,
+                "knee": -6.0,
+                "makeup": 0.0,
+                "mute": false,
+                "ratio": 1.0,
+                "release-threshold": -100.0,
+                "release-time": 100.0,
+                "sidechain-custom-highcut-filter": false,
+                "sidechain-custom-lowcut-filter": false,
+                "sidechain-highcut-frequency": 8000.0,
+                "sidechain-lookahead": 0.0,
+                "sidechain-lowcut-frequency": 4000.0,
+                "sidechain-mode": "RMS",
+                "sidechain-preamp": 0.0,
+                "sidechain-reactivity": 10.0,
+                "sidechain-source": "Middle",
+                "solo": false,
+                "split-frequency": 4000.0,
+                "stereo-split-source": "Left/Right"
+            },
+            "band5": {
+                "attack-threshold": -12.0,
+                "attack-time": 20.0,
+                "boost-amount": 6.0,
+                "boost-threshold": -72.0,
+                "compression-mode": "Downward",
+                "compressor-enable": false,
+                "enable-band": false,
+                "external-sidechain": false,
+                "knee": -6.0,
+                "makeup": 0.0,
+                "mute": false,
+                "ratio": 1.0,
+                "release-threshold": -100.0,
+                "release-time": 100.0,
+                "sidechain-custom-highcut-filter": false,
+                "sidechain-custom-lowcut-filter": false,
+                "sidechain-highcut-frequency": 12000.0,
+                "sidechain-lookahead": 0.0,
+                "sidechain-lowcut-frequency": 8000.0,
+                "sidechain-mode": "RMS",
+                "sidechain-preamp": 0.0,
+                "sidechain-reactivity": 10.0,
+                "sidechain-source": "Middle",
+                "solo": false,
+                "split-frequency": 8000.0,
+                "stereo-split-source": "Left/Right"
+            },
+            "band6": {
+                "attack-threshold": -12.0,
+                "attack-time": 20.0,
+                "boost-amount": 6.0,
+                "boost-threshold": -72.0,
+                "compression-mode": "Downward",
+                "compressor-enable": false,
+                "enable-band": false,
+                "external-sidechain": false,
+                "knee": -6.0,
+                "makeup": 0.0,
+                "mute": false,
+                "ratio": 1.0,
+                "release-threshold": -100.0,
+                "release-time": 100.0,
+                "sidechain-custom-highcut-filter": false,
+                "sidechain-custom-lowcut-filter": false,
+                "sidechain-highcut-frequency": 16000.0,
+                "sidechain-lookahead": 0.0,
+                "sidechain-lowcut-frequency": 12000.0,
+                "sidechain-mode": "RMS",
+                "sidechain-preamp": 0.0,
+                "sidechain-reactivity": 10.0,
+                "sidechain-source": "Middle",
+                "solo": false,
+                "split-frequency": 12000.0,
+                "stereo-split-source": "Left/Right"
+            },
+            "band7": {
+                "attack-threshold": -12.0,
+                "attack-time": 20.0,
+                "boost-amount": 6.0,
+                "boost-threshold": -72.0,
+                "compression-mode": "Downward",
+                "compressor-enable": false,
+                "enable-band": false,
+                "external-sidechain": false,
+                "knee": -6.0,
+                "makeup": 0.0,
+                "mute": false,
+                "ratio": 1.0,
+                "release-threshold": -100.0,
+                "release-time": 100.0,
+                "sidechain-custom-highcut-filter": false,
+                "sidechain-custom-lowcut-filter": false,
+                "sidechain-highcut-frequency": 20000.0,
+                "sidechain-lookahead": 0.0,
+                "sidechain-lowcut-frequency": 16000.0,
+                "sidechain-mode": "RMS",
+                "sidechain-preamp": 0.0,
+                "sidechain-reactivity": 10.0,
+                "sidechain-source": "Middle",
+                "solo": false,
+                "split-frequency": 16000.0,
+                "stereo-split-source": "Left/Right"
             },
             "bypass": false,
             "compressor-mode": "Modern",
@@ -804,21 +948,23 @@
             "envelope-boost": "None",
             "input-gain": 0.0,
             "output-gain": 0.0,
+            "stereo-split": false,
             "wet": 0.0
         },
         "plugins_order": [
             "crossfeed#0",
-            "multiband_compressor#1",
             "loudness#0",
+            "multiband_compressor#2",
             "bass_enhancer#0",
             "equalizer#1",
             "equalizer#2",
             "multiband_compressor#0",
+            "multiband_compressor#1",
             "compressor#0",
             "reverb#0",
-            "stereo_tools#0",
+            "delay#0",
             "autogain#0",
-            "limiter#0",
+            "maximizer#0",
             "level_meter#0"
         ],
         "reverb#0": {
@@ -834,27 +980,6 @@
             "predelay": 20.0,
             "room-size": "Large/smooth",
             "treble-cut": 12543.0
-        },
-        "stereo_tools#0": {
-            "balance-in": 0.0,
-            "balance-out": 0.0,
-            "bypass": true,
-            "delay": 20.0,
-            "input-gain": 0.0,
-            "middle-level": 0.0,
-            "middle-panorama": 0.0,
-            "mode": "LR > LR (Stereo Default)",
-            "mutel": false,
-            "muter": false,
-            "output-gain": 0.0,
-            "phasel": false,
-            "phaser": true,
-            "sc-level": 1.0,
-            "side-balance": 0.0,
-            "side-level": 0.0,
-            "softclip": false,
-            "stereo-base": 0.0,
-            "stereo-phase": 0.0
         }
     }
 }
