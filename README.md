@@ -34,29 +34,25 @@ Centers the signal via `Feed` | `Cutoff` sets the limit of frequencies it affect
 
 Applies volume corrections giving more prominence to the bass. Use it with `Autogain`
 
-### 1ST EQUALIZER 🎲
+### 1ST EQUALIZER | MULTIBAND COMPRESSOR 🎲
 
-The soul of each setting.
+They attenuate the input signal, giving space to the mix.
 
 ### BASS ENHANCER 💪
 
 It makes it sound crunchier.
 
-### 2ND EQUALIZER 🧬
+### FILTER 🚿️
 
-Expands the signal recreating a smooth `Dolby Atmos`
+Applies a `High-Pass` filter that eliminates bass. Switch to `Low-Pass` to do the opposite.
 
-### 3RD EQUALIZER 🧬
+### 2ND / 3RD / 4TH EQUALIZER 🧬
 
-Expands the signal recreating a harsh `Dolby Atmos`
+They expand the signal recreating a simple / smooth / harsh `Dolby Atmos`
 
-### 1ST MULTIBAND COMPRESSOR ❤️‍🔥
+### 2ND MULTIBAND COMPRESSOR ❤️‍🔥
 
 Increases the dynamic range of bass, midrange and treble.
-
-### 2ND MULTIBAND COMPRESSOR 🧬
-
-Expands the signal recreating a `Sony 360 Reality Audio`
 
 ### COMPRESSOR 🔥️
 
@@ -66,7 +62,7 @@ Increases the dynamic range of the signal making it sound fuller.
 
 Creates a bedroom. Try going beyond these values, you can achieve creative results with some practice.
 
-### DELAY / STEREO TOOLS 👥️
+### DELAY | STEREO TOOLS 👥️
 
 They create a stereo separation effect.
 
@@ -74,9 +70,9 @@ They create a stereo separation effect.
 
 Normalizes the volume based on a `Target` | `Reset History` re-evaluates this operation (refresh) | `Maximum History` is arbitrary.
 
-### LIMITER / MAXIMIZER 👂️
+### LIMITER | MAXIMIZER 👂️
 
-Prevents the signal from exceeding 0 dB and becoming distorted | `Threshold` can replace `Autogain` in exchange for messing up dynamics.
+They prevent the signal from exceeding 0 dB and becoming distorted | `Threshold` can replace `Autogain` in exchange for messing up dynamics.
 
 ### LEVEL METER 🔊️
 
@@ -94,24 +90,32 @@ FFT Size
 :---:
 16384
 
-2. Select 1st / 2nd / 3rd Equalizer. Set the following values:
+2. Select 1st / 2nd / 3rd / 4th Equalizer. Set the following values:
 
 X|Mode
 :---:|:---:
 Equalizer|SPM
 Filter|(MT)
 
-3. Select 1st / 2nd Multiband Compressor. Set the following values:
+3. Select Filter. Set the following values:
 
-Mode
+Mode|Equalizer Mode
+:---:|:---:
+LRX (MT)|SPM
+
+4. Select 1st / 2nd Multiband Compressor. Set the following values:
+
+Operating Mode
 :---:
 Linear Phase
+
+> Band Sidechain Options
 
 #|Lookahead
 :---:|:---:
 X|20.00 ms
 
-4. Select Compressor. Set the following values:
+5. Select Compressor. Set the following values:
 
 > Sidechain
 
@@ -119,11 +123,11 @@ Lookahead
 :---:
 20.00 ms
 
-5. Select Limiter. Set the following values:
+6. Select Limiter. Set the following values:
 
-Lookahead|Attack|Release
-:---:|:---:|:---:
-20.00 ms|20.00 ms|20.00 ms
+Mode|Lookahead|Attack|Release
+:---:|:---:|:---:|:---:
+Herm Wide|20.00 ms|20.00 ms|20.00 ms
 
 ### ON OR OFF 🤔
 
@@ -131,7 +135,7 @@ Some effects are disabled by default, be sure to turn them on and try them out. 
 
 ### DOWNWARD / UPWARD COMPRESSION 📈
 
-To achieve different styles, you can set the `Release Time` to 0.00, 100.00, 200.00, 300.00, 400.00 or 500.00 ms and the `Ratio` to 1.20:1, 1.50:1, 2.00:1, 3.00:1 or 6.00:1
+To achieve different styles, you can set the `Release Time` to 0.00, 100.00, 200.00, 300.00, 400.00 or 500.00 ms, the `Ratio` to 1.20:1, 1.50:1, 2.00:1, 3.00:1 or 6.00:1 and the `Reactivity` to 10.00 or 250.00 ms
 
 ## COMPATIBILITY ISSUES ⚠️
 
@@ -153,7 +157,11 @@ Since we **DO NOT** support old versions, it is vital that you have the current 
 
 ### Bass Enhancer
 
-- [Calf Studio Gear | Bass Enhancer](https://calf-studio-gear.org/doc/Bass%20Enhancer.html)
+- [Calf Bass Enhancer](https://calf-studio-gear.org/doc/Bass%20Enhancer.html)
+
+### Filter
+
+- [LSP Filter Stereo](https://lsp-plug.in/?page=manuals&section=filter_stereo)
 
 ### Multiband Compressor
 
@@ -165,7 +173,7 @@ Since we **DO NOT** support old versions, it is vital that you have the current 
 
 ### Reverberation
 
-- [Calf Studio Gear | Reverb](https://calf-studio-gear.org/doc/Reverb.html)
+- [Calf Reverb](https://calf-studio-gear.org/doc/Reverb.html)
 
 ### Delay
 
@@ -173,7 +181,7 @@ Since we **DO NOT** support old versions, it is vital that you have the current 
 
 ### Stereo Tools
 
-- [Calf Studio Gear | Stereo Tools](https://calf-studio-gear.org/doc/Stereo%20Tools.html)
+- [Calf Stereo Tools](https://calf-studio-gear.org/doc/Stereo%20Tools.html)
 
 ### Limiter
 
