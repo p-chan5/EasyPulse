@@ -19,7 +19,7 @@ Do they sound amazing? Then support us with a ⭐️ and a follow!
 1. Download the [latest release](https://github.com/p-chan5/EasyPulse/releases/latest) as `zip / tar.gz` or read [HOW TO BUILD THEM](https://github.com/p-chan5/EasyPulse/wiki/HOW-TO-BUILD-THEM).
 2. Unzip and move the `.json` files to one of the following paths:
   
-* Flatpak: `~/.var/app/com.github.wwmm.easyeffects/config/output`
+* Flatpak: `~/.var/app/com.github.wwmm.easyeffects/config/easyeffects/output`
 * Repositories: `~/.config/easyeffects/output`
 
 3. Ready! Load them from `Presets` > `Output`
