@@ -16,7 +16,7 @@ Do they sound amazing? Then support us with a ⭐️ and a follow!
 
 ## INSTALLATION 🚀️
 
-1. Download the [latest release](https://github.com/p-chan5/EasyPulse/releases/latest) as `zip / tar.gz` or read [HOW TO BUILD THEM](https://github.com/p-chan5/EasyPulse/blob/main/HOW_TO_BUILD_THEM.md).
+1. Download the [latest release](https://github.com/p-chan5/EasyPulse/releases/latest) as `zip / tar.gz` or read [HOW TO BUILD THEM](https://github.com/p-chan5/EasyPulse/wiki/HOW-TO-BUILD-THEM).
 2. Unzip and move the `.json` files to one of the following paths:
   
 * Flatpak: `~/.var/app/com.github.wwmm.easyeffects/config/easyeffects/output`
@@ -29,10 +29,6 @@ Do they sound amazing? Then support us with a ⭐️ and a follow!
 ### CROSSFEED 🎧
 
 Centers the signal via `Feed` | `Cutoff` sets the limit of frequencies it affects.
-
-### LOUDNESS 📢️
-
-Applies volume corrections giving more prominence to the bass. Use it with `Autogain`
 
 ### 1ST EQUALIZER | MULTIBAND COMPRESSOR 🎲
 
@@ -80,62 +76,17 @@ Helps to find the true perceived loudness of the signal.
 
 ## TIPS ✨
 
-### HIGHER QUALITY, HIGHER LATENCY 💎️
+### DOWNWARD / UPWARD COMPRESSION 📈
 
-You can get more quality in exchange for notable latency. Just follow the steps below:
+To achieve different styles, you can set the `Release Time` to 0.00, 100.00, 200.00, 300.00, 400.00 or 500.00 ms, the `Ratio` to 1.20:1, 1.50:1, 2.00:1, 3.00:1 or 6.00:1 and the `Reactivity` to 10.00, 25.00, 50.00, 125.00 or 250.00 ms
 
-1. Select Loudness. Set the following values:
+### MIN / MAX LATENCY 👀️
 
-FFT Size
-:---:
-16384
-
-2. Select 1st / 2nd / 3rd / 4th Equalizer. Set the following values:
-
-X|Mode
-:---:|:---:
-Equalizer|SPM
-Filter|(MT)
-
-3. Select Filter. Set the following values:
-
-Mode|Equalizer Mode
-:---:|:---:
-LRX (MT)|SPM
-
-4. Select 1st / 2nd Multiband Compressor. Set the following values:
-
-Operating Mode
-:---:
-Linear Phase
-
-> Band Sidechain Options
-
-#|Lookahead
-:---:|:---:
-X|20.00 ms
-
-5. Select Compressor. Set the following values:
-
-> Sidechain
-
-Lookahead
-:---:
-20.00 ms
-
-6. Select Limiter. Set the following values:
-
-Mode|Lookahead|Attack|Release
-:---:|:---:|:---:|:---:
-Herm Wide|20.00 ms|20.00 ms|20.00 ms
+There are two versions: one with minimal latency and one with high latency. Choose the one that best suits your needs. From a practical standpoint, they may seem the same, but they differ in technical aspects: The `min` version is stable and works in all possible scenarios. The `max` version requires more processing and is experimental, but it may sound more professional.
 
 ### ON OR OFF 🤔
 
 Some effects are disabled by default, be sure to turn them on and try them out. If you liked it, save it by rewriting the original file.
-
-### DOWNWARD / UPWARD COMPRESSION 📈
-
-To achieve different styles, you can set the `Release Time` to 0.00, 100.00, 200.00, 300.00, 400.00 or 500.00 ms, the `Ratio` to 1.20:1, 1.50:1, 2.00:1, 3.00:1 or 6.00:1 and the `Reactivity` to 10.00 or 250.00 ms
 
 ## COMPATIBILITY ISSUES ⚠️
 
@@ -146,10 +97,6 @@ Since we **DO NOT** support old versions, it is vital that you have the current 
 ### Crossfeed
 
 - [Bauer stereophonic-to-binaural DSP](https://bs2b.sourceforge.net/)
-
-### Loudness
-
-- [LSP Loudness Compensator Stereo](https://lsp-plug.in/?page=manuals&section=loud_comp_stereo)
 
 ### Equalizer
 
