@@ -1,6 +1,6 @@
-# HOW TO BUILD THEM
+# HOW TO BUILD THEM 🏗️
 
-Up to date with [1.2.0](https://github.com/p-chan5/EasyPulse/releases/latest)
+Up to date with [1.3.0](https://github.com/p-chan5/EasyPulse/releases/latest)
 
 0. Reset each effect to its default values.
 
@@ -14,17 +14,7 @@ Cutoff|Feed
 :---:|:---:
 1864 Hz|6.0 dB
 
-2. Add Loudness. Set the following values:
-
-Enable
-:---:
-No
-
-Output Volume
-:---:
--24.0 dB
-
-3. Add 1st Equalizer. Set the following values:
+2. Add 1st Equalizer. Set the following values:
 
 Enable
 :---:
@@ -92,7 +82,7 @@ Bands
 :---:|:---:|:---:|:---:|:---:|:---:|:---:
 1|Bell|RLC (BT)|x1|783 Hz|-18.00 dB|0.00
 
-4. Add Bass Enhancer. Set the following values:
+3. Add Bass Enhancer. Set the following values:
 
 Enable
 :---:
@@ -102,13 +92,13 @@ Blend Harmonics|Amount|Harmonics|Scope|Floor
 :---:|:---:|:---:|:---:|:---:
 -10|-6.0 dB|10.0|233 Hz|Enable / 116 Hz
 
-5. Add Filter. Set the following values:
+4. Add Filter. Set the following values:
 
 Type|Mode|Slope|Frequency
 :---:|:---:|:---:|:---:
 High-Pass|LRX (BT)|x4|329
 
-6. Add 2nd Equalizer. Set the following values:
+5. Add 2nd Equalizer. Set the following values:
 
 Enable
 :---:
@@ -130,7 +120,7 @@ Bands|Split Channels
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
 1|Ladder-Pass|LRX (BT)|x4|7458 Hz|6.00 dB|0.00|3.00 oct
 
-7. Add 3rd Equalizer. Set the following values:
+6. Add 3rd Equalizer. Set the following values:
 
 Enable
 :---:
@@ -154,7 +144,7 @@ Bands|Split Channels
 1|Ladder-Pass|LRX (BT)|x4|1567 Hz|6.00 dB|0.00|1.50 oct
 2|Ladder-Pass|LRX (BT)|x4|12543 Hz|6.00 dB|0.00|1.50 oct
 
-8. Add 4th Equalizer. Set the following values:
+7. Add 4th Equalizer. Set the following values:
 
 Enable
 :---:
@@ -180,7 +170,7 @@ Bands|Split Channels
 2|Ladder-Pass|LRX (BT)|x4|3729 Hz|6.00 dB|0.00|1.00 oct
 3|Ladder-Pass|LRX (BT)|x4|14917 Hz|6.00 dB|0.00|1.00 oct
 
-9. Add 2nd Multiband Compressor. Set the following values:
+8. Add 2nd Multiband Compressor. Set the following values:
 
 Enable
 :---:
@@ -209,7 +199,7 @@ Enable
 2|250.00 ms
 3|250.00 ms
 
-10. Add Compressor. Set the following values:
+9. Add Compressor. Set the following values:
 
 Enable
 :---:
@@ -227,7 +217,7 @@ Stereo Split Mode|Reactivity
 :---:|:---:
 Enable|250.00 ms
 
-11. Add Reverberation. Set the following values:
+10. Add Reverberation. Set the following values:
 
 Enable
 :---:
@@ -237,7 +227,7 @@ High Frequency Damping|Room Size|Diffusion|Pre Delay|Decay Time|Wet Level|Bass C
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
 12543 Hz|Large/smooth|0.00|20.00 ms|0.40 s|-6.0 dB|196 Hz|12543 Hz
 
-12. Add Stereo Tools. Set the following values:
+11. Add Stereo Tools. Set the following values:
 
 Enable
 :---:
@@ -255,7 +245,7 @@ Delay L/R
 :---:
 20.00 ms
 
-13. Add Autogain. Set the following values:
+12. Add Autogain. Set the following values:
 
 Enable
 :---:
@@ -265,7 +255,7 @@ Target|Reference
 :---:|:---:
 -10.0 dB|Integrated
 
-14. Add Limiter. Set the following values:
+13. Add Limiter. Set the following values:
 
 Enable
 :---:
@@ -273,9 +263,9 @@ Yes
 
 Stereo Link|Auto Leveling (ALR)|ALR Attack|ALR Release|Knee
 :---:|:---:|:---:|:---:|:---:
-0.00 %|Enable|0.10 ms|1000.00 ms|10.0 dB
+0.00 %|Enable|0.10 ms|1000.00 ms|12.0 dB
 
-15. Add Level Meter. Set the following values:
+14. Add Level Meter. Set the following values:
 
 Enable
 :---:
@@ -283,7 +273,7 @@ No
 
 > indie 🍄️
 
-3. Add 1st Multiband Compressor. Set the following values:
+2. Add 1st Multiband Compressor. Set the following values:
 
 Enable
 :---:
@@ -292,8 +282,8 @@ Yes
 #|Enable|Band Start|Band Bypass|Attack Time|Attack Threshold|Release Time|Ratio|Knee
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
 1|Yes|0 Hz|Enable|||||
-2|Yes|116 Hz||0.00 ms|-48.0 dB|300.00 ms|2.00|0.0 dB
-3|Yes|5274 Hz|Enable|||||
+2|Yes|138 Hz||0.00 ms|-60.0 dB|0.00 ms|1.50|0.0 dB
+3|Yes|4434 Hz|Enable|||||
 4|No||Enable|||||
 5|No||Enable|||||
 6|No||Enable|||||
@@ -306,26 +296,26 @@ Yes
 :---:|:---:
 2|250.00 ms
 
-9. Add 2nd Multiband Compressor. Set the following values:
+8. Add 2nd Multiband Compressor. Set the following values:
 
 Enable
 :---:
-No
+Yes
 
 Stereo Split Mode
 :---:
 Enable
 
-#|Enable|Band Start|Compression Mode|Band Bypass|Attack Time|Attack Threshold|Ratio|Knee
-:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
-1|Yes|0 Hz|Upward||0.00 ms|0.0 dB|1.20|0.0 dB
-2|Yes|116 Hz|Upward||0.00 ms|0.0 dB|1.20|0.0 dB
-3|Yes|5274 Hz|Upward||0.00 ms|0.0 dB|1.20|0.0 dB
-4|No|||Enable||||
-5|No|||Enable||||
-6|No|||Enable||||
-7|No|||Enable||||
-8|No|||Enable||||
+#|Enable|Band Start|Compression Mode|Band Bypass|Attack Time|Attack Threshold|Release Time|Ratio|Knee
+:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
+1|Yes|0 Hz|Upward||0.00 ms|0.0 dB|0.00 ms|1.20|0.0 dB
+2|Yes|138 Hz|Upward||0.00 ms|0.0 dB|0.00 ms|1.20|0.0 dB
+3|Yes|4434 Hz|Upward||0.00 ms|0.0 dB|0.00 ms|1.20|0.0 dB
+4|No|||Enable|||||
+5|No|||Enable|||||
+6|No|||Enable|||||
+7|No|||Enable|||||
+8|No|||Enable|||||
 
 > Band Sidechain Options
 
@@ -335,22 +325,45 @@ Enable
 2|250.00 ms
 3|250.00 ms
 
-12. Add Delay. Set the following values:
+## HIGHER QUALITY = HIGHER LATENCY 💎️
 
-Enable
+You can get more quality in exchange for notable latency. Just follow the steps below:
+
+1. Select 1st / 2nd / 3rd / 4th Equalizer. Set the following values:
+
+X|Mode
+:---:|:---:
+Equalizer|SPM
+Filter|(MT)
+
+2. Select Filter. Set the following values:
+
+Mode|Equalizer Mode
+:---:|:---:
+LRX (MT)|SPM
+
+3. Select 1st / 2nd Multiband Compressor. Set the following values:
+
+Operating Mode
 :---:
-No
+Linear Phase
 
-Delay (Right)
+> Band Sidechain Options
+
+#|Lookahead
+:---:|:---:
+X|20.00 ms
+
+4. Select Compressor. Set the following values:
+
+> Sidechain
+
+Lookahead
 :---:
 20.00 ms
 
-14. Add Maximizer. Set the following values:
+5. Select Limiter. Set the following values:
 
-Enable
-:---:
-Yes
-
-Release
-:---:
-100.00 ms
+Mode|Lookahead|Attack|Release
+:---:|:---:|:---:|:---:
+Herm Wide|20.00 ms|20.00 ms|20.00 ms
