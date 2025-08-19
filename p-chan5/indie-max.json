@@ -37,7 +37,7 @@
             "mode": "Upward",
             "output-gain": 0.0,
             "ratio": 1.5,
-            "release": 200.0,
+            "release": 0.0,
             "release-threshold": -100.0,
             "sidechain": {
                 "lookahead": 20.0,
