@@ -8,7 +8,7 @@ A set of `High Quality` presets for [Easy Effects](https://github.com/wwmm/easye
 - edm 🎹
 - hifi 💥️
 - indie 🍄
-- kpop 🎤️
+- kpop 🫰️
 - lofi 🍃️
 - rock 🎸️
 
@@ -22,7 +22,7 @@ Do they sound amazing? Then support us with a ⭐️ and a follow!
 * Flatpak: `~/.var/app/com.github.wwmm.easyeffects/config/easyeffects/output`
 * Repositories: `~/.config/easyeffects/output`
 
-3. Ready! Load them from `Presets` > `Output`
+3. Ready! Load them from `Output` > `Presets` > `Local`
 
 ## EFFECTS 🎛️
 
@@ -80,9 +80,13 @@ Helps to find the true perceived loudness of the signal.
 
 To achieve different styles, you can set the `Release Time` to 0.00, 100.00, 200.00, 300.00, 400.00 or 500.00 ms, the `Ratio` to 1.20:1, 1.50:1, 2.00:1, 3.00:1 or 6.00:1 and the `Reactivity` to 10.00, 25.00, 50.00, 125.00 or 250.00 ms
 
-### MIN / MAX LATENCY 👀️
+### MIN / MAX LATENCY 🧠️
 
 There are two versions: one with minimal latency and one with high latency. Choose the one that best suits your needs. From a practical standpoint, they may seem the same, but they differ in technical aspects: The `min` version is stable and works in all possible scenarios. The `max` version requires more processing and is experimental, but it may sound more professional.
+
+### NATIVE PLUGIN WINDOW 🔬️
+
+You can show or hide the native Linux Studio Plugins (LSP) interface to see the applied settings in more detail. Go to Preferences > General > Experimental Features and enable Native Plugin Window.
 
 ### ON OR OFF 🤔
 
@@ -90,7 +94,7 @@ Some effects are disabled by default, be sure to turn them on and try them out. 
 
 ## COMPATIBILITY ISSUES ⚠️
 
-Since we **DO NOT** support old versions, it is vital that you have the current stable branch for them to work.
+Since we **DO NOT** support old versions, it is vital that you have the current stable branch for them to work. In any case, see: [Easy Effects Changelog](https://github.com/wwmm/easyeffects/blob/master/CHANGELOG.md).
 
 ## HELP LINKS 🔗
 
