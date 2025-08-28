@@ -1,7 +1,5 @@
 # HOW TO BUILD THEM 🏗️
 
-Up to date with [1.3.0](https://github.com/p-chan5/EasyPulse/releases/latest)
-
 0. Reset each effect to its default values.
 
 1. Add Crossfeed. Set the following values:
@@ -52,7 +50,7 @@ Bands
 1|Low-Shelf|LRX (BT)|x1|138 Hz|18.00 dB|0.00
 2|Low-Shelf|LRX (BT)|x1|4434 Hz|-18.00 dB|0.00
 
-> kpop 🎤️
+> kpop 🫰️
 
 Bands
 :---:
@@ -174,7 +172,7 @@ Bands|Split Channels
 
 Enable
 :---:
-No
+indie 🍄️
 
 Stereo Split Mode
 :---:
@@ -199,6 +197,14 @@ Enable
 2|250.00 ms
 3|250.00 ms
 
+> indie 🍄️
+
+#|Release Time
+:---:|:---:
+1|0.00 ms
+2|0.00 ms
+3|0.00 ms
+
 9. Add Compressor. Set the following values:
 
 Enable
@@ -216,6 +222,12 @@ Upward|0.00 ms|0.0 dB|200.00 ms|1.50|0.0 dB
 Stereo Split Mode|Reactivity
 :---:|:---:
 Enable|250.00 ms
+
+> indie 🍄️
+
+Release Time
+:---:
+0.00 ms
 
 10. Add Reverberation. Set the following values:
 
@@ -295,35 +307,6 @@ Yes
 #|Reactivity
 :---:|:---:
 2|250.00 ms
-
-8. Add 2nd Multiband Compressor. Set the following values:
-
-Enable
-:---:
-Yes
-
-Stereo Split Mode
-:---:
-Enable
-
-#|Enable|Band Start|Compression Mode|Band Bypass|Attack Time|Attack Threshold|Release Time|Ratio|Knee
-:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
-1|Yes|0 Hz|Upward||0.00 ms|0.0 dB|0.00 ms|1.20|0.0 dB
-2|Yes|138 Hz|Upward||0.00 ms|0.0 dB|0.00 ms|1.20|0.0 dB
-3|Yes|4434 Hz|Upward||0.00 ms|0.0 dB|0.00 ms|1.20|0.0 dB
-4|No|||Enable|||||
-5|No|||Enable|||||
-6|No|||Enable|||||
-7|No|||Enable|||||
-8|No|||Enable|||||
-
-> Band Sidechain Options
-
-#|Reactivity
-:---:|:---:
-1|250.00 ms
-2|250.00 ms
-3|250.00 ms
 
 ## HIGHER QUALITY = HIGHER LATENCY 💎️
 
