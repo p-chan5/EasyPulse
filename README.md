@@ -19,8 +19,8 @@ Do they sound amazing? Then support us with a ⭐️ and a follow!
 1. Download the [latest release](https://github.com/p-chan5/EasyPulse/releases/latest) as `zip / tar.gz` or read [HOW TO BUILD THEM](https://github.com/p-chan5/EasyPulse/blob/main/HOW_TO_BUILD_THEM.md).
 2. Unzip and move the `.json` files to one of the following paths:
   
-* Flatpak: `~/.var/app/com.github.wwmm.easyeffects/config/easyeffects/output`
-* Repositories: `~/.config/easyeffects/output`
+* Flatpak: `~/.var/app/com.github.wwmm.easyeffects/data/easyeffects/output`
+* Repositories: `~/.local/share/easyeffects/output`
 
 3. Ready! Load them from `Output` > `Presets` > `Local`
 
@@ -40,7 +40,7 @@ It makes it sound crunchier.
 
 ### FILTER 🚿️
 
-Applies a `High-Pass` filter that eliminates bass. Switch to `Low-Pass` to do the opposite.
+Applies a `High-pass` filter that eliminates bass. Switch to `Low-pass` to do the opposite.
 
 ### 2ND / 3RD / 4TH EQUALIZER 🧬
 
@@ -64,15 +64,15 @@ They create a stereo separation effect.
 
 ### AUTOGAIN 🛠
 
-Normalizes the volume based on a `Target` | `Reset History` re-evaluates this operation (refresh) | `Maximum History` is arbitrary.
-
-### LIMITER | MAXIMIZER 👂️
-
-They prevent the signal from exceeding 0 dB and becoming distorted | `Threshold` can replace `Autogain` in exchange for messing up dynamics.
+Normalizes the volume based on a `Target` | `Reset history` re-evaluates this operation (refresh) | `Maximum history` is arbitrary.
 
 ### LEVEL METER 🔊️
 
 Helps to find the true perceived loudness of the signal.
+
+### LIMITER | MAXIMIZER 👂️
+
+They prevent the signal from exceeding 0 dB and becoming distorted | `Threshold` can replace `Autogain` in exchange for messing up dynamics.
 
 ## TIPS ✨
 
@@ -86,7 +86,7 @@ There are two versions: one with minimal latency and one with high latency. Choo
 
 ### NATIVE PLUGIN WINDOW 🔬️
 
-You can show or hide the native Linux Studio Plugins (LSP) interface to see the applied settings in more detail. Go to Preferences > General > Experimental Features and enable Native Plugin Window.
+You can show or hide the native Linux Studio Plugins and Calf Studio Gear interface to see the applied settings in more detail. Go to `Preferences` > `Experimental Features` and enable `Native window of effects`
 
 ### ON OR OFF 🤔
 
