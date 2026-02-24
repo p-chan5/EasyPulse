@@ -251,21 +251,19 @@ Toggle this effect
 :---:
 Off
 
-Reference|Target
-:---:|:---:
-Integrated|-10.00 dB
-
-13. Add Level Meter. Set the following values:
-
-Toggle this effect
+Target
 :---:
-Off
+-10.00 dB
 
-14. Add Limiter. Set the following values:
+13. Add Limiter. Set the following values:
 
-Stereo Link|Automatic level|AL Attack|AL Release|Knee
+Automatic level
+:---:
+Enable
+
+Stereo Link|AL Attack|AL Release|Knee|Smooth
 :---:|:---:|:---:|:---:|:---:
-0.0 %|Enable|0.10 ms|1000.0 ms|12.00 dB
+0.0 %|0.10 ms|1000.0 ms|12.00 dB|0.00 dB
 
 > indie 🍄️
 
@@ -325,6 +323,30 @@ Lookahead
 
 5. Select Limiter. Set the following values:
 
-Lookahead|Limiter Attack|Limiter Release
+Limiter Attack|Limiter Release|Lookahead
 :---:|:---:|:---:
 20.00 ms|20.00 ms|20.00 ms
+
+## ALTERNATIVES 🫧️
+
+You can replace some effects by using a variant.
+
+11. Add Delay. Set the following values:
+
+Toggle this effect
+:---:
+Off
+
+Invert right
+:---:
+Enable
+
+Time (Right)
+:---:
+20.00 ms
+
+13. Add Maximizer. Set the following values:
+
+Release
+:---:
+100.00 ms
