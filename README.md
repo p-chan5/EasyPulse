@@ -66,10 +66,6 @@ They create a stereo separation effect.
 
 Normalizes the volume based on a `Target` | `Reset history` re-evaluates this operation (refresh) | `Maximum history` is arbitrary.
 
-### LEVEL METER 🔊️
-
-Helps to find the true perceived loudness of the signal.
-
 ### LIMITER | MAXIMIZER 👂️
 
 They prevent the signal from exceeding 0 dB and becoming distorted | `Threshold` can replace `Autogain` in exchange for messing up dynamics.
@@ -82,7 +78,7 @@ To achieve different styles, you can set the `Release Time` to 0.00, 100.00, 200
 
 ### MIN / MAX LATENCY 🧠️
 
-There are two versions: one with minimal latency and one with high latency. Choose the one that best suits your needs. From a practical standpoint, they may seem the same, but they differ in technical aspects: The `min` version is stable and works in all possible scenarios. The `max` version requires more processing and is experimental, but it may sound more professional.
+There are two versions: one with minimal latency and one with high latency. Choose the one that best suits your needs. From a practical standpoint, the `min` version is stable and works in all possible scenarios, the `max` version requires more processing and is experimental, but it may sound more professional.
 
 ### NATIVE PLUGIN WINDOW 🔬️
 
@@ -94,9 +90,13 @@ Some effects are disabled by default, be sure to turn them on and try them out. 
 
 ## COMPATIBILITY ISSUES ⚠️
 
-Since we **DO NOT** support old versions, it is vital that you have the current stable branch for them to work. In any case, see: [Easy Effects Changelog](https://github.com/wwmm/easyeffects/blob/master/CHANGELOG.md).
+Since we **DO NOT** support old versions, it is vital that you have the current stable branch for them to work. In any case, see: [Easy Effects Changelog](https://wwmm.github.io/easyeffects/community/CHANGELOG.html).
 
 ## HELP LINKS 🔗
+
+### App Manual
+
+- [Easy Effects Manual](https://wwmm.github.io/easyeffects/)
 
 ### Crossfeed
 
