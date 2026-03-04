@@ -62,7 +62,7 @@ Creates a bedroom. Try going beyond these values, you can achieve creative resul
 
 They create a stereo separation effect.
 
-### AUTOGAIN 🛠
+### AUTOGAIN 🛠️
 
 Normalizes the volume based on a `Target` | `Reset history` re-evaluates this operation (refresh) | `Maximum history` is arbitrary.
 
@@ -75,6 +75,10 @@ They prevent the signal from exceeding 0 dB and becoming distorted | `Threshold`
 ### DOWNWARD / UPWARD COMPRESSION 📈
 
 To achieve different styles, you can set the `Release Time` to 0.00, 100.00, 200.00, 300.00, 400.00 or 500.00 ms, the `Ratio` to 1.20:1, 1.50:1, 2.00:1, 3.00:1 or 6.00:1 and the `Reactivity` to 10.00, 25.00, 50.00, 125.00 or 250.00 ms
+
+### DYNAMICS LOSS 🦴️
+
+It should not be noticeable unless the Limiter signal is oversaturated, but if that is the case, select the `Smooth` parameter and set a value between 0 dB and -48 dB
 
 ### MIN / MAX LATENCY 🧠️
 
