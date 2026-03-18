@@ -14,7 +14,7 @@ Cutoff|Feed
 
 2. Add 1st Equalizer. Set the following values:
 
-> classical 🎻️
+> classical
 
 Bands
 :---:
@@ -24,7 +24,7 @@ Bands
 :---:|:---:|:---:|:---:|:---:|:---:|:---:
 1|Bell|RLC (BT)|x1|392 Hz|-18.00 dB|0.00
 
-> edm 🎹
+> edm
 
 Bands
 :---:
@@ -35,7 +35,7 @@ Bands
 1|Low-shelf|LRX (BT)|x1|138 Hz|12.00 dB|0.00
 2|Low-shelf|LRX (BT)|x1|4434 Hz|-12.00 dB|0.00
 
-> hifi 💥️
+> hifi
 
 Bands
 :---:
@@ -46,7 +46,7 @@ Bands
 1|Low-shelf|LRX (BT)|x1|138 Hz|18.00 dB|0.00
 2|Low-shelf|LRX (BT)|x1|4434 Hz|-18.00 dB|0.00
 
-> kpop 🫰️
+> kpop
 
 Bands
 :---:
@@ -56,7 +56,7 @@ Bands
 :---:|:---:|:---:|:---:|:---:|:---:|:---:
 1|Bell|RLC (BT)|x1|783 Hz|-12.00 dB|0.00
 
-> lofi 🍃️
+> lofi
 
 Bands
 :---:
@@ -66,7 +66,7 @@ Bands
 :---:|:---:|:---:|:---:|:---:|:---:|:---:
 1|Bell|RLC (BT)|x1|392 Hz|-12.00 dB|0.00
 
-> rock 🎸️
+> rock
 
 Bands
 :---:
@@ -178,9 +178,9 @@ Stereo split
 :---:
 Enable
 
-#|Enable|Start|Compression mode|Bypass|Attack Time|Attack Threshold|Ratio|Knee
+Band|Enable|Start|Compression mode|Bypass|Attack Time|Attack Threshold|Ratio|Knee
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
-1|Yes|0 Hz|Upward||0.00 ms|0.00 dB|1.2|0.0 dB
+1|Yes||Upward||0.00 ms|0.00 dB|1.2|0.0 dB
 2|Yes|138 Hz|Upward||0.00 ms|0.00 dB|1.2|0.0 dB
 3|Yes|4434 Hz|Upward||0.00 ms|0.00 dB|1.2|0.0 dB
 4|No|||Enable||||
@@ -197,7 +197,7 @@ Enable
 2|250.0 ms
 3|250.0 ms
 
-> indie 🍄️
+> indie
 
 #|Release Time
 :---:|:---:
@@ -215,11 +215,11 @@ Stereo split
 :---:
 Enable
 
-Mode|Ratio|Knee|Attack Threshold|Attack Time|Release Time|Reactivity
-:---:|:---:|:---:|:---:|:---:|:---:|:---:
-Upward|1.5|0.00 dB|0.0 dB|0.00 ms|200.00 ms|250.00 ms
+Mode|Ratio|Knee|Attack Threshold|Attack Time|Release Time|Sidechain Mode|Reactivity
+:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
+Upward|1.5|0.00 dB|0.0 dB|0.00 ms|200.00 ms|RMS|250.00 ms
 
-> indie 🍄️
+> indie
 
 Release Time
 :---:
@@ -261,17 +261,17 @@ Automatic level
 :---:
 Enable
 
-Stereo Link|AL Attack|AL Release|Knee|Smooth
+Stereo Link|Al Attack|Al Release|Knee|Smooth
 :---:|:---:|:---:|:---:|:---:
 0.0 %|0.10 ms|1000.0 ms|12.00 dB|0.00 dB
 
-> indie 🍄️
+> indie
 
 2. Add 1st Multiband Compressor. Set the following values:
 
-#|Enable|Start|Bypass|Attack Time|Attack Threshold|Release Time|Ratio|Knee
+Band|Enable|Start|Bypass|Attack Time|Attack Threshold|Release Time|Ratio|Knee
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
-1|Yes|0 Hz|Enable|||||
+1|Yes||Enable|||||
 2|Yes|138 Hz||0.00 ms|-60.00 dB|0.00 ms|1.5|0.0 dB
 3|Yes|4434 Hz|Enable|||||
 4|No||Enable|||||
@@ -285,6 +285,93 @@ Stereo Link|AL Attack|AL Release|Knee|Smooth
 #|Reactivity
 :---:|:---:
 2|250.0 ms
+
+> analog
+
+0. To set the decimal values ​​open and edit the `.json` file.
+
+1. Add 1st Multiband Compressor. Set the following values:
+
+Operating mode
+:---:
+Linear phase
+
+Band|Enable|Start|Bypass|Attack Time|Attack Threshold|Release Time|Ratio|Knee
+:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
+1|Yes||Enable|||||
+2|Yes|116.54 Hz||0.00 ms|-60.00 dB|0.00 ms|1.5|0.0 dB
+3|Yes|5274.04 Hz|Enable|||||
+4|No||Enable|||||
+5|No||Enable|||||
+6|No||Enable|||||
+7|No||Enable|||||
+8|No||Enable|||||
+
+> Band # - Sidechain
+
+#|Reactivity|Lookahead
+:---:|:---:|:---:
+2|250.0 ms|20.0 ms
+
+2. Add 1st Equalizer. Set the following values:
+
+Toggle this effect
+:---:
+Off
+
+Mode|Bands|Split channels
+:---:|:---:|:---:
+SPM|5|Enable
+
+> Left
+
+#|Type|Mode|Slope|Frequency|Gain|Quality
+:---:|:---:|:---:|:---:|:---:|:---:|:---:
+1|Bell|RLC (MT)|x1|466.16 Hz|3.00 dB|1.25
+2|Bell|RLC (MT)|x1|932.33 Hz|-0.50 dB|1.00
+3|Bell|RLC (MT)|x1|1864.66 Hz|3.00 dB|1.25
+4|Bell|RLC (MT)|x1|3729.31 Hz|-0.50 dB|1.00
+5|Bell|RLC (MT)|x1|7458.62 Hz|3.00 dB|1.25
+
+> Right
+
+#|Type|Mode|Slope|Frequency|Gain|Quality
+:---:|:---:|:---:|:---:|:---:|:---:|:---:
+1|Bell|RLC (MT)|x1|932.33 Hz|3.00 dB|1.25
+2|Bell|RLC (MT)|x1|1864.66 Hz|-0.50 dB|1.00
+3|Bell|RLC (MT)|x1|3729.31 Hz|3.00 dB|1.25
+4|Bell|RLC (MT)|x1|7458.62 Hz|-0.50 dB|1.00
+5|Bell|RLC (MT)|x1|14917.24 Hz|3.00 dB|1.25
+
+3. Add 2nd Equalizer. Set the following values:
+
+Toggle this effect
+:---:
+Off
+
+Mode|Bands|Split channels
+:---:|:---:|:---:
+SPM|5|Enable
+
+> Left
+
+#|Type|Mode|Slope|Frequency|Gain|Quality
+:---:|:---:|:---:|:---:|:---:|:---:|:---:
+1|Bell|RLC (MT)|x1|466.16 Hz|6.00 dB|1.50
+2|Bell|RLC (MT)|x1|932.33 Hz|-1.00 dB|1.00
+3|Bell|RLC (MT)|x1|1864.66 Hz|6.00 dB|1.50
+4|Bell|RLC (MT)|x1|3729.31 Hz|-1.00 dB|1.00
+5|Bell|RLC (MT)|x1|7458.62 Hz|6.00 dB|1.50
+
+> Right
+
+#|Type|Mode|Slope|Frequency|Gain|Quality
+:---:|:---:|:---:|:---:|:---:|:---:|:---:
+1|Bell|RLC (MT)|x1|932.33 Hz|6.00 dB|1.50
+2|Bell|RLC (MT)|x1|1864.66 Hz|-1.00 dB|1.00
+3|Bell|RLC (MT)|x1|3729.31 Hz|6.00 dB|1.50
+4|Bell|RLC (MT)|x1|7458.62 Hz|-1.00 dB|1.00
+5|Bell|RLC (MT)|x1|14917.24 Hz|6.00 dB|1.50
 
 ## HIGHER QUALITY = HIGHER LATENCY 💎️
 
