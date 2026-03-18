@@ -2,15 +2,21 @@ A set of `High Quality` presets for [Easy Effects](https://github.com/wwmm/easye
 
 ## WHAT'S INSIDE 🎁
 
-7 configuration profiles:
+15 configuration files divided into two categories:
 
-- classical 🎻️
-- edm 🎹
-- hifi 💥️
-- indie 🍄
-- kpop 🫰️
-- lofi 🍃️
-- rock 🎸️
+Classic: with `min` and `max` latency versions.
+
+- classical
+- edm
+- hifi
+- indie
+- kpop
+- lofi
+- rock
+
+Special: they don't have many effects, but they do have some interesting features.
+
+- analog: includes 2 vintage surround equalizers.
 
 Do they sound amazing? Then support us with a ⭐️ and a follow!
 
@@ -72,21 +78,31 @@ They prevent the signal from exceeding 0 dB and becoming distorted | `Threshold`
 
 ## TIPS ✨
 
+### BASS TREATMENT 🩺
+
+It's hard to find a perfect setup for every user, although it is possible to make some adjustments to customize its behavior:
+
+1. Load `hifi` or `edm` > Open the 1st Equalizer band 1 options > Change the `Frequency` and/or reduce the `Gain` and/or change the `Mode` to BWC (BT)/(MT) as appropriate.
+
+2. Select Bass Enhancer > Set the `Amount` to -6, -3 or 0 dB and/or the `Floor` to 29, 58 or 116 Hz
+
+3. Select 1st/2nd Multiband Compressor and edit Band 1 options (Bypass/Compression mode/Attack Threshold/Ratio) and/or Band 2 Frequency (Start).
+
 ### DOWNWARD / UPWARD COMPRESSION 📈
 
 To achieve different styles, you can set the `Release Time` to 0.00, 100.00, 200.00, 300.00, 400.00 or 500.00 ms, the `Ratio` to 1.20:1, 1.50:1, 2.00:1, 3.00:1 or 6.00:1 and the `Reactivity` to 10.00, 25.00, 50.00, 125.00 or 250.00 ms
 
 ### DYNAMICS LOSS 🦴️
 
-It should not be noticeable unless the Limiter signal is oversaturated, but if that is the case, select the `Smooth` parameter and set a value between 0 dB and -48 dB
+It should not be noticeable unless the Limiter signal is oversaturated, but if that is the case, select the `Smooth` parameter and set a value between 0 dB and -48 dB and/or reduce the `Knee` or the `Input` level.
 
-### MIN / MAX LATENCY 🧠️
+### MIN VS MAX LATENCY 🥊️
 
-There are two versions: one with minimal latency and one with high latency. Choose the one that best suits your needs. From a practical standpoint, the `min` version is stable and works in all possible scenarios, the `max` version requires more processing and is experimental, but it may sound more professional.
+Choose the one that best suits your needs. From a practical standpoint, the `min` version is stable and works in all possible scenarios, while the `max` version requires more processing and is experimental, but may sound more professional.
 
 ### NATIVE PLUGIN WINDOW 🔬️
 
-You can show or hide the native Linux Studio Plugins and Calf Studio Gear interface to see the applied settings in more detail. Go to `Preferences` > `Experimental Features` and enable `Native window of effects`
+You can show or hide the native plugins interface to see the applied settings in more detail. Go to `Preferences` > `Experimental Features` and enable `Native window of effects`
 
 ### ON OR OFF 🤔
 
