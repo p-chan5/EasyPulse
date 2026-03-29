@@ -1,5 +1,7 @@
 # HOW TO BUILD THEM 🏗️
 
+To set decimal values (Hz) ​​open and edit the `.json` file or set them in the plugin GUI.
+
 0. Reset each effect to its default values.
 
 1. Add Crossfeed. Set the following values:
@@ -10,7 +12,7 @@ Off
 
 Cutoff|Feed
 :---:|:---:
-1864 Hz|6.0 dB
+1864.66 Hz|6.0 dB
 
 2. Add 1st Equalizer. Set the following values:
 
@@ -22,7 +24,7 @@ Bands
 
 #|Type|Mode|Slope|Frequency|Gain|Quality
 :---:|:---:|:---:|:---:|:---:|:---:|:---:
-1|Bell|RLC (BT)|x1|392 Hz|-18.00 dB|0.00
+1|Bell|RLC (BT)|x1|392.00 Hz|-18.00 dB|0.00
 
 > edm
 
@@ -32,8 +34,8 @@ Bands
 
 #|Type|Mode|Slope|Frequency|Gain|Quality
 :---:|:---:|:---:|:---:|:---:|:---:|:---:
-1|Low-shelf|LRX (BT)|x1|138 Hz|12.00 dB|0.00
-2|Low-shelf|LRX (BT)|x1|4434 Hz|-12.00 dB|0.00
+1|Low-shelf|LRX (BT)|x1|138.59 Hz|12.00 dB|0.00
+2|Low-shelf|LRX (BT)|x1|4434.92 Hz|-12.00 dB|0.00
 
 > hifi
 
@@ -43,8 +45,8 @@ Bands
 
 #|Type|Mode|Slope|Frequency|Gain|Quality
 :---:|:---:|:---:|:---:|:---:|:---:|:---:
-1|Low-shelf|LRX (BT)|x1|138 Hz|18.00 dB|0.00
-2|Low-shelf|LRX (BT)|x1|4434 Hz|-18.00 dB|0.00
+1|Low-shelf|LRX (BT)|x1|138.59 Hz|18.00 dB|0.00
+2|Low-shelf|LRX (BT)|x1|4434.92 Hz|-18.00 dB|0.00
 
 > kpop
 
@@ -54,7 +56,7 @@ Bands
 
 #|Type|Mode|Slope|Frequency|Gain|Quality
 :---:|:---:|:---:|:---:|:---:|:---:|:---:
-1|Bell|RLC (BT)|x1|783 Hz|-12.00 dB|0.00
+1|Bell|RLC (BT)|x1|783.99 Hz|-12.00 dB|0.00
 
 > lofi
 
@@ -64,7 +66,7 @@ Bands
 
 #|Type|Mode|Slope|Frequency|Gain|Quality
 :---:|:---:|:---:|:---:|:---:|:---:|:---:
-1|Bell|RLC (BT)|x1|392 Hz|-12.00 dB|0.00
+1|Bell|RLC (BT)|x1|392.00 Hz|-12.00 dB|0.00
 
 > rock
 
@@ -74,7 +76,7 @@ Bands
 
 #|Type|Mode|Slope|Frequency|Gain|Quality
 :---:|:---:|:---:|:---:|:---:|:---:|:---:
-1|Bell|RLC (BT)|x1|783 Hz|-18.00 dB|0.00
+1|Bell|RLC (BT)|x1|783.99 Hz|-18.00 dB|0.00
 
 3. Add Bass Enhancer. Set the following values:
 
@@ -84,7 +86,7 @@ Off
 
 Blend harmonics|Amount|Harmonics|Scope|Floor active|Floor
 :---:|:---:|:---:|:---:|:---:|:---:
--10|-6.0 dB|10.0|233 Hz|On|116 Hz
+-10|-6.0 dB|10.0|233.08 Hz|On|116.54 Hz
 
 4. Add Filter. Set the following values:
 
@@ -94,7 +96,7 @@ Off
 
 Type|Filter mode|Slope|Frequency
 :---:|:---:|:---:|:---:
-High-pass|LRX (BT)|x4|329
+High-pass|LRX (BT)|x4|329.63
 
 5. Add 2nd Equalizer. Set the following values:
 
@@ -110,13 +112,13 @@ Bands|Split channels
 
 #|Type|Mode|Slope|Frequency|Gain|Quality|Width
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
-1|Ladder-pass|LRX (BT)|x4|932 Hz|6.00 dB|0.00|3.00 oct
+1|Ladder-pass|LRX (BT)|x4|932.33 Hz|6.00 dB|0.00|3.00 oct
 
 > Right
 
 #|Type|Mode|Slope|Frequency|Gain|Quality|Width
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
-1|Ladder-pass|LRX (BT)|x4|7458 Hz|6.00 dB|0.00|3.00 oct
+1|Ladder-pass|LRX (BT)|x4|7458.62 Hz|6.00 dB|0.00|3.00 oct
 
 6. Add 3rd Equalizer. Set the following values:
 
@@ -132,15 +134,15 @@ Bands|Split channels
 
 #|Type|Mode|Slope|Frequency|Gain|Quality|Width
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
-1|Ladder-pass|LRX (BT)|x4|554 Hz|6.00 dB|0.00|1.50 oct
-2|Ladder-pass|LRX (BT)|x4|4434 Hz|6.00 dB|0.00|1.50 oct
+1|Ladder-pass|LRX (BT)|x4|554.37 Hz|6.00 dB|0.00|1.50 oct
+2|Ladder-pass|LRX (BT)|x4|4434.92 Hz|6.00 dB|0.00|1.50 oct
 
 > Right
 
 #|Type|Mode|Slope|Frequency|Gain|Quality|Width
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
-1|Ladder-pass|LRX (BT)|x4|1567 Hz|6.00 dB|0.00|1.50 oct
-2|Ladder-pass|LRX (BT)|x4|12543 Hz|6.00 dB|0.00|1.50 oct
+1|Ladder-pass|LRX (BT)|x4|1567.98 Hz|6.00 dB|0.00|1.50 oct
+2|Ladder-pass|LRX (BT)|x4|12543.85 Hz|6.00 dB|0.00|1.50 oct
 
 7. Add 4th Equalizer. Set the following values:
 
@@ -156,17 +158,17 @@ Bands|Split channels
 
 #|Type|Mode|Slope|Frequency|Gain|Quality|Width
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
-1|Ladder-pass|LRX (BT)|x4|466 Hz|6.00 dB|0.00|1.00 oct
-2|Ladder-pass|LRX (BT)|x4|1864 Hz|6.00 dB|0.00|1.00 oct
-3|Ladder-pass|LRX (BT)|x4|7458 Hz|6.00 dB|0.00|1.00 oct
+1|Ladder-pass|LRX (BT)|x4|466.16 Hz|6.00 dB|0.00|1.00 oct
+2|Ladder-pass|LRX (BT)|x4|1864.66 Hz|6.00 dB|0.00|1.00 oct
+3|Ladder-pass|LRX (BT)|x4|7458.62 Hz|6.00 dB|0.00|1.00 oct
 
 > Right
 
 #|Type|Mode|Slope|Frequency|Gain|Quality|Width
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
-1|Ladder-pass|LRX (BT)|x4|932 Hz|6.00 dB|0.00|1.00 oct
-2|Ladder-pass|LRX (BT)|x4|3729 Hz|6.00 dB|0.00|1.00 oct
-3|Ladder-pass|LRX (BT)|x4|14917 Hz|6.00 dB|0.00|1.00 oct
+1|Ladder-pass|LRX (BT)|x4|932.33 Hz|6.00 dB|0.00|1.00 oct
+2|Ladder-pass|LRX (BT)|x4|3729.31 Hz|6.00 dB|0.00|1.00 oct
+3|Ladder-pass|LRX (BT)|x4|14917.24 Hz|6.00 dB|0.00|1.00 oct
 
 8. Add 2nd Multiband Compressor. Set the following values:
 
@@ -181,13 +183,21 @@ Enable
 Band|Enable|Start|Compression mode|Bypass|Attack Time|Attack Threshold|Ratio|Knee
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
 1|Yes||Upward||0.00 ms|0.00 dB|1.2|0.0 dB
-2|Yes|138 Hz|Upward||0.00 ms|0.00 dB|1.2|0.0 dB
-3|Yes|4434 Hz|Upward||0.00 ms|0.00 dB|1.2|0.0 dB
+2|Yes|138.59 Hz|Upward||0.00 ms|0.00 dB|1.2|0.0 dB
+3|Yes|4434.92 Hz|Upward||0.00 ms|0.00 dB|1.2|0.0 dB
 4|No|||Enable||||
 5|No|||Enable||||
 6|No|||Enable||||
 7|No|||Enable||||
 8|No|||Enable||||
+
+> indie
+
+Band|Release Time
+:---:|:---:
+1|0.00 ms
+2|0.00 ms
+3|0.00 ms
 
 > Band # - Sidechain
 
@@ -196,14 +206,6 @@ Band|Enable|Start|Compression mode|Bypass|Attack Time|Attack Threshold|Ratio|Kne
 1|250.0 ms
 2|250.0 ms
 3|250.0 ms
-
-> indie
-
-#|Release Time
-:---:|:---:
-1|0.00 ms
-2|0.00 ms
-3|0.00 ms
 
 9. Add Compressor. Set the following values:
 
@@ -233,7 +235,7 @@ Off
 
 Room size|Decay time|Pre delay|Diffusion|High frequency damping|Bass cut|Treble cut|Wet
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
-Large/smooth|0.40 s|20 ms|0.00 %|12543.00 Hz|196 Hz|12543 Hz|-6.0 dB
+Large/smooth|0.40 s|20 ms|0.00 %|12543.85 Hz|196.00 Hz|12543.85 Hz|-6.0 dB
 
 11. Add Stereo Tools. Set the following values:
 
@@ -272,8 +274,8 @@ Stereo Link|Al Attack|Al Release|Knee|Smooth
 Band|Enable|Start|Bypass|Attack Time|Attack Threshold|Release Time|Ratio|Knee
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
 1|Yes||Enable|||||
-2|Yes|138 Hz||0.00 ms|-60.00 dB|0.00 ms|1.5|0.0 dB
-3|Yes|4434 Hz|Enable|||||
+2|Yes|138.59 Hz||0.00 ms|-60.00 dB|0.00 ms|1.5|0.0 dB
+3|Yes|4434.92 Hz|Enable|||||
 4|No||Enable|||||
 5|No||Enable|||||
 6|No||Enable|||||
@@ -287,8 +289,6 @@ Band|Enable|Start|Bypass|Attack Time|Attack Threshold|Release Time|Ratio|Knee
 2|250.0 ms
 
 > analog
-
-0. To set the decimal values ​​open and edit the `.json` file.
 
 1. Add 1st Multiband Compressor. Set the following values:
 
