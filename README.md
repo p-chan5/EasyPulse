@@ -1,4 +1,4 @@
-A set of `High Quality` presets for [Easy Effects](https://github.com/wwmm/easyeffects).
+`High Quality` [Easy Effects](https://github.com/wwmm/easyeffects) presets for headphones.
 
 ## WHAT'S INSIDE 🎁
 
@@ -82,19 +82,19 @@ They prevent the signal from exceeding 0 dB and becoming distorted | `Threshold`
 
 It's hard to find a perfect setup for every user, although it is possible to make some adjustments to customize its behavior:
 
-1. Load `hifi` or `edm` > Open the 1st Equalizer band 1 options > Change the `Frequency` and/or reduce the `Gain` and/or change the `Mode` to BWC (BT)/(MT) as appropriate.
+- Load `hifi` or `edm` > Open the 1st Equalizer band 1 options > Change the `Frequency` and/or reduce the `Gain` and/or change the `Mode` to BWC (BT)/(MT) as appropriate.
 
-2. Select Bass Enhancer > Set the `Amount` to -6, -3 or 0 dB and/or the `Floor` to 29, 58 or 116 Hz
+- Select Bass Enhancer > Set the `Amount` to -6, -3 or 0 dB and/or the `Floor` to 29.14, 58.27 or 116.54 Hz
 
-3. Select 1st/2nd Multiband Compressor and edit Band 1 options (Bypass/Compression mode/Attack Threshold/Ratio) and/or Band 2 Frequency (Start).
+- Select 1st/2nd Multiband Compressor and edit Band 1 options (Bypass/Compression mode/Attack Threshold/Ratio) and/or Band 2 Frequency (Start).
 
 ### DOWNWARD / UPWARD COMPRESSION 📈
 
-To achieve different styles, you can set the `Release Time` to 0.00, 100.00, 200.00, 300.00, 400.00 or 500.00 ms, the `Ratio` to 1.20:1, 1.50:1, 2.00:1, 3.00:1 or 6.00:1 and the `Reactivity` to 10.00, 25.00, 50.00, 125.00 or 250.00 ms
+To achieve different styles, you can set the `Attack Threshold` to 0.00, -12.00, -24.00, -36.00, -48.00 or -60.00 dB, the `Release Time` to 0.00, 100.00, 200.00, 300.00, 400.00 or 500.00 ms, the `Ratio` to 1.20:1, 1.50:1, 2.00:1, 3.00:1 or 6.00:1 and the `Reactivity` to 10.00, 25.00, 50.00, 125.00 or 250.00 ms
 
 ### DYNAMICS LOSS 🦴️
 
-It should not be noticeable unless the Limiter signal is oversaturated, but if that is the case, select the `Smooth` parameter and set a value between 0 dB and -48 dB and/or reduce the `Knee` or the `Input` level.
+It should not be noticeable unless the Limiter signal is oversaturated, but if that is the case, select the `Smooth` parameter and set a value between 0 and -48 dB and/or reduce the `Knee` or the `Input` level.
 
 ### MIN VS MAX LATENCY 🥊️
 
