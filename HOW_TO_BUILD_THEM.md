@@ -12,7 +12,7 @@ Off
 
 Cutoff|Feed
 :---:|:---:
-1864.66 Hz|6.0 dB
+1760.00 Hz|6.0 dB
 
 2. Add 1st Equalizer. Set the following values:
 
@@ -96,7 +96,7 @@ Off
 
 Type|Filter mode|Slope|Frequency
 :---:|:---:|:---:|:---:
-High-pass|LRX (BT)|x4|329.63
+High-pass|LRX (BT)|x4|329.63 Hz
 
 5. Add 2nd Equalizer. Set the following values:
 
@@ -243,9 +243,9 @@ Toggle this effect
 :---:
 Off
 
-Invert phase (Right)|Delay
-:---:|:---:
-On|20.00 ms
+Delay
+:---:
+20.00 ms
 
 12. Add Autogain. Set the following values:
 
@@ -373,6 +373,35 @@ SPM|5|Enable
 4|Bell|RLC (MT)|x1|7458.62 Hz|-1.00 dB|1.00
 5|Bell|RLC (MT)|x1|14917.24 Hz|6.00 dB|1.50
 
+4. Add 2nd Multiband Compressor. Set the following values:
+
+Toggle this effect
+:---:
+Off
+
+Stereo split
+:---:
+Enable
+
+Band|Enable|Start|Compression mode|Bypass|Attack Time|Attack Threshold|Release Time|Ratio|Knee
+:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
+1|Yes||Upward||0.00 ms|0.00 dB|0.00 ms|1.2|0.0 dB
+2|Yes|116.54 Hz|Upward||0.00 ms|0.00 dB|0.00 ms|1.2|0.0 dB
+3|Yes|5274.04 Hz|Upward||0.00 ms|0.00 dB|0.00 ms|1.2|0.0 dB
+4|No|||Enable|||||
+5|No|||Enable|||||
+6|No|||Enable|||||
+7|No|||Enable|||||
+8|No|||Enable|||||
+
+> Band # - Sidechain
+
+#|Reactivity|Lookahead
+:---:|:---:|:---:
+1|250.0 ms|20.0 ms
+2|250.0 ms|20.0 ms
+3|250.0 ms|20.0 ms
+
 ## HIGHER QUALITY = HIGHER LATENCY 💎️
 
 You can get more quality in exchange for notable latency. Just follow the steps below:
@@ -423,10 +452,6 @@ You can replace some effects by using a variant.
 Toggle this effect
 :---:
 Off
-
-Invert right
-:---:
-Enable
 
 Time (Right)
 :---:
