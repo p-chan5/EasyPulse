@@ -16,13 +16,13 @@ Classic: with `min` and `max` latency versions.
 
 Special: they don't have many effects, but they do have some interesting features.
 
-- analog: includes 2 vintage surround equalizers.
+- analog: includes 2 vintage-style surround equalizers.
 
 Do they sound amazing? Then support us with a ⭐️ and a follow!
 
 ## INSTALLATION 🚀️
 
-1. Download the [latest release](https://github.com/p-chan5/EasyPulse/releases/latest) as `zip / tar.gz` or read [HOW TO BUILD THEM](https://github.com/p-chan5/EasyPulse/blob/main/HOW_TO_BUILD_THEM.md).
+1. Download the [latest release](https://github.com/p-chan5/EasyPulse/releases/latest) as `zip / tar.gz` or read: [HOW TO BUILD THEM](https://github.com/p-chan5/EasyPulse/blob/main/HOW_TO_BUILD_THEM.md).
 2. Unzip and move the `.json` files to one of the following paths:
   
 * Flatpak: `~/.var/app/com.github.wwmm.easyeffects/data/easyeffects/output`
@@ -74,7 +74,7 @@ Normalizes the volume based on a `Target` | `Reset history` re-evaluates this op
 
 ### LIMITER | MAXIMIZER 👂️
 
-They prevent the signal from exceeding 0 dB and becoming distorted | `Threshold` can replace `Autogain` in exchange for messing up dynamics.
+They prevent the signal from exceeding 0.00 dB and becoming distorted | `Threshold` can replace `Autogain` in exchange for messing up dynamics.
 
 ## TIPS ✨
 
@@ -84,17 +84,17 @@ It's hard to find a perfect setup for every user, although it is possible to mak
 
 - Load `hifi` or `edm` > Open the 1st Equalizer band 1 options > Change the `Frequency` and/or reduce the `Gain` and/or change the `Mode` to BWC (BT)/(MT) as appropriate.
 
-- Select Bass Enhancer > Set the `Amount` to -6, -3 or 0 dB and/or the `Floor` to 29.14, 58.27 or 116.54 Hz
+- Select Bass Enhancer > Set the `Amount` to -6.00, -3.00 or 0.00 dB and/or the `Floor` to 29.14, 58.27 or 116.54 Hz
 
 - Select 1st/2nd Multiband Compressor and edit Band 1 options (Bypass/Compression mode/Attack Threshold/Ratio) and/or Band 2 Frequency (Start).
 
 ### DOWNWARD / UPWARD COMPRESSION 📈
 
-To achieve different styles, you can set the `Attack Threshold` to 0.00, -12.00, -24.00, -36.00, -48.00 or -60.00 dB, the `Release Time` to 0.00, 100.00, 200.00, 300.00, 400.00 or 500.00 ms, the `Ratio` to 1.20:1, 1.50:1, 2.00:1, 3.00:1 or 6.00:1 and the `Reactivity` to 10.00, 25.00, 50.00, 125.00 or 250.00 ms
+To achieve different styles, you can set the `Attack Threshold` to 0.00, -12.00, -24.00, -36.00, -48.00 or -60.00 dB, the `Release Time` to 0.00, 100.00, 200.00, 300.00, 400.00 or 500.00 ms, the `Ratio` to 1.20, 1.50, 2.00, 3.00 or 6.00 and the `Reactivity` to 10.0, 25.0, 50.0, 125.0 or 250.0 ms
 
 ### DYNAMICS LOSS 🦴️
 
-It should not be noticeable unless the Limiter signal is oversaturated, but if that is the case, select the `Smooth` parameter and set a value between 0 and -48 dB and/or reduce the `Knee` or the `Input` level.
+It should not be noticeable unless the Limiter signal is oversaturated, but if that is the case, select the `Smooth` parameter and set a value between 0.00 and -48.00 dB (default: -5.00 dB) and/or reduce the `Knee` or the `Input` level.
 
 ### MIN VS MAX LATENCY 🥊️
 
@@ -113,6 +113,10 @@ Some effects are disabled by default, be sure to turn them on and try them out. 
 Since we **DO NOT** support old versions, it is vital that you have the current stable branch for them to work. In any case, see: [Easy Effects Changelog](https://wwmm.github.io/easyeffects/community/CHANGELOG.html).
 
 ## HELP LINKS 🔗
+
+### 440 Hz Tuning
+
+- [Music Note To Frequency Chart - MixButton](https://mixbutton.com/music-tools/frequency-and-pitch/music-note-to-frequency-chart)
 
 ### App Manual
 
