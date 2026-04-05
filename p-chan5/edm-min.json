@@ -14,12 +14,12 @@
             "amount": -6.0,
             "blend": -10.0,
             "bypass": true,
-            "floor": 116.0,
+            "floor": 116.54,
             "floor-active": true,
             "harmonics": 10.0,
             "input-gain": 0.0,
             "output-gain": 0.0,
-            "scope": 233.0
+            "scope": 233.08
         },
         "blocklist": [],
         "compressor#0": {
@@ -31,11 +31,11 @@
             "hpf-frequency": 10.0,
             "hpf-mode": "Off",
             "input-gain": 0.0,
-            "input-to-link": 0.0,
-            "input-to-sidechain": 0.0,
+            "input-to-link": -80.01,
+            "input-to-sidechain": -80.01,
             "knee": 0.0,
-            "link-to-input": 0.0,
-            "link-to-sidechain": 0.0,
+            "link-to-input": -80.01,
+            "link-to-sidechain": -80.01,
             "lpf-frequency": 20000.0,
             "lpf-mode": "Off",
             "makeup": 0.0,
@@ -53,15 +53,15 @@
                 "stereo-split-source": "Left/Right",
                 "type": "Feed-forward"
             },
-            "sidechain-to-input": 0.0,
-            "sidechain-to-link": 0.0,
+            "sidechain-to-input": -80.01,
+            "sidechain-to-link": -80.01,
             "stereo-split": true,
             "threshold": 0.0,
             "wet": 0.0
         },
         "crossfeed#0": {
             "bypass": true,
-            "fcut": 1864,
+            "fcut": 1760,
             "feed": 6.0,
             "input-gain": 0.0,
             "output-gain": 0.0
@@ -72,7 +72,7 @@
             "input-gain": 0.0,
             "left": {
                 "band0": {
-                    "frequency": 138.0,
+                    "frequency": 138.59,
                     "gain": 12.0,
                     "mode": "LRX (BT)",
                     "mute": false,
@@ -83,7 +83,7 @@
                     "width": 4.0
                 },
                 "band1": {
-                    "frequency": 4434.0,
+                    "frequency": 4434.92,
                     "gain": -12.0,
                     "mode": "LRX (BT)",
                     "mute": false,
@@ -101,7 +101,7 @@
             "pitch-right": 0.0,
             "right": {
                 "band0": {
-                    "frequency": 138.0,
+                    "frequency": 138.59,
                     "gain": 12.0,
                     "mode": "LRX (BT)",
                     "mute": false,
@@ -112,7 +112,7 @@
                     "width": 4.0
                 },
                 "band1": {
-                    "frequency": 4434.0,
+                    "frequency": 4434.92,
                     "gain": -12.0,
                     "mode": "LRX (BT)",
                     "mute": false,
@@ -131,7 +131,7 @@
             "input-gain": 0.0,
             "left": {
                 "band0": {
-                    "frequency": 932.0,
+                    "frequency": 932.33,
                     "gain": 6.0,
                     "mode": "LRX (BT)",
                     "mute": false,
@@ -149,7 +149,7 @@
             "pitch-right": 0.0,
             "right": {
                 "band0": {
-                    "frequency": 7458.0,
+                    "frequency": 7458.62,
                     "gain": 6.0,
                     "mode": "LRX (BT)",
                     "mute": false,
@@ -168,7 +168,7 @@
             "input-gain": 0.0,
             "left": {
                 "band0": {
-                    "frequency": 554.0,
+                    "frequency": 554.37,
                     "gain": 6.0,
                     "mode": "LRX (BT)",
                     "mute": false,
@@ -179,7 +179,7 @@
                     "width": 1.5
                 },
                 "band1": {
-                    "frequency": 4434.0,
+                    "frequency": 4434.92,
                     "gain": 6.0,
                     "mode": "LRX (BT)",
                     "mute": false,
@@ -197,7 +197,7 @@
             "pitch-right": 0.0,
             "right": {
                 "band0": {
-                    "frequency": 1567.0,
+                    "frequency": 1567.98,
                     "gain": 6.0,
                     "mode": "LRX (BT)",
                     "mute": false,
@@ -208,7 +208,7 @@
                     "width": 1.5
                 },
                 "band1": {
-                    "frequency": 12543.0,
+                    "frequency": 12543.85,
                     "gain": 6.0,
                     "mode": "LRX (BT)",
                     "mute": false,
@@ -227,7 +227,7 @@
             "input-gain": 0.0,
             "left": {
                 "band0": {
-                    "frequency": 466.0,
+                    "frequency": 466.16,
                     "gain": 6.0,
                     "mode": "LRX (BT)",
                     "mute": false,
@@ -238,7 +238,7 @@
                     "width": 1.0
                 },
                 "band1": {
-                    "frequency": 1864.0,
+                    "frequency": 1864.66,
                     "gain": 6.0,
                     "mode": "LRX (BT)",
                     "mute": false,
@@ -249,7 +249,7 @@
                     "width": 1.0
                 },
                 "band2": {
-                    "frequency": 7458.0,
+                    "frequency": 7458.62,
                     "gain": 6.0,
                     "mode": "LRX (BT)",
                     "mute": false,
@@ -267,7 +267,7 @@
             "pitch-right": 0.0,
             "right": {
                 "band0": {
-                    "frequency": 932.0,
+                    "frequency": 932.33,
                     "gain": 6.0,
                     "mode": "LRX (BT)",
                     "mute": false,
@@ -278,7 +278,7 @@
                     "width": 1.0
                 },
                 "band1": {
-                    "frequency": 3729.0,
+                    "frequency": 3729.31,
                     "gain": 6.0,
                     "mode": "LRX (BT)",
                     "mute": false,
@@ -289,7 +289,7 @@
                     "width": 1.0
                 },
                 "band2": {
-                    "frequency": 14917.0,
+                    "frequency": 14917.24,
                     "gain": 6.0,
                     "mode": "LRX (BT)",
                     "mute": false,
@@ -306,7 +306,7 @@
             "balance": 0.0,
             "bypass": true,
             "equal-mode": "IIR",
-            "frequency": 329.0,
+            "frequency": 329.63,
             "gain": 0.0,
             "input-gain": 0.0,
             "mode": "LRX (BT)",
@@ -327,18 +327,18 @@
             "dithering": "None",
             "gain-boost": true,
             "input-gain": 0.0,
-            "input-to-link": 0.0,
-            "input-to-sidechain": 0.0,
-            "link-to-input": 0.0,
-            "link-to-sidechain": 0.0,
+            "input-to-link": -80.01,
+            "input-to-sidechain": -80.01,
+            "link-to-input": -80.01,
+            "link-to-sidechain": -80.01,
             "lookahead": 5.0,
             "mode": "Herm Thin",
             "output-gain": 0.0,
             "oversampling": "None",
             "release": 5.0,
             "sidechain-preamp": 0.0,
-            "sidechain-to-input": 0.0,
-            "sidechain-to-link": 0.0,
+            "sidechain-to-input": -80.01,
+            "sidechain-to-link": -80.01,
             "sidechain-type": "Internal",
             "stereo-link": 0.0,
             "threshold": 0.0
@@ -395,7 +395,7 @@
                 "sidechain-source": "Middle",
                 "sidechain-type": "Internal",
                 "solo": false,
-                "split-frequency": 138.0,
+                "split-frequency": 138.59,
                 "stereo-split-source": "Left/Right"
             },
             "band2": {
@@ -423,7 +423,7 @@
                 "sidechain-source": "Middle",
                 "sidechain-type": "Internal",
                 "solo": false,
-                "split-frequency": 4434.0,
+                "split-frequency": 4434.92,
                 "stereo-split-source": "Left/Right"
             },
             "band3": {
@@ -571,13 +571,13 @@
             "dry": -80.01,
             "envelope-boost": "None",
             "input-gain": 0.0,
-            "input-to-link": 0.0,
-            "input-to-sidechain": 0.0,
-            "link-to-input": 0.0,
-            "link-to-sidechain": 0.0,
+            "input-to-link": -80.01,
+            "input-to-sidechain": -80.01,
+            "link-to-input": -80.01,
+            "link-to-sidechain": -80.01,
             "output-gain": 0.0,
-            "sidechain-to-input": 0.0,
-            "sidechain-to-link": 0.0,
+            "sidechain-to-input": -80.01,
+            "sidechain-to-link": -80.01,
             "stereo-split": true,
             "wet": 0.0
         },
@@ -603,12 +603,12 @@
             "decay-time": 0.4,
             "diffusion": 0.0,
             "dry": 0.0,
-            "hf-damp": 12543.0,
+            "hf-damp": 12543.85,
             "input-gain": 0.0,
             "output-gain": 0.0,
             "predelay": 20.0,
             "room-size": "Large/smooth",
-            "treble-cut": 12543.0
+            "treble-cut": 12543.85
         },
         "stereo_tools#0": {
             "balance-in": 0.0,
@@ -624,7 +624,7 @@
             "muter": false,
             "output-gain": 0.0,
             "phasel": false,
-            "phaser": true,
+            "phaser": false,
             "sc-level": 1.0,
             "side-balance": 0.0,
             "side-level": 0.0,
