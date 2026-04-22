@@ -1,6 +1,10 @@
 # HOW TO BUILD THEM 🏗️
 
-To set decimal values (Hz) ​​open and edit the `.json` file or set them in the plugin GUI.
+- Save time by taking the following sequence as an example:
+
+> hifi-min > hifi-max / hifi-min > all-min / hifi-max > all-max | indie-min > indie-max | analog
+
+- To set decimal values (Hz) ​​open and edit the `.json` file or set them in the plugin GUI.
 
 0. Reset each effect to its default values.
 
@@ -176,15 +180,15 @@ Toggle this effect
 :---:
 Off
 
-Stereo split
-:---:
-Enable
+Sidechain boost|Stereo split
+:---:|:---:
+None|Enable
 
 Band|Enable|Start|Compression mode|Bypass|Attack Time|Attack Threshold|Ratio|Knee
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
-1|Yes||Upward||0.00 ms|0.00 dB|1.2|0.0 dB
-2|Yes|138.59 Hz|Upward||0.00 ms|0.00 dB|1.2|0.0 dB
-3|Yes|4434.92 Hz|Upward||0.00 ms|0.00 dB|1.2|0.0 dB
+1|Yes||Upward||0.00 ms|0.00 dB|1.20|0.0 dB
+2|Yes|138.59 Hz|Upward||0.00 ms|0.00 dB|1.20|0.0 dB
+3|Yes|4434.92 Hz|Upward||0.00 ms|0.00 dB|1.20|0.0 dB
 4|No|||Enable||||
 5|No|||Enable||||
 6|No|||Enable||||
@@ -219,9 +223,9 @@ Enable
 
 Mode|Ratio|Knee|Attack Threshold|Attack Time|Release Time|Sidechain Mode|Reactivity
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
-Upward|1.5|0.00 dB|0.0 dB|0.00 ms|200.00 ms|RMS|250.00 ms
+Upward|1.50|0.00 dB|0.0 dB|0.00 ms|200.00 ms|RMS|250.00 ms
 
-> indie
+> indie / analog
 
 Release Time
 :---:
@@ -271,10 +275,14 @@ Stereo Link|Al Attack|Al Release|Knee|Smooth
 
 2. Add 1st Multiband Compressor. Set the following values:
 
+Sidechain boost
+:---:
+None
+
 Band|Enable|Start|Bypass|Attack Time|Attack Threshold|Release Time|Ratio|Knee
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
 1|Yes||Enable|||||
-2|Yes|138.59 Hz||0.00 ms|-60.00 dB|0.00 ms|1.5|0.0 dB
+2|Yes|138.59 Hz||0.00 ms|-60.00 dB|0.00 ms|1.50|0.0 dB
 3|Yes|4434.92 Hz|Enable|||||
 4|No||Enable|||||
 5|No||Enable|||||
@@ -292,14 +300,14 @@ Band|Enable|Start|Bypass|Attack Time|Attack Threshold|Release Time|Ratio|Knee
 
 1. Add 1st Multiband Compressor. Set the following values:
 
-Operating mode
-:---:
-Linear phase
+Operating mode|Sidechain boost
+:---:|:---:
+Linear phase|None
 
 Band|Enable|Start|Bypass|Attack Time|Attack Threshold|Release Time|Ratio|Knee
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
 1|Yes||Enable|||||
-2|Yes|116.54 Hz||0.00 ms|-60.00 dB|0.00 ms|1.5|0.0 dB
+2|Yes|116.54 Hz||0.00 ms|-60.00 dB|0.00 ms|1.50|0.0 dB
 3|Yes|5274.04 Hz|Enable|||||
 4|No||Enable|||||
 5|No||Enable|||||
@@ -379,15 +387,15 @@ Toggle this effect
 :---:
 Off
 
-Stereo split
-:---:
-Enable
+Operating mode|Sidechain boost|Stereo split
+:---:|:---:|:---:
+Linear phase|None|Enable
 
 Band|Enable|Start|Compression mode|Bypass|Attack Time|Attack Threshold|Release Time|Ratio|Knee
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
-1|Yes||Upward||0.00 ms|0.00 dB|0.00 ms|1.2|0.0 dB
-2|Yes|116.54 Hz|Upward||0.00 ms|0.00 dB|0.00 ms|1.2|0.0 dB
-3|Yes|5274.04 Hz|Upward||0.00 ms|0.00 dB|0.00 ms|1.2|0.0 dB
+1|Yes||Upward||0.00 ms|0.00 dB|0.00 ms|1.20|0.0 dB
+2|Yes|116.54 Hz|Upward||0.00 ms|0.00 dB|0.00 ms|1.20|0.0 dB
+3|Yes|5274.04 Hz|Upward||0.00 ms|0.00 dB|0.00 ms|1.20|0.0 dB
 4|No|||Enable|||||
 5|No|||Enable|||||
 6|No|||Enable|||||
@@ -402,9 +410,15 @@ Band|Enable|Start|Compression mode|Bypass|Attack Time|Attack Threshold|Release T
 2|250.0 ms|20.0 ms
 3|250.0 ms|20.0 ms
 
+5. Add Compressor. Set the same values ​​as step 9 to maximum latency.
+
+6. Add Stereo Tools. Set the same values ​​as step 11.
+
+7. Add Limiter. Set the same values ​​as step 13 to maximum latency.
+
 ## HIGHER QUALITY = HIGHER LATENCY 💎️
 
-You can get more quality in exchange for notable latency. Just follow the steps below:
+To achieve higher quality in exchange for noticeable latency, follow these steps:
 
 1. Select 1st / 2nd / 3rd / 4th Equalizer. Set the following values:
 
@@ -445,7 +459,7 @@ Limiter Attack|Limiter Release|Lookahead
 
 ## ALTERNATIVES 🫧️
 
-You can replace some effects by using a variant.
+Replace some effects using a variant.
 
 11. Add Delay. Set the following values:
 
