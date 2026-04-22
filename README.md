@@ -1,6 +1,6 @@
 `High Quality` [Easy Effects](https://github.com/wwmm/easyeffects) presets for headphones.
 
-## WHAT'S INSIDE 🎁
+## WHAT'S INSIDE 🎁️
 
 15 configuration files divided into two categories:
 
@@ -32,15 +32,15 @@ Do they sound amazing? Then support us with a ⭐️ and a follow!
 
 ## EFFECTS 🎛️
 
-### CROSSFEED 🎧
+### CROSSFEED 🎧️
 
 Centers the signal via `Feed` | `Cutoff` sets the limit of frequencies it affects.
 
-### 1ST EQUALIZER | MULTIBAND COMPRESSOR 🎲
+### 1ST EQUALIZER | MULTIBAND COMPRESSOR 🎲️
 
 They attenuate the input signal, giving space to the mix.
 
-### BASS ENHANCER 💪
+### BASS ENHANCER 💪️
 
 It makes it sound crunchier.
 
@@ -48,11 +48,11 @@ It makes it sound crunchier.
 
 Applies a `High-pass` filter that eliminates bass. Switch to `Low-pass` to do the opposite.
 
-### 2ND / 3RD / 4TH EQUALIZER 🧬
+### 2ND / 3RD / 4TH EQUALIZER 🧬️
 
 They expand the signal recreating a simple / smooth / harsh `Dolby Atmos`
 
-### 2ND MULTIBAND COMPRESSOR ❤️‍🔥
+### 2ND MULTIBAND COMPRESSOR ❤️‍🔥️
 
 Increases the dynamic range of bass, midrange and treble.
 
@@ -76,19 +76,19 @@ Normalizes the volume based on a `Target` | `Reset history` re-evaluates this op
 
 They prevent the signal from exceeding 0.00 dB and becoming distorted | `Threshold` can replace `Autogain` in exchange for messing up dynamics.
 
-## TIPS ✨
+## TIPS ✨️
 
-### BASS TREATMENT 🩺
+### BASS TREATMENT 🩺️
 
 It's hard to find a perfect setup for every user, although it is possible to make some adjustments to customize its behavior:
 
-- Load `hifi` or `edm` > Open the 1st Equalizer band 1 options > Change the `Frequency` and/or reduce the `Gain` and/or change the `Mode` to BWC (BT)/(MT) as appropriate.
+- Load `hifi` or `edm` > Open the 1st Equalizer Band 1 options > Change the `Frequency` and/or reduce the `Gain` and/or change the `Mode` to BWC (BT)/(MT) as appropriate.
 
 - Select Bass Enhancer > Set the `Amount` to -6.00, -3.00 or 0.00 dB and/or the `Floor` to 29.14, 58.27 or 116.54 Hz
 
 - Select 1st/2nd Multiband Compressor and edit Band 1 options (Bypass/Compression mode/Attack Threshold/Ratio) and/or Band 2 Frequency (Start).
 
-### DOWNWARD / UPWARD COMPRESSION 📈
+### DOWNWARD / UPWARD COMPRESSION 📈️
 
 To achieve different styles, you can set the `Attack Threshold` to 0.00, -12.00, -24.00, -36.00, -48.00 or -60.00 dB, the `Release Time` to 0.00, 100.00, 200.00, 300.00, 400.00 or 500.00 ms, the `Ratio` to 1.20, 1.50, 2.00, 3.00 or 6.00 and the `Reactivity` to 10.0, 25.0, 50.0, 125.0 or 250.0 ms
 
@@ -104,15 +104,19 @@ Choose the one that best suits your needs. From a practical standpoint, the `min
 
 You can show or hide the native plugins interface to see the applied settings in more detail. Go to `Preferences` > `Experimental Features` and enable `Native window of effects`
 
-### ON OR OFF 🤔
+### ON OR OFF 🤔️
 
 Some effects are disabled by default, be sure to turn them on and try them out. If you liked it, save it by rewriting the original file.
+
+### SOFTCLIP 😵️
+
+Select Stereo Tools and enable this option to add analog distortion (clipping) to the signal. Increase the `S/C Level` to make it more noticeable, but don't overdo it.
 
 ## COMPATIBILITY ISSUES ⚠️
 
 Since we **DO NOT** support old versions, it is vital that you have the current stable branch for them to work. In any case, see: [Easy Effects Changelog](https://wwmm.github.io/easyeffects/community/CHANGELOG.html).
 
-## HELP LINKS 🔗
+## HELP LINKS 🔗️
 
 ### 440 Hz Tuning
 
