@@ -597,18 +597,18 @@
             "limiter#0"
         ],
         "reverb#0": {
-            "amount": -6.0,
-            "bass-cut": 196.0,
+            "amount": 0.0,
+            "bass-cut": 233.08,
             "bypass": true,
-            "decay-time": 0.4,
-            "diffusion": 0.0,
-            "dry": 0.0,
-            "hf-damp": 12543.85,
+            "decay-time": 0.6,
+            "diffusion": 1.0,
+            "dry": -100.0,
+            "hf-damp": 14917.24,
             "input-gain": 0.0,
             "output-gain": 0.0,
-            "predelay": 20.0,
+            "predelay": 0.0,
             "room-size": "Large/smooth",
-            "treble-cut": 12543.85
+            "treble-cut": 14917.24
         },
         "stereo_tools#0": {
             "balance-in": 0.0,
