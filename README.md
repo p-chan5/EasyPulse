@@ -16,25 +16,25 @@ Classic: with `min` and `max` latency versions.
 
 Special: they don't have many effects, but they do have some interesting features.
 
-- analog: includes 2 vintage-style surround equalizers.
+- analog-max: includes 2 vintage-style surround equalizers.
 
-Do they sound amazing? Then support us with a ⭐️ and a follow!
+Do they sound amazing? Then support us with a ⭐️ and don't miss any updates!
 
 ## INSTALLATION 🚀️
 
-1. Download the [latest release](https://github.com/p-chan5/EasyPulse/releases/latest) as `zip / tar.gz` or read: [HOW TO BUILD THEM](https://github.com/p-chan5/EasyPulse/blob/main/HOW_TO_BUILD_THEM.md).
+1. Download the [latest release](https://github.com/p-chan5/EasyPulse/releases/latest) as `zip / tar.gz` or read [HOW TO BUILD THEM](https://github.com/p-chan5/EasyPulse/blob/main/HOW_TO_BUILD_THEM.md).
 2. Unzip and move the `.json` files to one of the following paths:
   
 * Flatpak: `~/.var/app/com.github.wwmm.easyeffects/data/easyeffects/output`
 * Repositories: `~/.local/share/easyeffects/output`
 
-3. Ready! Load them from `Output` > `Presets` > `Local`
+3. Done! Load them from `Output` > `Presets` > `Local`
 
 ## EFFECTS 🎛️
 
 ### CROSSFEED 🎧️
 
-Centers the signal via `Feed` | `Cutoff` sets the limit of frequencies it affects.
+Centers the signal via `Feed` | `Cutoff` sets the limit of frequencies that it affects.
 
 ### 1ST EQUALIZER | MULTIBAND COMPRESSOR 🎲️
 
@@ -42,27 +42,27 @@ They attenuate the input signal, giving space to the mix.
 
 ### BASS ENHANCER 💪️
 
-It makes it sound crunchier.
+Makes it sound crunchier.
 
 ### FILTER 🚿️
 
-Applies a `High-pass` filter that eliminates bass. Switch to `Low-pass` to do the opposite.
+Applies a `High-pass` filter that removes bass frequencies. Switch to `Low-pass` to do the opposite.
 
 ### 2ND / 3RD / 4TH EQUALIZER 🧬️
 
-They expand the signal recreating a simple / smooth / harsh `Dolby Atmos`
+They expand the signal, recreating a simple / smooth / full `Dolby Atmos`
 
 ### 2ND MULTIBAND COMPRESSOR ❤️‍🔥️
 
-Increases the dynamic range of bass, midrange and treble.
+Increases the dynamic range of bass, mids and treble.
 
 ### COMPRESSOR 🔥️
 
-Increases the dynamic range of the signal making it sound fuller.
+Increases the dynamic range of the signal.
 
 ### REVERBERATION ⛰️
 
-Creates a bedroom. Try going beyond these values, you can achieve creative results with some practice.
+Creates a bedroom. Choose the `Room size` | Increase or decrease the `Decay time` | Choose between 0.00, 0.50 or 1.00 % `Diffusion`
 
 ### DELAY | STEREO TOOLS 👥️
 
@@ -70,7 +70,7 @@ They create a stereo separation effect.
 
 ### AUTOGAIN 🛠️
 
-Normalizes the volume based on a `Target` | `Reset history` re-evaluates this operation (refresh) | `Maximum history` is arbitrary.
+Normalizes volume based on a `Target` | `Reset history` re-evaluates this operation (refresh) | `Maximum history` is arbitrary.
 
 ### LIMITER | MAXIMIZER 👂️
 
@@ -82,11 +82,11 @@ They prevent the signal from exceeding 0.00 dB and becoming distorted | `Thresho
 
 It's hard to find a perfect setup for every user, although it is possible to make some adjustments to customize its behavior:
 
-- Load `hifi` or `edm` > Open the 1st Equalizer Band 1 options > Change the `Frequency` and/or reduce the `Gain` and/or change the `Mode` to BWC (BT)/(MT) as appropriate.
+- Load analog-max, hifi or edm > Open the 1st Equalizer Band 1 options > Change the `Frequency` and/or reduce the `Gain` and/or change the `Mode` to BWC (BT)/(MT) as appropriate.
 
 - Select Bass Enhancer > Set the `Amount` to -6.00, -3.00 or 0.00 dB and/or the `Floor` to 29.14, 58.27 or 116.54 Hz
 
-- Select 1st/2nd Multiband Compressor and edit Band 1 options (Bypass/Compression mode/Attack Threshold/Ratio) and/or Band 2 Frequency (Start).
+- Select 1st/2nd Multiband Compressor > Edit Band 1 options (Bypass/Compression mode/Attack Threshold/Ratio) and/or Band 2 Frequency (Start).
 
 ### DOWNWARD / UPWARD COMPRESSION 📈️
 
@@ -96,7 +96,7 @@ To achieve different styles, you can set the `Attack Threshold` to 0.00, -12.00,
 
 It should not be noticeable unless the Limiter signal is oversaturated, but if that is the case, select the `Smooth` parameter and set a value between 0.00 and -48.00 dB (default: -5.00 dB) and/or reduce the `Knee` or the `Input` level.
 
-### MIN VS MAX LATENCY 🥊️
+### MINIMUM VS MAXIMUM LATENCY 🥊️
 
 Choose the one that best suits your needs. From a practical standpoint, the `min` version is stable and works in all possible scenarios, while the `max` version requires more processing and is experimental, but may sound more professional.
 
@@ -106,15 +106,15 @@ You can show or hide the native plugins interface to see the applied settings in
 
 ### ON OR OFF 🤔️
 
-Some effects are disabled by default, be sure to turn them on and try them out. If you liked it, save it by rewriting the original file.
+Some effects are disabled by default; be sure to enable and test them. If you like the result, save it by overwriting the original file or creating a new one.
 
 ### SOFTCLIP 😵️
 
-Select Stereo Tools and enable this option to add analog distortion (clipping) to the signal. Increase the `S/C Level` to make it more noticeable, but don't overdo it.
+Select Stereo Tools and enable this option to add analog distortion (clipping) to the signal. Increase the `S/C Level` to make it more noticeable, but **DON'T** overdo it.
 
 ## COMPATIBILITY ISSUES ⚠️
 
-Since we **DO NOT** support old versions, it is vital that you have the current stable branch for them to work. In any case, see: [Easy Effects Changelog](https://wwmm.github.io/easyeffects/community/CHANGELOG.html).
+Since we **DON'T** support older versions, it's vital that you have the current stable branch for them to work. In any case, please refer to the [Easy Effects changelog](https://wwmm.github.io/easyeffects/community/CHANGELOG.html).
 
 ## HELP LINKS 🔗️
 
