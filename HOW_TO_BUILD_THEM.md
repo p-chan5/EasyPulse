@@ -1,12 +1,14 @@
-# HOW TO BUILD THEM 🏗️
+## HOW TO BUILD THEM 🏗️
 
-- Save time by taking the following sequence as an example:
+- Almost all values ​​are documented, except for the defaults. To see them, open and analyze the `.json` file.
 
-> hifi-min > hifi-max / hifi-min > all-min / hifi-max > all-max | indie-min > indie-max | analog
+- Make sure to `Reset` each effect before starting.
+
+- Take the following sequence as an example and save time as you go.
+
+> hifi-min > hifi-max / hifi-min > all-min / hifi-max > all-max | indie-min > indie-max | analog-max
 
 - To set decimal values (Hz) ​​open and edit the `.json` file or set them in the plugin GUI.
-
-0. Reset each effect to its default values.
 
 1. Add Crossfeed. Set the following values:
 
@@ -225,7 +227,7 @@ Mode|Ratio|Knee|Attack Threshold|Attack Time|Release Time|Sidechain Mode|Reactiv
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
 Upward|1.50|0.00 dB|0.0 dB|0.00 ms|200.00 ms|RMS|250.00 ms
 
-> indie / analog
+> indie
 
 Release Time
 :---:
@@ -237,9 +239,9 @@ Toggle this effect
 :---:
 Off
 
-Room size|Decay time|Pre delay|Diffusion|High frequency damping|Bass cut|Treble cut|Wet
+Room size|Decay time|Diffusion|High frequency damping|Bass cut|Treble cut|Dry|Wet
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
-Large/smooth|0.40 s|20 ms|0.00 %|12543.85 Hz|196.00 Hz|12543.85 Hz|-6.0 dB
+Large/smooth|0.60 s|1.00 %|14917.24 Hz|233.08 Hz|14917.24 Hz|-100.0 dB/-inf|0.0 dB
 
 11. Add Stereo Tools. Set the following values:
 
@@ -296,32 +298,20 @@ Band|Enable|Start|Bypass|Attack Time|Attack Threshold|Release Time|Ratio|Knee
 :---:|:---:
 2|250.0 ms
 
-> analog
+> analog-max
 
-1. Add 1st Multiband Compressor. Set the following values:
+1. Add 1st Equalizer. Set the following values:
 
-Operating mode|Sidechain boost
+Mode|Bands
 :---:|:---:
-Linear phase|None
+SPM|2
 
-Band|Enable|Start|Bypass|Attack Time|Attack Threshold|Release Time|Ratio|Knee
-:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
-1|Yes||Enable|||||
-2|Yes|116.54 Hz||0.00 ms|-60.00 dB|0.00 ms|1.50|0.0 dB
-3|Yes|5274.04 Hz|Enable|||||
-4|No||Enable|||||
-5|No||Enable|||||
-6|No||Enable|||||
-7|No||Enable|||||
-8|No||Enable|||||
+#|Type|Mode|Slope|Frequency|Gain|Quality
+:---:|:---:|:---:|:---:|:---:|:---:|:---:
+1|Low-shelf|LRX (MT)|x1|116.54 Hz|18.00 dB|0.00
+2|Low-shelf|LRX (MT)|x1|5274.04 Hz|-18.00 dB|0.00
 
-> Band # - Sidechain
-
-#|Reactivity|Lookahead
-:---:|:---:|:---:
-2|250.0 ms|20.0 ms
-
-2. Add 1st Equalizer. Set the following values:
+2. Add 2nd Equalizer. Set the following values:
 
 Toggle this effect
 :---:
@@ -329,29 +319,21 @@ Off
 
 Mode|Bands|Split channels
 :---:|:---:|:---:
-SPM|5|Enable
+SPM|1|Enable
 
 > Left
 
 #|Type|Mode|Slope|Frequency|Gain|Quality
 :---:|:---:|:---:|:---:|:---:|:---:|:---:
-1|Bell|RLC (MT)|x1|466.16 Hz|3.00 dB|1.25
-2|Bell|RLC (MT)|x1|932.33 Hz|-0.50 dB|1.00
-3|Bell|RLC (MT)|x1|1864.66 Hz|3.00 dB|1.25
-4|Bell|RLC (MT)|x1|3729.31 Hz|-0.50 dB|1.00
-5|Bell|RLC (MT)|x1|7458.62 Hz|3.00 dB|1.25
+1|Bell|RLC (MT)|x1|1318.51 Hz|6.00 dB|0.50
 
 > Right
 
 #|Type|Mode|Slope|Frequency|Gain|Quality
 :---:|:---:|:---:|:---:|:---:|:---:|:---:
-1|Bell|RLC (MT)|x1|932.33 Hz|3.00 dB|1.25
-2|Bell|RLC (MT)|x1|1864.66 Hz|-0.50 dB|1.00
-3|Bell|RLC (MT)|x1|3729.31 Hz|3.00 dB|1.25
-4|Bell|RLC (MT)|x1|7458.62 Hz|-0.50 dB|1.00
-5|Bell|RLC (MT)|x1|14917.24 Hz|3.00 dB|1.25
+1|Bell|RLC (MT)|x1|5274.04 Hz|6.00 dB|0.50
 
-3. Add 2nd Equalizer. Set the following values:
+3. Add 3rd Equalizer. Set the following values:
 
 Toggle this effect
 :---:
@@ -381,7 +363,7 @@ SPM|5|Enable
 4|Bell|RLC (MT)|x1|7458.62 Hz|-1.00 dB|1.00
 5|Bell|RLC (MT)|x1|14917.24 Hz|6.00 dB|1.50
 
-4. Add 2nd Multiband Compressor. Set the following values:
+4. Add 1st Multiband Compressor. Set the following values:
 
 Toggle this effect
 :---:
@@ -391,16 +373,16 @@ Operating mode|Sidechain boost|Stereo split
 :---:|:---:|:---:
 Linear phase|None|Enable
 
-Band|Enable|Start|Compression mode|Bypass|Attack Time|Attack Threshold|Release Time|Ratio|Knee
-:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
-1|Yes||Upward||0.00 ms|0.00 dB|0.00 ms|1.20|0.0 dB
-2|Yes|116.54 Hz|Upward||0.00 ms|0.00 dB|0.00 ms|1.20|0.0 dB
-3|Yes|5274.04 Hz|Upward||0.00 ms|0.00 dB|0.00 ms|1.20|0.0 dB
-4|No|||Enable|||||
-5|No|||Enable|||||
-6|No|||Enable|||||
-7|No|||Enable|||||
-8|No|||Enable|||||
+Band|Enable|Start|Compression mode|Bypass|Attack Time|Attack Threshold|Ratio|Knee
+:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
+1|Yes||Upward||0.00 ms|0.00 dB|1.20|0.0 dB
+2|Yes|116.54 Hz|Upward||0.00 ms|0.00 dB|1.20|0.0 dB
+3|Yes|5274.04 Hz|Upward||0.00 ms|0.00 dB|1.20|0.0 dB
+4|No|||Enable||||
+5|No|||Enable||||
+6|No|||Enable||||
+7|No|||Enable||||
+8|No|||Enable||||
 
 > Band # - Sidechain
 
@@ -416,7 +398,7 @@ Band|Enable|Start|Compression mode|Bypass|Attack Time|Attack Threshold|Release T
 
 7. Add Limiter. Set the same values ​​as step 13 to maximum latency.
 
-## HIGHER QUALITY = HIGHER LATENCY 💎️
+### HIGHER QUALITY = HIGHER LATENCY 💎️
 
 To achieve higher quality in exchange for noticeable latency, follow these steps:
 
@@ -431,7 +413,7 @@ Filter|(MT)
 
 Filter mode|Equalizer mode
 :---:|:---:
-LRX (MT)|SPM
+(MT)|SPM
 
 3. Select 1st / 2nd Multiband Compressor. Set the following values:
 
@@ -457,9 +439,17 @@ Limiter Attack|Limiter Release|Lookahead
 :---:|:---:|:---:
 20.00 ms|20.00 ms|20.00 ms
 
-## ALTERNATIVES 🫧️
+### ALTERNATIVES 🫧️
 
 Replace some effects using a variant.
+
+2. Add Filter. Set the following values:
+
+> edm | hifi
+
+Type|Filter mode|Slope|Frequency|Width|Gain|Quality
+:---:|:---:|:---:|:---:|:---:|:---:|:---:
+Ladder-pass|LRX (BT)|x1|783.99 Hz|5|-12.00/-18.00 dB|0.00
 
 11. Add Delay. Set the following values:
 
@@ -476,3 +466,88 @@ Time (Right)
 Release
 :---:
 100.00 ms
+
+### ARCHIVE 🗃️
+
+These settings are no longer used, but they are still available if you need them.
+
+X. Add Equalizer. Set the following values:
+
+Toggle this effect
+:---:
+Off
+
+Mode|Bands|Split channels
+:---:|:---:|:---:
+SPM|5|Enable
+
+> Left
+
+#|Type|Mode|Slope|Frequency|Gain|Quality
+:---:|:---:|:---:|:---:|:---:|:---:|:---:
+1|Bell|RLC (MT)|x1|466.16 Hz|3.00 dB|1.25
+2|Bell|RLC (MT)|x1|932.33 Hz|-0.50 dB|1.00
+3|Bell|RLC (MT)|x1|1864.66 Hz|3.00 dB|1.25
+4|Bell|RLC (MT)|x1|3729.31 Hz|-0.50 dB|1.00
+5|Bell|RLC (MT)|x1|7458.62 Hz|3.00 dB|1.25
+
+> Right
+
+#|Type|Mode|Slope|Frequency|Gain|Quality
+:---:|:---:|:---:|:---:|:---:|:---:|:---:
+1|Bell|RLC (MT)|x1|932.33 Hz|3.00 dB|1.25
+2|Bell|RLC (MT)|x1|1864.66 Hz|-0.50 dB|1.00
+3|Bell|RLC (MT)|x1|3729.31 Hz|3.00 dB|1.25
+4|Bell|RLC (MT)|x1|7458.62 Hz|-0.50 dB|1.00
+5|Bell|RLC (MT)|x1|14917.24 Hz|3.00 dB|1.25
+
+X. Add Level Meter. Set the following values:
+
+Toggle this effect
+:---:
+Off
+
+X. Add Loudness. Set the following values:
+
+Mode|IIR approximation|Volume
+:---:|:---:|:---:
+IIR|Normal/Best|-24.0 dB
+
+> max
+
+Mode|FFT size
+:---:|:---:
+FFT|4096/16384
+
+X. Add Multiband Compressor. Set the following values:
+
+Operating mode|Sidechain boost
+:---:|:---:
+Linear phase|None
+
+Band|Enable|Start|Bypass|Attack Time|Attack Threshold|Release Time|Ratio|Knee
+:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
+1|Yes||Enable|||||
+2|Yes|116.54 Hz||0.00 ms|-60.00 dB|0.00 ms|1.50|0.0 dB
+3|Yes|5274.04 Hz|Enable|||||
+4|No||Enable|||||
+5|No||Enable|||||
+6|No||Enable|||||
+7|No||Enable|||||
+8|No||Enable|||||
+
+> Band # - Sidechain
+
+#|Reactivity|Lookahead
+:---:|:---:|:---:
+2|250.0 ms|20.0 ms
+
+X. Add Reverberation. Set the following values:
+
+Toggle this effect
+:---:
+Off
+
+Room size|Decay time|Pre delay|Diffusion|High frequency damping|Bass cut|Treble cut|Wet
+:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
+Large/smooth|0.40 s|20 ms|0.00 %|12543.85 Hz|196.00 Hz|12543.85 Hz|-6.0 dB
