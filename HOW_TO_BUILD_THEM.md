@@ -1,6 +1,6 @@
 ## HOW TO BUILD THEM 🏗️
 
-- Almost all values ​​are documented, except for the defaults. To see them, open and analyze the `.json` file.
+- All custom values ​​are documented, except for the default ones. To see them, open and analyze the `.json` file.
 
 - Make sure to `Reset` each effect before starting.
 
@@ -188,7 +188,7 @@ None|Enable
 
 Band|Enable|Start|Compression mode|Bypass|Attack Time|Attack Threshold|Ratio|Knee
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
-1|Yes||Upward||0.00 ms|0.00 dB|1.20|0.0 dB
+1|||Upward||0.00 ms|0.00 dB|1.20|0.0 dB
 2|Yes|138.59 Hz|Upward||0.00 ms|0.00 dB|1.20|0.0 dB
 3|Yes|4434.92 Hz|Upward||0.00 ms|0.00 dB|1.20|0.0 dB
 4|No|||Enable||||
@@ -283,7 +283,7 @@ None
 
 Band|Enable|Start|Bypass|Attack Time|Attack Threshold|Release Time|Ratio|Knee
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
-1|Yes||Enable|||||
+1|||Enable|||||
 2|Yes|138.59 Hz||0.00 ms|-60.00 dB|0.00 ms|1.50|0.0 dB
 3|Yes|4434.92 Hz|Enable|||||
 4|No||Enable|||||
@@ -375,7 +375,7 @@ Linear phase|None|Enable
 
 Band|Enable|Start|Compression mode|Bypass|Attack Time|Attack Threshold|Ratio|Knee
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
-1|Yes||Upward||0.00 ms|0.00 dB|1.20|0.0 dB
+1|||Upward||0.00 ms|0.00 dB|1.20|0.0 dB
 2|Yes|116.54 Hz|Upward||0.00 ms|0.00 dB|1.20|0.0 dB
 3|Yes|5274.04 Hz|Upward||0.00 ms|0.00 dB|1.20|0.0 dB
 4|No|||Enable||||
@@ -527,7 +527,7 @@ Linear phase|None
 
 Band|Enable|Start|Bypass|Attack Time|Attack Threshold|Release Time|Ratio|Knee
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
-1|Yes||Enable|||||
+1|||Enable|||||
 2|Yes|116.54 Hz||0.00 ms|-60.00 dB|0.00 ms|1.50|0.0 dB
 3|Yes|5274.04 Hz|Enable|||||
 4|No||Enable|||||
