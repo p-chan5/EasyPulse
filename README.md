@@ -1,4 +1,4 @@
-`High Quality` [Easy Effects](https://github.com/wwmm/easyeffects) presets for headphones.
+`High Quality` [Easy Effects](https://github.com/wwmm/easyeffects) presets for headphones and earbuds.
 
 ## WHAT'S INSIDE 🎁️
 
@@ -26,7 +26,7 @@ Do they sound amazing? Then support us with a ⭐️ and don't miss any updates!
 2. Unzip and move the `.json` files to one of the following paths:
   
 * Flatpak: `~/.var/app/com.github.wwmm.easyeffects/data/easyeffects/output`
-* Repositories: `~/.local/share/easyeffects/output`
+* Repositories/Source code: `~/.local/share/easyeffects/output`
 
 3. Done! Load them from `Output` > `Presets` > `Local`
 
@@ -82,11 +82,11 @@ They prevent the signal from exceeding 0.00 dB and becoming distorted | `Thresho
 
 It's hard to find a perfect setup for every user, although it is possible to make some adjustments to customize its behavior:
 
-- Load analog-max, hifi or edm > Open the 1st Equalizer Band 1 options > Change the `Frequency` and/or reduce the `Gain` and/or change the `Mode` to BWC (BT)/(MT) as appropriate.
+- Load analog-max, edm or hifi > Open the 1st Equalizer Band 1 options > Change the `Frequency` and/or reduce the `Gain` and/or change the `Mode` to BWC (BT)/(MT) as appropriate.
 
 - Select Bass Enhancer > Set the `Amount` to -6.00, -3.00 or 0.00 dB and/or the `Floor` to 29.14, 58.27 or 116.54 Hz
 
-- Select 1st/2nd Multiband Compressor > Edit Band 1 options (Bypass/Compression mode/Attack Threshold/Ratio) and/or Band 2 Frequency (Start).
+- Select 1st/2nd Multiband Compressor > Edit Band 1 options (Bypass/Compression mode/Attack Threshold/Release Time/Ratio/Reactivity) and/or Band 2 Frequency (Start).
 
 ### DOWNWARD / UPWARD COMPRESSION 📈️
 
