@@ -41,6 +41,7 @@
         "equalizer#0": {
             "balance": 0.0,
             "bypass": false,
+            "decramp": "Off",
             "input-gain": 0.0,
             "left": {
                 "band0": {
@@ -100,6 +101,7 @@
         "equalizer#1": {
             "balance": 0.0,
             "bypass": true,
+            "decramp": "Off",
             "input-gain": 0.0,
             "left": {
                 "band0": {
@@ -137,6 +139,7 @@
         "equalizer#2": {
             "balance": 0.0,
             "bypass": true,
+            "decramp": "Off",
             "input-gain": 0.0,
             "left": {
                 "band0": {
