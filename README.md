@@ -44,6 +44,10 @@ They attenuate the input signal, giving space to the mix.
 
 Makes it sound crunchier.
 
+### EXCITER 🙌️
+
+Makes the treble sound bright.
+
 ### FILTER 🚿️
 
 Applies a `High-pass` filter that removes bass frequencies. Switch to `Low-pass` to do the opposite.
@@ -68,7 +72,7 @@ Creates a bedroom. Choose the `Room size` | Increase or decrease the `Decay time
 
 They create a stereo separation effect.
 
-### AUTOGAIN 🛠️
+### AUTOGAIN 🔊️
 
 Normalizes volume based on a `Target` | `Reset history` re-evaluates this operation (refresh) | `Maximum history` is arbitrary.
 
@@ -78,13 +82,17 @@ They prevent the signal from exceeding 0.00 dB and becoming distorted | `Thresho
 
 ## TIPS ✨️
 
+### ACCURATE REVERB 🔍️
+
+To achieve creative results, you can set the `Pre delay` to 20 ms or more, the `Bass cut` to 196.00, 233.08 or 277.18 Hz, the `High frequency damping/Treble cut` to 12543.85, 14917.24 or 17739.69 Hz and the `Dry/Wet` controls to -6.0, -3.0, 0.0, 3.0 or 6.0 dB
+
 ### BASS TREATMENT 🩺️
 
 It's hard to find a perfect setup for every user, although it is possible to make some adjustments to customize its behavior:
 
 - Load analog-max, edm or hifi > Open the 1st Equalizer Band 1 options > Change the `Frequency` and/or reduce the `Gain` and/or change the `Mode` to BWC (BT)/(MT) as appropriate.
 
-- Select Bass Enhancer > Set the `Amount` to -6.00, -3.00 or 0.00 dB and/or the `Floor` to 29.14, 58.27 or 116.54 Hz
+- Select Bass Enhancer > Blend the harmonics (3rd - harsh / 2nd - soft) and/or set the `Amount` to -6.00, -3.00, 0.00, 3.00 or 6.00 dB and/or the `Floor` to 29.14, 58.27 or 116.54 Hz
 
 - Select 1st/2nd Multiband Compressor > Edit Band 1 options (Bypass/Compression mode/Attack Threshold/Release Time/Ratio/Reactivity) and/or Band 2 Frequency (Start).
 
@@ -96,13 +104,17 @@ To achieve different styles, you can set the `Attack Threshold` to 0.00, -12.00,
 
 It should not be noticeable unless the Limiter signal is oversaturated, but if that is the case, select the `Smooth` parameter and set a value between 0.00 and -48.00 dB (default: -5.00 dB) and/or reduce the `Knee` or the `Input` level.
 
+### HARMONICS SCULPTOR ⚒️
+
+Select Exciter > Blend the harmonics (3rd - harsh / 2nd - soft) and/or set the `Amount` to -6.00, -3.00, 0.00, 3.00 or 6.00 dB and/or the `Scope` to 2217.46, 4434.92 or 8869.84 Hz
+
 ### MINIMUM VS MAXIMUM LATENCY 🥊️
 
 Choose the one that best suits your needs. From a practical standpoint, the `min` version is stable and works in all possible scenarios, while the `max` version requires more processing and is experimental, but may sound more professional.
 
 ### NATIVE PLUGIN WINDOW 🔬️
 
-You can show or hide the native plugins interface to see the applied settings in more detail. Go to `Preferences` > `Experimental Features` and enable `Native window of effects`
+You can show the native plugins interface to see the applied settings in more detail. Go to `Preferences` > `Experimental Features` and enable `Native window of effects`
 
 ### ON OR OFF 🤔️
 
@@ -111,6 +123,16 @@ Some effects are disabled by default; be sure to enable and test them. If you li
 ### SOFTCLIP 😵️
 
 Select Stereo Tools and enable this option to add analog distortion (clipping) to the signal. Increase the `S/C Level` to make it more noticeable, but **DON'T** overdo it.
+
+### STEREO LINK 👤️
+
+This feature allows you to process the left and right channels independently, resulting in a wider mix. However, it can sometimes distort the stereo image, especially when manually splitting the signal (2nd/3rd/4th Equalizer). To disable it, select the Limiter and set it to 100.0 %, or to 50.0 % if you prefer it to operate partially.
+
+### STEREO PLAYGROUND 🛝️
+
+- Select Stereo Tools and set the `Side level` to 3.00 or 6.00 dB
+
+- Replace Stereo Tools with Delay and add more than 20.00 ms (Time) to the right channel. Be careful not to add too much, or it will sound out of sync.
 
 ## COMPATIBILITY ISSUES ⚠️
 
@@ -137,6 +159,10 @@ Since we **DON'T** support older versions, it's vital that you have the current 
 ### Bass Enhancer
 
 - [Calf Bass Enhancer](https://calf-studio-gear.org/doc/Bass%20Enhancer.html)
+
+### Exciter
+
+- [Calf Exciter](https://calf-studio-gear.org/doc/Exciter.html)
 
 ### Filter
 
