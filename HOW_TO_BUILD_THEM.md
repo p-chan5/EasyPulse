@@ -4,6 +4,8 @@
 
 - Make sure to `Reset` each effect before starting.
 
+- PulseAudio/PulseEffects users should use advanced tools like [JACK](https://jackaudio.org/) and [Carla](https://kx.studio/Applications:Carla). Then, try emulating the on/off switch (Bypass) using an Open Sound Control (OSC) utility like `oscsend`
+
 - Take the following sequence as an example and save time as you go.
 
 > hifi-min > hifi-max / hifi-min > all-min / hifi-max > all-max | indie-min > indie-max | analog-max
@@ -92,9 +94,19 @@ Off
 
 Blend harmonics|Amount|Harmonics|Scope|Floor active|Floor
 :---:|:---:|:---:|:---:|:---:|:---:
--10|-6.0 dB|10.0|233.08 Hz|On|116.54 Hz
+-10|-6.0 dB|10.0|233.08 Hz|On|29.14 Hz
 
-4. Add Filter. Set the following values:
+4. Add Exciter. Set the following values:
+
+Toggle this effect
+:---:
+Off
+
+Blend harmonics|Amount|Harmonics|Scope|Ceil active|Ceil
+:---:|:---:|:---:|:---:|:---:|:---:
+-10|-6.0 dB|10.0|2217.46 Hz|On|17739.69 Hz
+
+5. Add Filter. Set the following values:
 
 Toggle this effect
 :---:
@@ -104,7 +116,7 @@ Type|Filter mode|Slope|Frequency
 :---:|:---:|:---:|:---:
 High-pass|LRX (BT)|x4|329.63 Hz
 
-5. Add 2nd Equalizer. Set the following values:
+6. Add 2nd Equalizer. Set the following values:
 
 Toggle this effect
 :---:
@@ -126,7 +138,7 @@ Bands|Split channels
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
 1|Ladder-pass|LRX (BT)|x4|7458.62 Hz|6.00 dB|0.00|3.00 oct
 
-6. Add 3rd Equalizer. Set the following values:
+7. Add 3rd Equalizer. Set the following values:
 
 Toggle this effect
 :---:
@@ -150,7 +162,7 @@ Bands|Split channels
 1|Ladder-pass|LRX (BT)|x4|1567.98 Hz|6.00 dB|0.00|1.50 oct
 2|Ladder-pass|LRX (BT)|x4|12543.85 Hz|6.00 dB|0.00|1.50 oct
 
-7. Add 4th Equalizer. Set the following values:
+8. Add 4th Equalizer. Set the following values:
 
 Toggle this effect
 :---:
@@ -176,7 +188,7 @@ Bands|Split channels
 2|Ladder-pass|LRX (BT)|x4|3729.31 Hz|6.00 dB|0.00|1.00 oct
 3|Ladder-pass|LRX (BT)|x4|14917.24 Hz|6.00 dB|0.00|1.00 oct
 
-8. Add 2nd Multiband Compressor. Set the following values:
+9. Add 2nd Multiband Compressor. Set the following values:
 
 Toggle this effect
 :---:
@@ -213,7 +225,7 @@ Band|Release Time
 2|250.0 ms
 3|250.0 ms
 
-9. Add Compressor. Set the following values:
+10. Add Compressor. Set the following values:
 
 Toggle this effect
 :---:
@@ -233,7 +245,7 @@ Release Time
 :---:
 0.00 ms
 
-10. Add Reverberation. Set the following values:
+11. Add Reverberation. Set the following values:
 
 Toggle this effect
 :---:
@@ -241,9 +253,9 @@ Off
 
 Room size|Decay time|Diffusion|High frequency damping|Bass cut|Treble cut|Dry|Wet
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
-Large/smooth|0.60 s|1.00 %|14917.24 Hz|233.08 Hz|14917.24 Hz|-100.0 dB/-inf|0.0 dB
+Large/smooth|0.60 s|1.00 %|17739.69 Hz|277.18 Hz|17739.69 Hz|-100.0 dB/-inf|0.0 dB
 
-11. Add Stereo Tools. Set the following values:
+12. Add Stereo Tools. Set the following values:
 
 Toggle this effect
 :---:
@@ -253,7 +265,7 @@ Delay
 :---:
 20.00 ms
 
-12. Add Autogain. Set the following values:
+13. Add Autogain. Set the following values:
 
 Toggle this effect
 :---:
@@ -263,7 +275,7 @@ Target
 :---:
 -10.00 dB
 
-13. Add Limiter. Set the following values:
+14. Add Limiter. Set the following values:
 
 Automatic level
 :---:
@@ -392,11 +404,11 @@ Band|Enable|Start|Compression mode|Bypass|Attack Time|Attack Threshold|Ratio|Kne
 2|250.0 ms|20.0 ms
 3|250.0 ms|20.0 ms
 
-5. Add Compressor. Set the same values ​​as step 9 to maximum latency.
+5. Add Compressor. Set the same values ​​as step 10 to maximum latency.
 
-6. Add Stereo Tools. Set the same values ​​as step 11.
+6. Add Stereo Tools. Set the same values ​​as step 12.
 
-7. Add Limiter. Set the same values ​​as step 13 to maximum latency.
+7. Add Limiter. Set the same values ​​as step 14 to maximum latency.
 
 ### HIGHER QUALITY = HIGHER LATENCY 💎️
 
@@ -451,7 +463,7 @@ Type|Filter mode|Slope|Frequency|Width|Gain|Quality
 :---:|:---:|:---:|:---:|:---:|:---:|:---:
 Ladder-pass|LRX (BT)|x1|783.99 Hz|5|-12.00/-18.00 dB|0.00
 
-11. Add Delay. Set the following values:
+12. Add Delay. Set the following values:
 
 Toggle this effect
 :---:
@@ -461,7 +473,7 @@ Time (Right)
 :---:
 20.00 ms
 
-13. Add Maximizer. Set the following values:
+14. Add Maximizer. Set the following values:
 
 Release
 :---:
@@ -518,6 +530,8 @@ IIR|Normal/Best|-24.0 dB
 Mode|FFT size
 :---:|:---:
 FFT|4096/16384
+
+Manual: [LSP Loudness Compensator Stereo](https://lsp-plug.in/?page=manuals&section=loud_comp_stereo)
 
 X. Add Multiband Compressor. Set the following values:
 
