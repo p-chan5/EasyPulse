@@ -14,7 +14,7 @@
             "amount": -6.0,
             "blend": -10.0,
             "bypass": true,
-            "floor": 116.54,
+            "floor": 29.14,
             "floor-active": true,
             "harmonics": 10.0,
             "input-gain": 0.0,
@@ -69,6 +69,7 @@
         "equalizer#0": {
             "balance": 0.0,
             "bypass": true,
+            "decramp": "Off",
             "input-gain": 0.0,
             "left": {
                 "band0": {
@@ -106,6 +107,7 @@
         "equalizer#1": {
             "balance": 0.0,
             "bypass": true,
+            "decramp": "Off",
             "input-gain": 0.0,
             "left": {
                 "band0": {
@@ -165,6 +167,7 @@
         "equalizer#2": {
             "balance": 0.0,
             "bypass": true,
+            "decramp": "Off",
             "input-gain": 0.0,
             "left": {
                 "band0": {
@@ -243,9 +246,21 @@
             },
             "split-channels": true
         },
+        "exciter#0": {
+            "amount": -6.0,
+            "blend": -10.0,
+            "bypass": true,
+            "ceil": 17739.69,
+            "ceil-active": true,
+            "harmonics": 10.0,
+            "input-gain": 0.0,
+            "output-gain": 0.0,
+            "scope": 2217.46
+        },
         "filter#0": {
             "balance": 0.0,
             "bypass": true,
+            "decramp": "Off",
             "equal-mode": "SPM",
             "frequency": 329.63,
             "gain": 0.0,
@@ -764,6 +779,7 @@
             "crossfeed#0",
             "multiband_compressor#0",
             "bass_enhancer#0",
+            "exciter#0",
             "filter#0",
             "equalizer#0",
             "equalizer#1",
@@ -777,17 +793,17 @@
         ],
         "reverb#0": {
             "amount": 0.0,
-            "bass-cut": 233.08,
+            "bass-cut": 277.18,
             "bypass": true,
             "decay-time": 0.6,
             "diffusion": 1.0,
             "dry": -100.0,
-            "hf-damp": 14917.24,
+            "hf-damp": 17739.69,
             "input-gain": 0.0,
             "output-gain": 0.0,
             "predelay": 0.0,
             "room-size": "Large/smooth",
-            "treble-cut": 14917.24
+            "treble-cut": 17739.69
         },
         "stereo_tools#0": {
             "balance-in": 0.0,
