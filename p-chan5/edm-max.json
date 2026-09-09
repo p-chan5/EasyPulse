@@ -359,6 +359,44 @@
             "stereo-link": 0.0,
             "threshold": 0.0
         },
+        "midside_equalizer#0": {
+            "balance": 0.0,
+            "bypass": true,
+            "decramp": "Off",
+            "input-gain": 0.0,
+            "mid": {
+                "band0": {
+                    "frequency": 329.63,
+                    "gain": 0.0,
+                    "mode": "LRX (MT)",
+                    "mute": true,
+                    "q": 0.0,
+                    "slope": "x4",
+                    "solo": false,
+                    "type": "Hi-pass",
+                    "width": 4.0
+                }
+            },
+            "mode": "SPM",
+            "num-bands": 1,
+            "output-gain": 0.0,
+            "pitch-mid": 0.0,
+            "pitch-side": 0.0,
+            "side": {
+                "band0": {
+                    "frequency": 329.63,
+                    "gain": 0.0,
+                    "mode": "LRX (MT)",
+                    "mute": false,
+                    "q": 0.0,
+                    "slope": "x4",
+                    "solo": false,
+                    "type": "Hi-pass",
+                    "width": 4.0
+                }
+            },
+            "split-channels": true
+        },
         "multiband_compressor#0": {
             "band0": {
                 "attack-threshold": 0.0,
@@ -602,6 +640,7 @@
             "equalizer#0",
             "bass_enhancer#0",
             "exciter#0",
+            "midside_equalizer#0",
             "filter#0",
             "equalizer#1",
             "equalizer#2",
