@@ -8,7 +8,7 @@
 
 - Take the following sequence as an example and save time as you go.
 
-> hifi-min > hifi-max / hifi-min > all-min / hifi-max > all-max | indie-min > indie-max | analog-max
+> hifi-min > hifi-max / hifi-min > all-min / hifi-max > all-max | indie-min > indie-max | analog-eq-max > analog-mc-max
 
 - To set decimal values (Hz) ​​open and edit the `.json` file or set them in the plugin GUI.
 
@@ -106,7 +106,29 @@ Blend harmonics|Amount|Harmonics|Scope|Ceil active|Ceil
 :---:|:---:|:---:|:---:|:---:|:---:
 -10|-6.0 dB|10.0|2217.46 Hz|On|17739.69 Hz
 
-5. Add Filter. Set the following values:
+5. Add Mid-Side Equalizer. Set the following values:
+
+Toggle this effect
+:---:
+Off
+
+Bands|Split mid/side
+:---:|:---:
+1|Enable
+
+> Mid
+
+#|Type|Mode|Slope|Frequency|Quality|Mute
+:---:|:---:|:---:|:---:|:---:|:---:|:---:
+1|High-pass|LRX (BT)|x4|329.63 Hz|0.00|On
+
+> Side
+
+#|Type|Mode|Slope|Frequency|Quality
+:---:|:---:|:---:|:---:|:---:|:---:
+1|High-pass|LRX (BT)|x4|329.63 Hz|0.00
+
+6. Add Filter. Set the following values:
 
 Toggle this effect
 :---:
@@ -116,7 +138,7 @@ Type|Filter mode|Slope|Frequency
 :---:|:---:|:---:|:---:
 High-pass|LRX (BT)|x4|329.63 Hz
 
-6. Add 2nd Equalizer. Set the following values:
+7. Add 2nd Equalizer. Set the following values:
 
 Toggle this effect
 :---:
@@ -138,7 +160,7 @@ Bands|Split channels
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
 1|Ladder-pass|LRX (BT)|x4|7458.62 Hz|6.00 dB|0.00|3.00 oct
 
-7. Add 3rd Equalizer. Set the following values:
+8. Add 3rd Equalizer. Set the following values:
 
 Toggle this effect
 :---:
@@ -162,7 +184,7 @@ Bands|Split channels
 1|Ladder-pass|LRX (BT)|x4|1567.98 Hz|6.00 dB|0.00|1.50 oct
 2|Ladder-pass|LRX (BT)|x4|12543.85 Hz|6.00 dB|0.00|1.50 oct
 
-8. Add 4th Equalizer. Set the following values:
+9. Add 4th Equalizer. Set the following values:
 
 Toggle this effect
 :---:
@@ -188,7 +210,7 @@ Bands|Split channels
 2|Ladder-pass|LRX (BT)|x4|3729.31 Hz|6.00 dB|0.00|1.00 oct
 3|Ladder-pass|LRX (BT)|x4|14917.24 Hz|6.00 dB|0.00|1.00 oct
 
-9. Add 2nd Multiband Compressor. Set the following values:
+10. Add 2nd Multiband Compressor. Set the following values:
 
 Toggle this effect
 :---:
@@ -225,7 +247,7 @@ Band|Release Time
 2|250.0 ms
 3|250.0 ms
 
-10. Add Compressor. Set the following values:
+11. Add Compressor. Set the following values:
 
 Toggle this effect
 :---:
@@ -245,7 +267,7 @@ Release Time
 :---:
 0.00 ms
 
-11. Add Reverberation. Set the following values:
+12. Add Reverberation. Set the following values:
 
 Toggle this effect
 :---:
@@ -255,7 +277,7 @@ Room size|Decay time|Diffusion|High frequency damping|Bass cut|Treble cut|Dry|We
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
 Large/smooth|0.60 s|1.00 %|17739.69 Hz|277.18 Hz|17739.69 Hz|-100.0 dB/-inf|0.0 dB
 
-12. Add Stereo Tools. Set the following values:
+13. Add Stereo Tools. Set the following values:
 
 Toggle this effect
 :---:
@@ -265,7 +287,7 @@ Delay
 :---:
 20.00 ms
 
-13. Add Autogain. Set the following values:
+14. Add Autogain. Set the following values:
 
 Toggle this effect
 :---:
@@ -275,7 +297,7 @@ Target
 :---:
 -10.00 dB
 
-14. Add Limiter. Set the following values:
+15. Add Limiter. Set the following values:
 
 Automatic level
 :---:
@@ -310,7 +332,7 @@ Band|Enable|Start|Bypass|Attack Time|Attack Threshold|Release Time|Ratio|Knee
 :---:|:---:
 2|250.0 ms
 
-> analog-max
+> analog-eq-max
 
 1. Add 1st Equalizer. Set the following values:
 
@@ -322,6 +344,31 @@ SPM|2
 :---:|:---:|:---:|:---:|:---:|:---:|:---:
 1|Low-shelf|LRX (MT)|x1|116.54 Hz|18.00 dB|0.00
 2|Low-shelf|LRX (MT)|x1|5274.04 Hz|-18.00 dB|0.00
+
+> mc
+
+1. Add 1st Multiband Compressor. Set the following values:
+
+Operating mode|Sidechain boost
+:---:|:---:
+Linear phase|None
+
+Band|Enable|Start|Bypass|Attack Time|Attack Threshold|Release Time|Ratio|Knee
+:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
+1|||Enable|||||
+2|Yes|116.54 Hz||0.00 ms|-60.00 dB|0.00 ms|1.50|0.0 dB
+3|Yes|5274.04 Hz|Enable|||||
+4|No||Enable|||||
+5|No||Enable|||||
+6|No||Enable|||||
+7|No||Enable|||||
+8|No||Enable|||||
+
+> Band # - Sidechain
+
+#|Reactivity|Lookahead
+:---:|:---:|:---:
+2|250.0 ms|20.0 ms
 
 2. Add 2nd Equalizer. Set the following values:
 
@@ -375,7 +422,7 @@ SPM|5|Enable
 4|Bell|RLC (MT)|x1|7458.62 Hz|-1.00 dB|1.00
 5|Bell|RLC (MT)|x1|14917.24 Hz|6.00 dB|1.50
 
-4. Add 1st Multiband Compressor. Set the following values:
+4. Add 2nd Multiband Compressor. Set the following values:
 
 Toggle this effect
 :---:
@@ -396,6 +443,14 @@ Band|Enable|Start|Compression mode|Bypass|Attack Time|Attack Threshold|Ratio|Kne
 7|No|||Enable||||
 8|No|||Enable||||
 
+> mc
+
+Band|Release Time
+:---:|:---:
+1|0.00 ms
+2|0.00 ms
+3|0.00 ms
+
 > Band # - Sidechain
 
 #|Reactivity|Lookahead
@@ -404,17 +459,23 @@ Band|Enable|Start|Compression mode|Bypass|Attack Time|Attack Threshold|Ratio|Kne
 2|250.0 ms|20.0 ms
 3|250.0 ms|20.0 ms
 
-5. Add Compressor. Set the same values ​​as step 10 to maximum latency.
+5. Add Compressor. Set the same values ​​as step 11 to maximum latency.
 
-6. Add Stereo Tools. Set the same values ​​as step 12.
+> mc
 
-7. Add Limiter. Set the same values ​​as step 14 to maximum latency.
+Release Time
+:---:
+0.00 ms
+
+6. Add Stereo Tools. Set the same values ​​as step 13.
+
+7. Add Limiter. Set the same values ​​as step 15 to maximum latency.
 
 ### HIGHER QUALITY = HIGHER LATENCY 💎️
 
 To achieve higher quality in exchange for noticeable latency, follow these steps:
 
-1. Select 1st / 2nd / 3rd / 4th Equalizer. Set the following values:
+1. Select 1st / 2nd / 3rd / 4th Equalizer | Mid-Side Equalizer. Set the following values:
 
 X|Mode
 :---:|:---:
@@ -451,6 +512,28 @@ Limiter Attack|Limiter Release|Lookahead
 :---:|:---:|:---:
 20.00 ms|20.00 ms|20.00 ms
 
+### OVERSAMPLING 👑️
+
+Its use is limited to testing purposes, since in most cases the result is inaudible, which depends heavily on the source material and your audio server configuration.
+
+1. Select 1st / 2nd / 3rd / 4th Equalizer | Mid-Side Equalizer. Set the following values:
+
+Equalizer decramping|Mode
+:---:|:---:
+x8|(BT)
+
+2. Select Filter. Set the following values:
+
+Filter mode|Equalizer decramping
+:---:|:---:
+(BT)|x8
+
+3. Select Limiter. Set the following values:
+
+Oversampling
+:---:
+Half/True peak
+
 ### ALTERNATIVES 🫧️
 
 Replace some effects using a variant.
@@ -463,7 +546,7 @@ Type|Filter mode|Slope|Frequency|Width|Gain|Quality
 :---:|:---:|:---:|:---:|:---:|:---:|:---:
 Ladder-pass|LRX (BT)|x1|783.99 Hz|5|-12.00/-18.00 dB|0.00
 
-12. Add Delay. Set the following values:
+13. Add Delay. Set the following values:
 
 Toggle this effect
 :---:
@@ -473,7 +556,7 @@ Time (Right)
 :---:
 20.00 ms
 
-14. Add Maximizer. Set the following values:
+15. Add Maximizer. Set the following values:
 
 Release
 :---:
@@ -532,29 +615,6 @@ Mode|FFT size
 FFT|4096/16384
 
 Manual: [LSP Loudness Compensator Stereo](https://lsp-plug.in/?page=manuals&section=loud_comp_stereo)
-
-X. Add Multiband Compressor. Set the following values:
-
-Operating mode|Sidechain boost
-:---:|:---:
-Linear phase|None
-
-Band|Enable|Start|Bypass|Attack Time|Attack Threshold|Release Time|Ratio|Knee
-:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
-1|||Enable|||||
-2|Yes|116.54 Hz||0.00 ms|-60.00 dB|0.00 ms|1.50|0.0 dB
-3|Yes|5274.04 Hz|Enable|||||
-4|No||Enable|||||
-5|No||Enable|||||
-6|No||Enable|||||
-7|No||Enable|||||
-8|No||Enable|||||
-
-> Band # - Sidechain
-
-#|Reactivity|Lookahead
-:---:|:---:|:---:
-2|250.0 ms|20.0 ms
 
 X. Add Reverberation. Set the following values:
 
