@@ -2,7 +2,7 @@
 
 ## WHAT'S INSIDE 🎁️
 
-15 configuration files divided into two categories:
+16 configuration files divided into two categories:
 
 Classic: with `min` and `max` latency versions.
 
@@ -16,7 +16,7 @@ Classic: with `min` and `max` latency versions.
 
 Special: they don't have many effects, but they do have some interesting features.
 
-- analog-max: includes 2 vintage-style surround equalizers.
+- analog-eq/mc-max: includes 2 vintage-style surround equalizers.
 
 Do they sound amazing? Then support us with a ⭐️ and don't miss any updates!
 
@@ -48,6 +48,10 @@ Makes it sound crunchier.
 
 Makes the treble sound bright.
 
+### MID-SIDE EQUALIZER 🦠️
+
+Removes stereo information from low frequencies, converting them to mono.
+
 ### FILTER 🚿️
 
 Applies a `High-pass` filter that removes bass frequencies. Switch to `Low-pass` to do the opposite.
@@ -78,7 +82,7 @@ Normalizes volume based on a `Target` | `Reset history` re-evaluates this operat
 
 ### LIMITER | MAXIMIZER 👂️
 
-They prevent the signal from exceeding 0.00 dB and becoming distorted | `Threshold` can replace `Autogain` in exchange for messing up dynamics.
+They prevent the signal from exceeding 0.00 dB and becoming distorted | `Threshold` can replace Autogain in exchange for messing up dynamics.
 
 ## TIPS ✨️
 
@@ -90,7 +94,7 @@ To achieve creative results, you can set the `Pre delay` to 20 ms or more, the `
 
 It's hard to find a perfect setup for every user, although it is possible to make some adjustments to customize its behavior:
 
-- Load analog-max, edm or hifi > Open the 1st Equalizer Band 1 options > Change the `Frequency` and/or reduce the `Gain` and/or change the `Mode` to BWC (BT)/(MT) as appropriate.
+- Load analog-eq-max, edm-min/max or hifi-min/max > Open the 1st Equalizer Band 1 options > Change the `Frequency` and/or reduce the `Gain` and/or change the `Mode` to BWC (BT)/(MT) as appropriate.
 
 - Select Bass Enhancer > Blend the harmonics (3rd - harsh / 2nd - soft) and/or set the `Amount` to -6.00, -3.00, 0.00, 3.00 or 6.00 dB and/or the `Floor` to 29.14, 58.27 or 116.54 Hz
 
@@ -102,7 +106,9 @@ To achieve different styles, you can set the `Attack Threshold` to 0.00, -12.00,
 
 ### DYNAMICS LOSS 🦴️
 
-It should not be noticeable unless the Limiter signal is oversaturated, but if that is the case, select the `Smooth` parameter and set a value between 0.00 and -48.00 dB (default: -5.00 dB) and/or reduce the `Knee` or the `Input` level.
+It should not be noticeable unless the Limiter signal is oversaturated, but if that is the case, select the `Smooth` parameter and set a value between 0.00 and -48.00 dB (default: -5.00 dB) and/or reduce the `Knee`
+
+Better yet, lower the volume of the specific audio stream in the `Players` section; this way, you'll leave some extra headroom without saturating the mix.
 
 ### HARMONICS SCULPTOR ⚒️
 
@@ -124,9 +130,11 @@ Some effects are disabled by default; be sure to enable and test them. If you li
 
 Select Stereo Tools and enable this option to add analog distortion (clipping) to the signal. Increase the `S/C Level` to make it more noticeable, but **DON'T** overdo it.
 
-### STEREO LINK 👤️
+### STEREO LINK / SPLIT 👤️
 
-This feature allows you to process the left and right channels independently, resulting in a wider mix. However, it can sometimes distort the stereo image, especially when manually splitting the signal (2nd/3rd/4th Equalizer). To disable it, select the Limiter and set it to 100.0 %, or to 50.0 % if you prefer it to operate partially.
+Both allow the left and right channels to be processed independently, resulting in a wider mix. However, they can sometimes distort the stereo image, especially when splitting the signal manually (2nd/3rd/4th Equalizer).
+
+Therefore, you can choose to use the current setting (recommended) or select the Limiter and adjust the `Stereo Link` parameter to 50 % for partial operation, or disable it by setting it to 100 % along with the `Stereo Split` option available on the 2nd Multiband Compressor and Compressor.
 
 ### STEREO PLAYGROUND 🛝️
 
@@ -163,6 +171,10 @@ Since we **DON'T** support older versions, it's vital that you have the current 
 ### Exciter
 
 - [Calf Exciter](https://calf-studio-gear.org/doc/Exciter.html)
+
+### Mid-Side Equalizer
+
+- [LSP Parametric Equalizer x32 MidSide](https://lsp-plug.in/?page=manuals&section=para_equalizer_x32_ms)
 
 ### Filter
 
